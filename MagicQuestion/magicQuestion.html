@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Magic Conch</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="form-container">
+        <h1 class="conch" data-text="ASK THE CONCH">ASK THE CONCH</h1>
+        <form action="answer.html" method="GET" class="fortune-form">
+            <div class="input-container">
+                <label for="question" class="visually-hidden">Enter your question</label>
+                <input id="question" name="question" type="text" required placeholder="WHAT'S YOUR FATE?">
+            </div>
+            
+            <button type="submit" class="submit-btn">REVEAL YOUR DESTINY</button>
+        </form>
+        
+        
+        <div class="decoration">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="button-container">
+            <a href="/index.html" class="back-to-main-btn">BACK</a>
+        </div>
+    </footer>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
