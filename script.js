@@ -4,6 +4,11 @@ const modalImage = document.getElementById("modalImage");
 const modalDescription = document.getElementById("modalDescription");
 
 const projectDetails = {
+    aboutMe: {
+        title: "Hello",
+        images: ["/placeholder"],
+        description: "some info about me!"
+    },
     project1: {
         title: "Project 1",
         images: ["/placeholder", "/placeholder","/placeholder","/placeholder"],
