@@ -19,6 +19,11 @@ const projectDetails = {
         images: ["/placeholder", "/placeholder","/placeholder","/placeholder"],
         description: "Description of Project 3. "
     },
+    project4: {
+        title: "Project 4",
+        images: ["/placeholder", "/placeholder", "/placeholder", "/placeholder"],
+        description: "Description of Project 4. "
+    },
     illustration: {
         title: "Illustration",
         images: ["/illustration/2022/Birthday_Cake.JPEG", "Illustration/2022/Milk.jpg","/placeholder","/placeholder"],
