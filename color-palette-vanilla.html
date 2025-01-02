@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Color Palette</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .color-swatch {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .color-sample {
+            height: 100px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+        }
+        .color-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .color-hex, .color-tailwind {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Portfolio Color Palette</h1>
+    <div id="colorGrid" class="color-grid"></div>
+
+    <script>
+        const colors = [
+            { name: "Light Coral", hexCode: "#FCA5A5", tailwindClass: "bg-red-300" },
+            { name: "Medium Turquoise", hexCode: "#5EEAD4", tailwindClass: "bg-teal-300" },
+            { name: "Light Yellow", hexCode: "#FEF08A", tailwindClass: "bg-yellow-200" },
+            { name: "Light Pink", hexCode: "#F9A8D4", tailwindClass: "bg-pink-300" },
+            { name: "Light Blue", hexCode: "#93C5FD", tailwindClass: "bg-blue-300" },
+            { name: "Medium Purple", hexCode: "#A855F7", tailwindClass: "bg-purple-500" },
+            { name: "Light Coral (darker)", hexCode: "#F87171", tailwindClass: "bg-red-400" },
+            { name: "Light Green", hexCode: "#86EFAC", tailwindClass: "bg-green-300" },
+            { name: "Very Light Blue", hexCode: "#BFDBFE", tailwindClass: "bg-blue-200" },
+            { name: "Medium Yellow", hexCode: "#FDE047", tailwindClass: "bg-yellow-300" }
+        ];
+
+        const colorGrid = document.getElementById('colorGrid');
+
+        colors.forEach(color => {
+            const swatch = document.createElement('div');
+            swatch.className = 'color-swatch';
+            swatch.innerHTML = `
+                <div class="color-sample" style="background-color: ${color.hexCode};"></div>
+                <div class="color-name">${color.name}</div>
+                <div class="color-hex">${color.hexCode}</div>
+                <div class="color-tailwind">${color.tailwindClass}</div>
+            `;
+            colorGrid.appendChild(swatch);
+        });
+    </script>
+</body>
+</html>
