@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Up! - A Card Game</title>
+    <title>Broker Breaker - Action-Progression Game</title>
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
 </head>
 
 <body data-page="project2">
@@ -14,44 +14,61 @@
         <div class="nav-content">
             <a href="/index.html" class="home-link">← Back to Home</a>
             <div class="project-nav">
-                <a href="project2.html">Order Up!</a>
-                <a href="project1.html">A Night at Home</a>
-                <a href="project3.html">Broker Breaker</a>
-                <a href="project4.html">Green Mechanics</a>
+                <a class="project2 project-link active" href="project2.html">Broker Breaker</a>
+                <a class="project1 project-link" href="project1.html">Order Up!</a>
+                <a class="project3 project-link" href="project3.html">A Night at Home</a>
+                <a class="project4 project-link" href="project4.html">Green Mechanics</a>
             </div>
         </div>
     </nav>
 
     <main class="main-content">
         <header class="project-header">
-            <h1 class="project-title">Order Up! <span class="version-badge">Version 1.4</span></h1>
-            <div class="project-subtitle">Card Game Design / 2024 / Game Designer & Developer</div>
+            <h1 class="project-title">Broker Breaker</h1>
+            <div class="project-subtitle">Digital Game / 2024 / Developer</div>
         </header>
 
         <div class="project-info">
             <div class="info-section">
-                <h3>Game Components</h3>
-                <p>Recipe Cards (26)<br>Ingredient Cards (56)<br>Wild Cards (6)<br>Penalty Cards (6)</p>
+                <h3>Tools & Technologies</h3>
+                <p>Game Maker<br>Pixel Art<br>Sound Design<br>Game Design<br>Player Testing</p>
             </div>
             <div class="info-section">
-                <h3>Gameplay</h3>
-                <p>2+ Players<br>Simultaneous Play<br>Fast-Paced Gameplay<br>~15-20 Minutes</p>
+                <h3>Team</h3>
+                <p>Jummy Adelaja<br>Felicita Kowalski<br>Sanya Gupta<br>Pavlo Soldatov</p>
             </div>
             <div class="info-section">
                 <h3>Role & Responsibilities</h3>
                 <ul>
                     <li>Game Design</li>
-                    <li>Playtesting</li>
-                    <li>Balancing</li>
-                    <li>Rule Development</li>
+                    <li>Sprite Creation</li>
+                    <li>Player Testing</li>
+                    <li>Programming & Implementation</li>
                 </ul>
             </div>
         </div>
 
-        <div class="project-gallery">
-            <img src="" alt="Game cards layout" class="gallery-image lightbox-trigger">
-            <img src="" alt="Gameplay example" class="gallery-image lightbox-trigger">
-            <img src="" alt="Card designs" class="gallery-image lightbox-trigger">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/broker-breaker/initial-inspiration.png" alt="Initial game inspiration"
+                        class="lightbox-trigger">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/broker-breaker/gamemaker-first.png" alt="First attempt at Game Maker"
+                        class="lightbox-trigger">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/broker-breaker/paper-prototype.png" alt="Paper prototyping phase"
+                        class="lightbox-trigger">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/broker-breaker/final-layout.png" alt="Final game layout" class="lightbox-trigger">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
 
         <div id="lightbox" class="lightbox hidden">
@@ -61,83 +78,75 @@
 
         <div class="project-description">
             <h2>About the Project</h2>
-            <p>Order Up! is a fast-paced card game where players compete as chefs to complete recipes using ingredient
-                cards. The game features simultaneous play mechanics, creating an exciting rush to complete recipes
-                before other players. With a mix of strategic resource management and quick decision-making, players
-                must balance their ingredient collection while watching out for penalty cards that could derail their
-                progress.</p>
+            <p>Broker Breaker is an action-progression PC game targeting casual gamers aged 8 and up. Set in the chaos
+                of Wall Street, players battle through waves of increasingly challenging enemies while managing
+                resources and upgrading their abilities, culminating in an epic boss battle.</p>
 
-        <h2>Game Mechanics</h2>
-        <p>The core gameplay revolves around matching ingredient cards to recipe requirements. Players start with 7
-            ingredient cards and compete to complete the currently revealed recipe. Special mechanics include:</p>
-        <ul>
-            <li>Wildcard "Fully Stocked Fridge" cards that can substitute any ingredient</li>
-            <li>Penalty cards that force discards (One Star Review) or recipe forfeitures (Health Code Violation)</li>
-            <li>Dynamic hand management with continuous drawing and discarding</li>
-            <li>Simultaneous play format that creates engaging player interaction</li>
-        </ul>
-        
-        <div class="project-gallery">
-            <img src="" alt="Game cards layout" class="gallery-image lightbox-trigger">
-            <img src="" alt="Gameplay example" class="gallery-image lightbox-trigger">
-            <img src="" alt="Card designs" class="gallery-image lightbox-trigger">
+            <h2>Core Gameplay</h2>
+            <p>The game follows a compelling loop where players spawn enemies, battle them, earn points, advance through
+                levels, and ultimately face the final boss. Players must survive increasingly difficult waves while
+                collecting resources and managing their abilities strategically.</p>
+
+            <h2>Game Features</h2>
+            <ul>
+                <li>Multiple weapon types including red, blue, and white weapons, plus a special area attack ability
+                </li>
+                <li>Progressive difficulty system with six distinct stages of enemy spawning</li>
+                <li>Experience-based progression system using collectible rats that enhance player abilities</li>
+                <li>Three distinct enemy types with unique characteristics and behaviors</li>
+                <li>Epic final boss battle featuring special attacks and complex mechanics</li>
+            </ul>
+
+            <h2>Development Process</h2>
+            <h3>Enemy Design & Progression</h3>
+            <p>The game features three main enemy types:</p>
+            <ul>
+                <li>Type 1: Balanced enemies with 100 HP and 0.6 movement speed</li>
+                <li>Type 2: Swift enemies with 50 HP and 1.1 movement speed</li>
+                <li>Type 3: Tank enemies with 300 HP and 0.3 movement speed</li>
+                <li>Final Boss: A formidable opponent with 5000 HP, special charging attacks, and unique mechanics</li>
+            </ul>
+
+            <h2>Art and Visual Design</h2>
+            <p>The game features a detailed pixel art style with carefully crafted visual elements including:</p>
+            <ul>
+                <li>Character animations for movement, attacks, and weapon changes</li>
+                <li>Distinct weapon effects and projectiles</li>
+                <li>Environmental assets including buildings, lamp posts, and interactive elements</li>
+                <li>Dynamic UI elements showing health, weapons, and experience progress</li>
+            </ul>
+
+            <h2>Playtesting & Iterations</h2>
+            <p>Through multiple playtesting sessions, we refined the game based on player feedback:</p>
+
+            <h3>Key Improvements</h3>
+            <ul>
+                <li>Enhanced UI with weapon-specific colors and animations</li>
+                <li>Balanced rat spawn rates and collection mechanics</li>
+                <li>Adjusted enemy spawn rates and player health for better difficulty scaling</li>
+                <li>Added visual feedback for cooldowns and collectibles</li>
+                <li>Implemented automatic rat collection when in range</li>
+            </ul>
+
+            <h2>Controls & Gameplay</h2>
+            <p>The game features intuitive controls:</p>
+            <ul>
+                <li>Movement: WASD or arrow keys</li>
+                <li>Attack: Automatic firing toward mouse pointer</li>
+                <li>Weapon switching: Q or E keys</li>
+                <li>Special area attack: Space bar</li>
+            </ul>
         </div>
-
-        <h2>Development Process</h2>
-        <p>The game underwent significant evolution through multiple playtesting sessions:</p>
-        
-        <h3>Initial Version</h3>
-        <p>The first iteration included trading mechanics and strict hand limits, which proved to slow down
-            gameplay. Early playtesting revealed issues with recipe completion difficulty and card distribution.</p>
-        
-        <h3>Refinements</h3>
-        <p>Through iterative testing, several key improvements were made:</p>
-        <ul>
-            <li>Simplified recipe requirements for better game flow</li>
-            <li>Added wildcards to prevent gameplay stagnation</li>
-            <li>Introduced penalty cards for player interaction</li>
-            <li>Adjusted ingredient card distribution for better balance</li>
-            <li>Modified win conditions for more satisfying gameplay</li>
-        </ul>
-        
-        <h2>Card Distribution</h2>
-        <p>The final game features carefully balanced card quantities:</p>
-        <ul>
-            <li>26 Recipe Cards with varying complexity</li>
-            <li>56 Ingredient Cards spread across 12 different types</li>
-            <li>6 Wildcard "Fully Stocked Fridge" cards</li>
-            <li>6 Penalty Cards (3 each of two types)</li>
-            <li>Recipe requirements ranging from 1-3 ingredients</li>
-        </ul>
-        
-        <h2>Playtesting Insights</h2>
-        <p>Multiple playtesting sessions with 2-4 players revealed valuable insights:</p>
-        <ul>
-            <li>Need for clear rules about card placement and timing</li>
-            <li>Importance of round reset procedures</li>
-            <li>Balance between game speed and strategic depth</li>
-            <li>Accessibility considerations leading to planned illustrations</li>
-        </ul>
-        
-        <h2>Future Development</h2>
-        <p>Current plans for further development include:</p>
-        <ul>
-            <li>Adding illustrations for improved accessibility</li>
-            <li>Upgrading to cardstock for better durability</li>
-            <li>Potential expansion with new recipe and ingredient combinations</li>
-            <li>Exploring additional special card mechanics</li>
-        </ul>
-
     </main>
+
     <button id="backToTop" title="Back to Top">↑</button>
-    
-    
+
     <footer class="footer">
         <p>&copy; 2024 Jummy Adelaja. All rights reserved.</p>
     </footer>
-    
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="projectScript.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="projectScript.js"></script>
 </body>
 
 </html>

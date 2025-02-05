@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Night At Home - Interactive Horror Experience</title>
+    <title>Order Up! - A Card Game</title>
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    
+
 </head>
 
 <body data-page="project1">
@@ -14,181 +14,128 @@
         <div class="nav-content">
             <a href="/index.html" class="home-link">← Back to Home</a>
             <div class="project-nav">
-                <a href="project1.html">A Night At Home</a>
-                <a href="project2.html">Order Up!</a>
-                <a href="project3.html">Broker Breaker</a>
-                <a href="project4.html">Green Mechanics</a>
+                <a class="project1 project-link" href="project1.html">Order Up!</a>
+                <a class="project2 project-link" href="project2.html">Broker Breaker</a>
+                <a class="project3 project-link" href="project3.html">A Night at Home</a>
+                <a class="project4 project-link" href="project4.html">Green Mechanics</a>
             </div>
         </div>
     </nav>
 
     <main class="main-content">
         <header class="project-header">
-            <h1 class="project-title">A Night At Home 2.0</h1>
-            <div class="project-subtitle">Interactive Fiction / 2024 / Writer & Developer</div>
+            <h1 class="project-title">Order Up! <span class="version-badge">Version 1.4</span></h1>
+            <div class="project-subtitle">Card Game Design / 2024 / Game Designer & Developer</div>
         </header>
 
         <div class="project-info">
             <div class="info-section">
-                <h3>Tools & Technologies</h3>
-                <p>Twine<br>HTML/CSS<br>JavaScript<br>Canva<br>Story-First Design</p>
+                <h3>Game Components</h3>
+                <p>Recipe Cards (26)<br>Ingredient Cards (56)<br>Wild Cards (6)<br>Penalty Cards (6)</p>
             </div>
             <div class="info-section">
-                <h3>Timeline</h3>
-                <p>2 months<br>November 2024- December 2024</p>
+                <h3>Gameplay</h3>
+                <p>2+ Players<br>Simultaneous Play<br>Fast-Paced Gameplay<br>~15-20 Minutes</p>
             </div>
             <div class="info-section">
                 <h3>Role & Responsibilities</h3>
                 <ul>
-                    <li>Narrative Design / Choice Architecture</li>
-                    <li>Writing</li>
-                    <li>Player Testing</li>
-                    <li>Programming & Design</li>
+                    <li>Game Design</li>
+                    <li>Playtesting</li>
+                    <li>Balancing</li>
+                    <li>Rule Development</li>
                 </ul>
             </div>
         </div>
 
-<div class="swiper">
-    <!-- Wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-            <img src="images\homepage.png" alt="version 2.0 hompage" class="lightbox-trigger">
+        <div class="project-gallery">
+            <img src="images\Order_up1.HEIC" alt="Game cards layout" class="gallery-image lightbox-trigger">
+            <img src="" alt="Gameplay example" class="gallery-image lightbox-trigger">
+            <img src="" alt="Card designs" class="gallery-image lightbox-trigger">
         </div>
 
-        <div class="swiper-slide">
-            <img src="images\about.png" alt="version 2.0 summary" class="lightbox-trigger">
+        <div id="lightbox" class="lightbox hidden">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-image" alt="Enlarged View">
         </div>
-
-        <div class="swiper-slide">
-            <img src="images\gates.png" alt="version 2.0 story gates" class="lightbox-trigger">
-        </div>
-
-        <div class="swiper-slide">
-            <img src="images\saves.png" alt="version 2.0 save function" class="lightbox-trigger">
-        </div>
-
-        <div class="swiper-slide">
-            <img src="images\v2_story.png" alt="version 2.0 story page" class="lightbox-trigger">
-        </div>
-
-        <div class="swiper-slide">
-            <img src="images\v1_title.png" alt="version 1.0 title page" class="lightbox-trigger">
-        </div>
-
-        <div class="swiper-slide">
-            <img src="images\v1_story.png" alt="version 1.0 story page" class="lightbox-trigger">
-        </div>
-    </div>
-
-    <!-- Pagination -->
-    <div class="swiper-pagination"></div>
-
-    <!-- Navigation -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-</div>
-
-<!-- Lightbox Modal -->
-<div id="lightbox" class="lightbox hidden">
-    <span class="close">&times;</span>
-    <img class="lightbox-content" id="lightbox-image" alt="Enlarged View">
-</div>
-
-
 
         <div class="project-description">
             <h2>About the Project</h2>
-            <p>A Night at Home is an interactive narrative fiction game, also known as a choice-based or branching narrative game.
-                This genre of storytelling allows readers to actively participate in shaping the narrative through their choices,
-                creating a personalized journey through the story. Unlike linear fiction, where readers passively follow a
-                predetermined path, branching narratives offer multiple potential storylines that diverge and converge based on
-                reader decisions.</p>
+            <p>Order Up! is a fast-paced card game where players compete as chefs to complete recipes using ingredient
+                cards. The game features simultaneous play mechanics, creating an exciting rush to complete recipes
+                before other players. With a mix of strategic resource management and quick decision-making, players
+                must balance their ingredient collection while watching out for penalty cards that could derail their
+                progress.</p>
 
-            <h2>Version 2.0 Enhancements</h2>
-            <p><i>A Night at Home 2.0</i> represents a significant evolution of the original Twine game, rebuilt as part of my
-                graduate student project. Key improvements include:</p>
-            <ul>    
-                <li>A three-page structure featuring a welcoming home page, a gates page for quick navigation, and an
-                immersive story page</li>
-                <li>Custom visual elements replacing standard Twine 2 animations</li>
-                <li>Enhanced navigation options throughout the experience</li>
-                <li>Save functionality (currently in debugging)</li>
-                <li> Planned audio implementation</li>
-            </ul>
+        <h2>Game Mechanics</h2>
+        <p>The core gameplay revolves around matching ingredient cards to recipe requirements. Players start with 7
+            ingredient cards and compete to complete the currently revealed recipe. Special mechanics include:</p>
+        <ul>
+            <li>Wildcard "Fully Stocked Fridge" cards that can substitute any ingredient</li>
+            <li>Penalty cards that force discards (One Star Review) or recipe forfeitures (Health Code Violation)</li>
+            <li>Dynamic hand management with continuous drawing and discarding</li>
+            <li>Simultaneous play format that creates engaging player interaction</li>
+        </ul>
+        
+        <div class="project-gallery">
+            <img src="" alt="Game cards layout" class="gallery-image lightbox-trigger">
+            <img src="" alt="Gameplay example" class="gallery-image lightbox-trigger">
+            <img src="" alt="Card designs" class="gallery-image lightbox-trigger">
+        </div>
 
-            <div>
-                <h2>Experience the Story</h2>
-                <p>Alone at night in your quiet, empty house, a noise pulls you from your thoughts. Do you brush it off and
-                try to sleep, or let curiosity pull you deeper into the shadows? A Night at Home is an interactive game
-                that challenges players to navigate a maze of creeping dread and uneasy choices. As the house shifts
-                around you, and strange events draw you toward something sinister, it's up to you to decide how far
-                you'll go when fear gnaws at the edges of your sanity. Will you face the darkness, or will you turn away
-                and hope it's only your imagination?</p>
-
-                <p>Ready to test your courage? <a class="outgoing-link" target="_blank" href="https://nadelaja.github.io/a-night-at-home-2.0/">Play A Night at Home</a> and discover what lurks in the
-                darkness of your own home.</p>
-            </div>
-
-<div class="project-gallery">
-    <img src="" alt="Inital Brainstorming" class="gallery-image lightbox-trigger">
-    <img src="" alt="First Draft of Choice Architecture" class="gallery-image lightbox-trigger">
-    <img src="" alt="Semi-Final Story Structure" class="gallery-image lightbox-trigger">
-</div>
-
-            <h2>Development Process & Playtesting</h2>
-            <p>The development process was heavily informed by player feedback through multiple iterations:</p>
-
-            <h3>Early Testing</h3>
-            <p>Key feedback from early testing helped shape the narrative structure:</p>
-            <ul>
-                <li>dentified issues with passage length, leading to more digestible segments</li>
-                <li>Suggested incorporating choices within the text rather than just at passage ends</li>
-                <li>Recommended varying the presentation of player options to maintain engagement</li>
-            </ul>
-
-            <h3>Later Testing</h3>
-            <p>Further refinements based on additional testing:</p>
-            <ul>
-                <li>Further text optimization for better pacing</li>
-                <li>Suggested implementing a "true bad ending" where the player is consumed by the dark entity</li>
-                <li>Confirmed appropriate gameplay duration (approximately 10 minutes per route)</li>
-            </ul>
-
-            <h3>Results & Impact</h3>
-            <p>Playtesting showed players felt invested in their choices, with the familiar home setting deepening their connection.
-            The branching narrative encouraged replayability as players explored different paths.</p>
-
-            <h2> Challenges</h2>
-
-            <p>Creating effective interactive horror meant balancing tension with meaningful choices, making sure each decision felt
-            significant while maintaining a coherent narrative. 
-            </p>
-            
-            <h3>Passage Length and Pacing</h3>
-            <p>Managing the length of passages was key to keeping the narrative moving smoothly. Through playtesting, I refined these
-            sections to strike the right balance between atmosphere, context, and engagement, ensuring the pacing stayed consistent
-            without overwhelming the reader.</p>
-            
-            <h3>Twine to Custom Implementation</h3>
-            <p>The game was ported from Twine to a custom interface using Lazerwalker's <a class="outgoing-link" target="_blank" href="https://github.com/lazerwalker/twison">Twison</a> 
-                story format to export the narrative to JSON. This process, while challenging, gave me the freedom to create a 
-                more personalized and thematic user experience.
-            </p>
-            
-            <h3>Custom UI Development</h3>
-            <p>Developing a custom UI required balancing aesthetics and functionality. The interface was designed to enhance the horror
-            atmosphere while remaining intuitive, featuring custom navigation, save functionality, and seamless visual transitions.</p>
-
+        <h2>Development Process</h2>
+        <p>The game underwent significant evolution through multiple playtesting sessions:</p>
+        
+        <h3>Initial Version</h3>
+        <p>The first iteration included trading mechanics and strict hand limits, which proved to slow down
+            gameplay. Early playtesting revealed issues with recipe completion difficulty and card distribution.</p>
+        
+        <h3>Refinements</h3>
+        <p>Through iterative testing, several key improvements were made:</p>
+        <ul>
+            <li>Simplified recipe requirements for better game flow</li>
+            <li>Added wildcards to prevent gameplay stagnation</li>
+            <li>Introduced penalty cards for player interaction</li>
+            <li>Adjusted ingredient card distribution for better balance</li>
+            <li>Modified win conditions for more satisfying gameplay</li>
+        </ul>
+        
+        <h2>Card Distribution</h2>
+        <p>The final game features carefully balanced card quantities:</p>
+        <ul>
+            <li>26 Recipe Cards with varying complexity</li>
+            <li>56 Ingredient Cards spread across 12 different types</li>
+            <li>6 Wildcard "Fully Stocked Fridge" cards</li>
+            <li>6 Penalty Cards (3 each of two types)</li>
+            <li>Recipe requirements ranging from 1-3 ingredients</li>
+        </ul>
+        
+        <h2>Playtesting Insights</h2>
+        <p>Multiple playtesting sessions with 2-4 players revealed valuable insights:</p>
+        <ul>
+            <li>Need for clear rules about card placement and timing</li>
+            <li>Importance of round reset procedures</li>
+            <li>Balance between game speed and strategic depth</li>
+            <li>Accessibility considerations leading to planned illustrations</li>
+        </ul>
+        
+        <h2>Future Development</h2>
+        <p>Current plans for further development include:</p>
+        <ul>
+            <li>Adding illustrations for improved accessibility</li>
+            <li>Upgrading to cardstock for better durability</li>
+            <li>Potential expansion with new recipe and ingredient combinations</li>
+            <li>Exploring additional special card mechanics</li>
+        </ul>
         </div>
     </main>
     <button id="backToTop" title="Back to Top">↑</button>
-
-
+    
+    
     <footer class="footer">
         <p>&copy; 2024 Jummy Adelaja. All rights reserved.</p>
     </footer>
-
+    
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="projectScript.js"></script>
 </body>

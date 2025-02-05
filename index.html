@@ -1,38 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jummy's Portfolio</title>
+    <title>Jummy Adelaja's Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
     <div class="container">
         <div class="box name">Hi! I'm Jummy.</div>
         <div class="arrow">
-        <span class="arrow-right">&#8594;</span>
+            <span class="arrow-right">&#8594;</span>
             <span class="arrow-down">&#8595;</span>
         </div>
-        <div class="box title">DESIGNER & DEVELOPER</div>
+        <div class="box title ">DESIGNER & DEVELOPER</div>
         <div class="box about">I create bold, innovative designs that challenge conventions and push boundaries.</div>
-        <div class="box project1"><a href="projectPages\project2.html">Order Up</a></div>
-        <div class="box project2" onclick="openModal('project2')">Jack of All Trades, Master of Fun??</div>
-        <div class="box project3"><a href="projectPages\project1.html">A Night At Home</a></div>
-        <div class="box project4" onclick="openModal('project4')">Green Mechanics Website Redesign</div>
-        <div class="box illustration"><a href="Illustration/illustration.html">ILLUSTRATION</a></div>
-        <div class="star"><a href="\MagicQuestion\magicQuestion.html">&#10022;</a></div> 
-        <div class="flower"><a href="#">&#10047;</a></div> 
-        <div class="box contact">GET IN TOUCH: your@email.com</div>
-        <div class="box skills">HTML / CSS / JS / DESIGN / UX</div>
-        <div class="box social">
-            <div class="social-icons">
-                <!-- <span>TW</span> -->
-                <span class="link"><a href="https://www.linkedin.com/in/nafisat-adelaja/" target="_blank">&#10022; <br> RESUME</a></span>
-                <span class="link"><a href="https://www.linkedin.com/in/nafisat-adelaja/" target="_blank">&#10022; <br> GITHUB</a></span>
-                <span class="link"><a href="https://www.linkedin.com/in/nafisat-adelaja/" target="_blank">&#10022; <br> LI</a></span>
+        <div class="box project1 clickable-box">
+            <a href="projectPages\project1.html">Order Up</a>
+            <div class="preview">
+                <img src="projectPages\images\homepage.png" alt="Order Up Preview">
             </div>
         </div>
+        <div class="box project2 clickable-box">
+            <a href="projectPages\project2.html">Broker Breaker:<br>A Very New York Twin-Stick Shooter</a>
+            <div class="preview">
+                <img src="projectPages\images\homepage.png" alt="Broker Breaker Preview">
+            </div>
+        </div>
+        <div class="box project3 clickable-box">
+            <a href="projectPages\project3.html">A Night At Home</a>
+            <div class="preview">
+                <img src="projectPages\images\homepage.png" alt="A Night At Home Preview">
+            </div>
+        </div>
+
+        <div class="box project4 clickable-box" onclick="openModal('project4')">Green Mechanics Website Redesign</div>
+        <div class="box illustration clickable-box"><a href="Illustration/illustration.html">ILLUSTRATION</a></div>
+        <div class="star"><a href="\MagicQuestion\magicQuestion.html">&#10022;</a></div>
+        <div class="flower"><a href="#">&#10047;</a></div>
+        <div class="box contact clickable-box">GET IN TOUCH: your@email.com</div>
+        <div class="box skills">HTML / CSS / JS / DESIGN / UX</div>
+        
+        <div class="box social">
+            <div class="social-icons">
+            <div class="test">
+                <!-- <span>TW</span> -->
+                <span class="link"><a href="path-to-your-resume.pdf" target="_blank">
+                    <i class="fas fa-file-alt"></i> 
+                </a>
+                </span>
+                <p>Resume</p>
+                </div>
+
+                <span class="link"><a href="https://github.com/nadelaja" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                </span>
+
+                <span class="link"><a href="https://www.linkedin.com/in/nafisat-adelaja/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                </span>
+            </div>
+        </div>
+        
     </div>
 
     <!-- Modals -->
@@ -48,5 +83,5 @@
     </div>
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>

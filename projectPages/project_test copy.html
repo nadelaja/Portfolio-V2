@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Up! - A Card Game</title>
+    <link rel="stylesheet" href="projects.css">
+
+
+</head>
+
+<style>
+    :root {
+        --main-color: orange;
+        --text-color: #000;
+        --border-width: 3px;
+        --shadow-offset: -3px;
+        --card-padding: 20px;
+    }
+
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Courier New', monospace;
+        background-color: #fff;
+        color: var(--text-color);
+    }
+
+    /* Navigation */
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 15px;
+        border-bottom: var(--border-width) solid var(--text-color);
+        z-index: 100;
+    }
+
+    .nav-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .project-link {
+        padding: 8px 16px;
+        border: var(--border-width) solid var(--text-color);
+        text-decoration: none;
+        color: var(--text-color);
+        transition: all 0.3s ease;
+    }
+
+    .project-link:hover {
+        background-color: var(--main-color);
+        transform: translate(var(--shadow-offset), var(--shadow-offset));
+        box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--text-color);
+    }
+
+    /* Main Layout */
+    .main-content {
+        max-width: 1400px;
+        margin: 100px auto 50px;
+        padding: 0 20px;
+    }
+
+    .split-layout {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 40px;
+        margin-bottom: 60px;
+    }
+
+    .left-column {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .project-header {
+        background-color: var(--main-color);
+        padding: 40px;
+        border: var(--border-width) solid var(--text-color);
+        transform: translateX(10px);
+        box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--text-color);
+    }
+
+    .project-title {
+        font-size: 3.5em;
+        margin: 0;
+        line-height: 1.1;
+    }
+
+    .version-badge {
+        font-size: 0.3em;
+        background-color: var(--text-color);
+        color: #fff;
+        padding: 5px 10px;
+        vertical-align: middle;
+    }
+
+    /* Key Features */
+    .key-features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .feature-card {
+        background-color: #fff;
+        border: var(--border-width) solid var(--text-color);
+        padding: var(--card-padding);
+        transform: translateX(10px);
+        box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--text-color);
+    }
+
+    .feature-card h3 {
+        margin: 0;
+        padding: 10px;
+        background-color: var(--main-color);
+        margin: -20px -20px 10px -20px;
+    }
+
+    .feature-content {
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* Featured Image */
+    .featured-image-container {
+        position: relative;
+    }
+
+    .featured-image {
+        width: 100%;
+        border: var(--border-width) solid var(--text-color);
+        transform: translateX(-10px);
+        box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--text-color);
+    }
+
+    /* Game Components */
+    .game-components {
+        margin: 80px 0;
+    }
+
+    .section-title {
+        font-size: 2em;
+        color: var(--main-color);
+        border-bottom: var(--border-width) solid var(--main-color);
+        padding-bottom: 10px;
+        margin-bottom: 40px;
+    }
+
+    .components-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+
+    .component-card {
+        position: relative;
+        border: var(--border-width) solid var(--text-color);
+        padding: var(--card-padding);
+        transform: translateX(10px);
+        box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--text-color);
+    }
+
+    .card-count {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        background-color: var(--main-color);
+        border: var(--border-width) solid var(--text-color);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+
+    /* Gameplay Mechanics */
+    .mechanics-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .mechanic-card {
+        border: var(--border-width) solid var(--text-color);
+        padding: var(--card-padding);
+        background-color: #fff;
+        transform: translateX(10px);
+        box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--text-color);
+    }
+
+    .mechanic-card h3 {
+        margin: 0;
+        padding: 10px;
+        background-color: var(--main-color);
+        margin: -20px -20px 10px -20px;
+    }
+
+    /* Development Process */
+    .process-timeline {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 40px;
+        margin-top: 60px;
+        position: relative;
+    }
+
+    .timeline-point {
+        border: var(--border-width) solid var(--text-color);
+        padding: var(--card-padding);
+        background-color: #fff;
+        transform: translateX(10px);
+        box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--text-color);
+    }
+
+    .timeline-point h3 {
+        margin: 0;
+        padding: 10px;
+        background-color: var(--main-color);
+        margin: -20px -20px 10px -20px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+        .split-layout {
+            grid-template-columns: 1fr;
+        }
+
+        .featured-image {
+            transform: none;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .nav-content {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .project-nav {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .project-title {
+            font-size: 2.5em;
+        }
+
+        .key-features {
+            grid-template-columns: 1fr;
+        }
+
+        .main-content {
+            margin-top: 160px;
+        }
+    }
+
+    /* Back to Top Button */
+    #backToTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: var(--text-color);
+        color: #fff;
+        width: 50px;
+        height: 50px;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        transition: all 0.3s ease;
+        border: var(--border-width) solid var(--text-color);
+    }
+
+    #backToTop:hover {
+        background-color: var(--main-color);
+        transform: translate(var(--shadow-offset), var(--shadow-offset));
+        box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--text-color);
+    }
+
+    /* Footer */
+    .footer {
+        background-color: var(--main-color);
+        padding: 20px;
+        text-align: center;
+        border-top: var(--border-width) solid var(--text-color);
+        margin-top: 80px;
+    }
+</style>
+
+<body data-page="project2">
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <a href="/index.html" class="home-link">← Back to Home</a>
+            <div class="project-nav">
+                <a class="project-link project2 active" href="project2.html">Order Up!</a>
+                <a class="project-link project1" href="project1.html">A Night at Home</a>
+                <a class="project-link project3" href="project3.html">Broker Breaker</a>
+                <a class="project-link project4" href="project4.html">Green Mechanics</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="split-layout">
+            <div class="left-column">
+                <header class="project-header">
+                    <h1 class="project-title">Order Up! <span class="version-badge">Version 1.4</span></h1>
+                    <div class="project-subtitle">Card Game Design / 2024 / Game Designer & Developer</div>
+                </header>
+
+                <section class="key-features">
+                    <div class="feature-card players">
+                        <h3>Players</h3>
+                        <div class="feature-content">2+ Players</div>
+                    </div>
+                    <div class="feature-card duration">
+                        <h3>Duration</h3>
+                        <div class="feature-content">15-20 min</div>
+                    </div>
+                    <div class="feature-card complexity">
+                        <h3>Complexity</h3>
+                        <div class="feature-content">Medium</div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="right-column">
+                <div class="featured-image-container">
+                    <img src="images/Order_up1.HEIC" alt="Game cards layout" class="featured-image lightbox-trigger">
+                </div>
+            </div>
+        </div>
+
+        <section class="game-components">
+            <h2 class="section-title">Game Components</h2>
+            <div class="components-grid">
+                <div class="component-card recipe">
+                    <span class="card-count">26</span>
+                    <h3>Recipe Cards</h3>
+                    <p>Unique recipes with varying complexity levels</p>
+                </div>
+                <div class="component-card ingredient">
+                    <span class="card-count">56</span>
+                    <h3>Ingredient Cards</h3>
+                    <p>Different ingredients to complete recipes</p>
+                </div>
+                <div class="component-card wild">
+                    <span class="card-count">6</span>
+                    <h3>Wild Cards</h3>
+                    <p>"Fully Stocked Fridge" wildcards</p>
+                </div>
+                <div class="component-card penalty">
+                    <span class="card-count">6</span>
+                    <h3>Penalty Cards</h3>
+                    <p>Challenging gameplay elements</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gameplay-mechanics">
+            <div class="mechanics-header">
+                <h2 class="section-title">Gameplay Mechanics</h2>
+                <p class="mechanics-intro">Fast-paced card matching with strategic decision making</p>
+            </div>
+            <div class="mechanics-grid">
+                <div class="mechanic-card">
+                    <h3>Simultaneous Play</h3>
+                    <p>All players compete at once to complete recipes</p>
+                </div>
+                <div class="mechanic-card">
+                    <h3>Resource Management</h3>
+                    <p>Strategic ingredient collection and use</p>
+                </div>
+                <div class="mechanic-card">
+                    <h3>Hand Management</h3>
+                    <p>Dynamic drawing and discarding system</p>
+                </div>
+                <div class="mechanic-card">
+                    <h3>Risk & Reward</h3>
+                    <p>Balance speed against accuracy</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="development-process">
+            <div class="process-timeline">
+                <div class="timeline-point concept">
+                    <h3>Initial Concept</h3>
+                    <p>Core gameplay mechanics and initial prototyping</p>
+                </div>
+                <div class="timeline-point testing">
+                    <h3>Playtesting</h3>
+                    <p>Iterative improvements through player feedback</p>
+                </div>
+                <div class="timeline-point refinement">
+                    <h3>Refinement</h3>
+                    <p>Balance adjustments and mechanic tweaking</p>
+                </div>
+                <div class="timeline-point final">
+                    <h3>Final Version</h3>
+                    <p>Polished gameplay and component design</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button id="backToTop" title="Back to Top">↑</button>
+
+    <footer class="footer">
+        <p>&copy; 2024 Jummy Adelaja. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

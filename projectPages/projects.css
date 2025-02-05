@@ -1,5 +1,9 @@
 :root {
     --main-color: orange;
+    --hover-color: orange;
+    --text-color: #000;
+    --border-thickness: 3px;
+    --box-shadow-offset: -3px;
 }
 
 body,
@@ -53,10 +57,42 @@ html {
     transition: all 0.3s ease;
 }
 
-.project-nav a:hover {
+/*.project-nav a:hover {
     background-color: var(--main-color);
     transform: scaleX(1.025);
+}*/
+
+.project1:hover {
+    background-color: #F9A8D4;
+    transform: scaleX(1.025);
 }
+
+.project2:hover {
+    background-color: #54a0ff;
+    transform: scaleX(1.025);
+}
+
+.project3:hover {
+    background-color:#5f27cd;
+    transform: scaleX(1.025);
+        color: #fff;
+}
+
+.project4:hover {
+    background-color: orange;
+    transform: scaleX(1.025);
+}
+
+.project-link:hover {
+    transform: translate(calc(var(--box-shadow-offset) * -1), calc(var(--box-shadow-offset) * -1));
+    box-shadow: var(--box-shadow-offset) var(--box-shadow-offset) 0 var(--text-color);
+}
+
+/*.project-link.active {
+    background-color: var(--main-color);
+    transform: translate(calc(var(--box-shadow-offset) * -1), calc(var(--box-shadow-offset) * -1));
+    box-shadow: var(--box-shadow-offset) var(--box-shadow-offset) 0 var(--text-color);
+}*/
 
 .main-content {
     max-width: 1200px;
@@ -73,12 +109,12 @@ html {
 .project-title {
     font-size: 3em;
     margin-bottom: 10px;
-    color: #fff;
+    color: var(--text-color);
 }
 
 .project-subtitle {
     font-size: 1.5em;
-    color: #fff;
+    color: var(--text-color);
     margin-bottom: 20px;
 }
 
@@ -104,14 +140,20 @@ html {
 }
 
 .info-section {
-    background-color: #f0f0f0;
+    background-color: #fff /*f0f0f0*/;
     padding: 20px;
-    border-left: 5px solid var(--main-color);
+    margin-right: 16px;
+    border: 3px solid #000;
+    transform: translateX(10px);
+    box-shadow: -3px -3px 0px #000;
 }
 
 .info-section h3 {
-    color: #000;
+    background-color: var(--main-color);
+    padding-left: 5px;
+    color: var(--text-color);
     margin-top: 0;
+    
 }
 
 .project-gallery {
@@ -126,7 +168,10 @@ html {
     object-fit: cover;
     border: 2px solid #000;
     transition: transform 0.3s ease;
+        /*transform: translateX(10px);
+            box-shadow: -3px -3px 0px #000;*/
 }
+
 
 img {
     width: 100%;
@@ -148,6 +193,7 @@ img {
     border-bottom: 3px solid var(--main-color);
     padding-bottom: 10px;
     margin-top: 40px;
+    
 }
 
 /* Back to top button */
@@ -156,7 +202,6 @@ img {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 99;
     border: none;
     outline: none;
     background-color: rgba(0, 0, 0, 0.3);
@@ -172,7 +217,7 @@ img {
 }
 
 #backToTop:hover {
-    background-color: rgb(95, 39, 205, 0.5);
+    background-color: var(--hover-color);
     transform: scale(1.1);
     transition: color 0.3s ease;
 }
@@ -180,10 +225,12 @@ img {
 .footer {
     background-color: var(--main-color);
     padding: 15px;
+    border-top: var(--border-thickness) solid #000;
 }
 
 .footer p{
     text-align: center;
+    color: var(--text-color);
 }
 
 .swiper {
@@ -214,6 +261,8 @@ img {
 .lightbox img {
     max-width: 90%;
     max-height: 90%;
+    object-fit:cover;
+    overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
