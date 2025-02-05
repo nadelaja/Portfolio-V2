@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+
+:root {
+    --heading-text:'Seymour One', Serif;
+}
+
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', monospace;
+    font-family: var(--heading-text);
     background-color: #fff; /*f0f0f0;*/
     color: #000;
 }
@@ -68,16 +74,6 @@ body, html {
     z-index: 1;*/
 /*}*/
 
-.test {
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-}
-
-.test p {
-    margin-top: 4px;
-}
-
 .clickable-box:hover {
 transform: translateX(10px);
 box-shadow: -3px -3px 0px #000;
@@ -117,6 +113,23 @@ box-shadow: -3px -3px 0px #000;
 
 
 .link:hover a {
+    color: #fff;
+    transform: scale(1.25);
+}
+
+.social-link-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+
+}
+
+.social-link-text p {
+    margin-top: 4px;
+    font-size: 20px;
+}
+
+.social-link-text p:hover {
     color: #fff;
     transform: scale(1.25);
 }

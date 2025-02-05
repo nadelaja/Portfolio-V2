@@ -64,22 +64,22 @@ const pageColorMap = {
 const page = document.body.getAttribute('data-page');
 document.documentElement.style.setProperty('--main-color', pageColorMap[page]);
 
-const pageHoverColorMap = {
+const textColor = {
+        project1: '#000',
+        project2: '#000',
+        project3: '#fff',
+    };
+
+    document.documentElement.style.setProperty('--text-color', textColor[page]);   
+
+/*const pageHoverColorMap = {
     project1: 'rgb(95, 39, 205, 0.5)', // purple
     project2: 'rgb(255, 165, 0, .5)',// <- orange, // pink
     project3: 'grey', // replace with an dark opaque grey
     project4: '#1dd1a1', // green
 };
 
-document.documentElement.style.setProperty('--hover-color', pageHoverColorMap[page]);
-
-const textColor= {
-        project1: '#000',
-        project2: '#000',
-        project3: '#fff',
-    };
-
-    document.documentElement.style.setProperty('--text-color', textColor[page]);        
+document.documentElement.style.setProperty('--hover-color', pageHoverColorMap[page]);*/     
 });
 
 // Scroll to top button
@@ -94,3 +94,11 @@ window.onscroll = function () {
 backTo.onclick = function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+        $('.footer').fadeIn(500);
+    } else {
+        $('.footer').fadeOut(500);
+    }
+});

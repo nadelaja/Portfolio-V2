@@ -217,7 +217,7 @@ img {
 }
 
 #backToTop:hover {
-    background-color: var(--hover-color);
+    background-color: black;
     transform: scale(1.1);
     transition: color 0.3s ease;
 }
@@ -232,6 +232,7 @@ img {
     text-align: center;
     color: var(--text-color);
 }
+
 
 .swiper {
     width: 100%;
