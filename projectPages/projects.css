@@ -1,17 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+
 :root {
     --main-color: orange;
     --hover-color: orange;
-    --text-color: #000;
+    --text-color: #000; 
     --border-thickness: 3px;
     --box-shadow-offset: -3px;
+    --header-font: 'Unbounded', serif;
+    --body-font:'Archivo', sans-serif;
 }
 
 body,
 html {
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', monospace;
-    background-color: #fff;
+    font-family: var(--body-font);
+    background-color: #f9f1e1;
     color: #000;
 }
 
@@ -19,10 +23,11 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: #f9f1e1;
     padding: 15px;
     border-bottom: 3px solid #000;
     z-index: 100;
+    font-family: var(--header-font);
 }
 
 .nav-content {
@@ -79,7 +84,7 @@ html {
 }
 
 .project4:hover {
-    background-color: orange;
+    background-color: #1dd1a1;
     transform: scaleX(1.025);
 }
 
@@ -101,6 +106,7 @@ html {
 }
 
 .project-header {
+    font-family: var(--header-font);
     margin-bottom: 40px;
     background-color: var(--main-color);
     padding: 40px;
@@ -151,6 +157,7 @@ html {
 }
 
 .info-section h3 {
+    font-family: var(--header-font);
     background-color: var(--main-color);
     padding-left: 5px;
     color: var(--text-color);
@@ -192,6 +199,7 @@ img {
 
 .project-description h2 {
     color: var(--main-color);
+    font-family: var(--header-font);
     border-bottom: 3px solid var(--main-color);
     padding-bottom: 10px;
     margin-top: 40px;
