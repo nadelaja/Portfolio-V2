@@ -104,6 +104,8 @@ html {
     margin-bottom: 40px;
     background-color: var(--main-color);
     padding: 40px;
+    border: #000 solid;
+    box-shadow: -4px -4px 0px #000;
 }
 
 .project-title {

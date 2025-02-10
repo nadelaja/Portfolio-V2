@@ -58,7 +58,7 @@ const pageColorMap = {
     project1: '#F9A8D4', // pink
     project2: '#54a0ff',// blue, // pink
     project3: '#5f27cd', // purple
-    project4: '#dd1a1', //green
+    project4: '#1dd1a1', //green
 };
 
 const page = document.body.getAttribute('data-page');
