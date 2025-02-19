@@ -1,5 +1,16 @@
 //document.addEventListener('DOMContentLoaded', () => {
 // Initialize Swiper
+
+//hamburger  menu
+function hamburgerMenu() {
+    var x = document.getElementById("navContent");
+    if (x.className === "nav-content") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav-content";
+    }
+}
+
 const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     spaceBetween: 20,
@@ -19,7 +30,7 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-        640: {
+        900: {
             slidesPerView: 2,
         },
     },
@@ -57,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const pageColorMap = {
     project1: '#F9A8D4', // pink
     project2: '#54a0ff',// blue, // pink
-    project3: '#5f27cd', // purple
+    project3: '#9723c9', // purple
     project4: '#1dd1a1', //green
 };
 
@@ -67,7 +78,7 @@ document.documentElement.style.setProperty('--main-color', pageColorMap[page]);
 const textColor = {
         project1: '#000',
         project2: '#000',
-        project3: '#fff',
+        project3: '#000',
     };
 
     document.documentElement.style.setProperty('--text-color', textColor[page]);   
@@ -95,7 +106,7 @@ backTo.onclick = function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
-$(window).scroll(function () {
+(window).scroll(function () {
     if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
         $('.footer').fadeIn(500);
     } else {

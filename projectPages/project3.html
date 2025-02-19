@@ -7,18 +7,22 @@
     <title>A Night At Home - Interactive Horror Experience</title>
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body data-page="project3">
     <nav class="nav-bar">
-        <div class="nav-content">
+        <div class="nav-content" id="navContent">
             <a href="../index.html" class="home-link">← Back to Home</a>
             <div class="project-nav">
                 <a class="project3 project-link" href="project3.html">A Night at Home</a>
                 <a class="project1 project-link" href="project1.html">Order Up!</a>
                 <a class="project2 project-link" href="project2.html">Broker Breaker</a>
                 <a class="project4 project-link" href="project4.html">Green Mechanics</a>
+                <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
         </div>
     </nav>
@@ -30,6 +34,16 @@
         </header>
 
         <div class="project-info">
+            <div class="info-section">
+                <h3>Project Overview</h3>
+                <p>A Night at Home is an branching narrative game, a genre of storytelling allows
+                    readers to participate in shaping the narrative through their choice. Branching
+                    narratives offer multiple potential storylines that diverge and converge based
+                    on reader decisions, creating a personalized journey through the story.
+                </p>
+                <p>An interactive narrative horror game that lets readers shape their own story through meaningful choices, rebuilt
+                    from Twine into a custom implementation.</p>
+            </div>
             <div class="info-section">
                 <h3>Tools & Technologies</h3>
                 <p>Twine<br>HTML/CSS<br>JavaScript<br>Canva<br>Story-First Design</p>
@@ -61,148 +75,145 @@
                 <span class="close">&times;</span>
                 <img class="lightbox-content" id="lightbox-image" alt="Enlarged View">
             </div>
-            </div>
+        </div>
 
 
-            <div class="project-description">
-                <h2>About the Project</h2>
-                <p>A Night at Home is an interactive narrative fiction game, also known as a choice-based or branching
-                    narrative game.
-                    This genre of storytelling allows readers to actively participate in shaping the narrative through
-                    their choices,
-                    creating a personalized journey through the story. Unlike linear fiction, where readers passively
-                    follow a
-                    predetermined path, branching narratives offer multiple potential storylines that diverge and
-                    converge based on
-                    reader decisions.</p>
+        <div class="project-description">
+            <h2>About the Project</h2>
+            <p>A Night at Home is an branching narrative game, a genre of storytelling allows
+                readers to participate in shaping the narrative through their choice. Branching
+                narratives offer multiple potential storylines that diverge and converge based
+                on reader decisions, creating a personalized journey through the story.
+            </p>
 
-                <div class="swiper">
-                    <!-- Wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="images\homepage.png" alt="version 2.0 hompage" class="lightbox-trigger">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="images\about.png" alt="version 2.0 summary" class="lightbox-trigger">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="images\gates.png" alt="version 2.0 story gates" class="lightbox-trigger">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="images\saves.png" alt="version 2.0 save function" class="lightbox-trigger">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="images\v2_story.png" alt="version 2.0 story page" class="lightbox-trigger">
-                        </div>
-
+            <div class="swiper">
+                <!-- Wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="images\homepage.png" alt="version 2.0 hompage" class="lightbox-trigger">
                     </div>
 
-                    <!-- Pagination -->
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide">
+                        <img src="images\about.png" alt="version 2.0 summary" class="lightbox-trigger">
+                    </div>
 
-                    <!-- Navigation -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="swiper-slide">
+                        <img src="images\gates.png" alt="version 2.0 story gates" class="lightbox-trigger">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images\saves.png" alt="version 2.0 save function" class="lightbox-trigger">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images\v2_story.png" alt="version 2.0 story page" class="lightbox-trigger">
+                    </div>
+
                 </div>
 
-                <h2>Version 2.0 Enhancements</h2>
-                <p><i>A Night at Home 2.0</i> represents a significant evolution of the original Twine game, rebuilt as
-                    part of my
-                    graduate student project. Key improvements include:</p>
-                <ul>
-                    <li>A three-page structure featuring a welcoming home page, a gates page for quick navigation, and
-                        an
-                        immersive story page</li>
-                    <li>Custom visual elements replacing standard Twine 2 animations</li>
-                    <li>Enhanced navigation options throughout the experience</li>
-                    <li>Save functionality (currently in debugging)</li>
-                    <li> Planned audio implementation</li>
-                </ul>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
 
-                <div>
-                    <h2>Experience the Story</h2>
-                    <p>Alone at night in your quiet, empty house, a noise pulls you from your thoughts. Do you brush it
-                        off and
-                        try to sleep, or let curiosity pull you deeper into the shadows? A Night at Home is an
-                        interactive game
-                        that challenges players to navigate a maze of creeping dread and uneasy choices. As the house
-                        shifts
-                        around you, and strange events draw you toward something sinister, it's up to you to decide how
-                        far
-                        you'll go when fear gnaws at the edges of your sanity. Will you face the darkness, or will you
-                        turn away
-                        and hope it's only your imagination?</p>
-
-                    <p>Ready to test your courage? <a class="outgoing-link" target="_blank"
-                            href="https://nadelaja.github.io/a-night-at-home-2.0/">Play A Night at Home</a> and discover
-                        what lurks in the
-                        darkness of your own home.</p>
-                </div>
-
-                <div class="project-gallery">
-                    <img src="" alt="Inital Brainstorming" class="gallery-image lightbox-trigger">
-                    <img src="" alt="First Draft of Choice Architecture" class="gallery-image lightbox-trigger">
-                    <img src="images\Game Planning.png" alt="Semi-Final Story Structure" class="gallery-image lightbox-trigger">
-                </div>
-
-                <h2>Development Process & Playtesting</h2>
-                <p>The development process was heavily informed by player feedback through multiple iterations:</p>
-
-                <h3>Early Testing</h3>
-                <p>Key feedback from early testing helped shape the narrative structure:</p>
-                <ul>
-                    <li>dentified issues with passage length, leading to more digestible segments</li>
-                    <li>Suggested incorporating choices within the text rather than just at passage ends</li>
-                    <li>Recommended varying the presentation of player options to maintain engagement</li>
-                </ul>
-
-                <h3>Later Testing</h3>
-                <p>Further refinements based on additional testing:</p>
-                <ul>
-                    <li>Further text optimization for better pacing</li>
-                    <li>Suggested implementing a "true bad ending" where the player is consumed by the dark entity</li>
-                    <li>Confirmed appropriate gameplay duration (approximately 10 minutes per route)</li>
-                </ul>
-
-                <h3>Results & Impact</h3>
-                <p>Playtesting showed players felt invested in their choices, with the familiar home setting deepening
-                    their connection.
-                    The branching narrative encouraged replayability as players explored different paths.</p>
-
-                <h2> Challenges</h2>
-
-                <p>Creating effective interactive horror meant balancing tension with meaningful choices, making sure
-                    each decision felt
-                    significant while maintaining a coherent narrative.
-                </p>
-
-                <h3>Passage Length and Pacing</h3>
-                <p>Managing the length of passages was key to keeping the narrative moving smoothly. Through
-                    playtesting, I refined these
-                    sections to strike the right balance between atmosphere, context, and engagement, ensuring the
-                    pacing stayed consistent
-                    without overwhelming the reader.</p>
-
-                <h3>Twine to Custom Implementation</h3>
-                <p>The game was ported from Twine to a custom interface using Lazerwalker's <a class="outgoing-link"
-                        target="_blank" href="https://github.com/lazerwalker/twison">Twison</a>
-                    story format to export the narrative to JSON. This process, while challenging, gave me the freedom
-                    to create a
-                    more personalized and thematic user experience.
-                </p>
-
-                <h3>Custom UI Development</h3>
-                <p>Developing a custom UI required balancing aesthetics and functionality. The interface was designed to
-                    enhance the horror
-                    atmosphere while remaining intuitive, featuring custom navigation, save functionality, and seamless
-                    visual transitions.</p>
-
+                <!-- Navigation -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
+
+            <h2>Version 2.0 Enhancements</h2>
+            <p><i>A Night at Home 2.0</i> represents a significant evolution of the original Twine game, rebuilt as
+                part of my
+                graduate student project. Key improvements include:</p>
+            <ul>
+                <li>A three-page structure featuring a welcoming home page, a gates page for quick navigation, and
+                    an
+                    immersive story page</li>
+                <li>Custom visual elements replacing standard Twine 2 animations</li>
+                <li>Enhanced navigation options throughout the experience</li>
+                <li>Save functionality (currently in debugging)</li>
+                <li> Planned audio implementation</li>
+            </ul>
+
+            <div>
+                <h2>Experience the Story</h2>
+                <p>Alone at night in your quiet, empty house, a noise pulls you from your thoughts. Do you brush it
+                    off and
+                    try to sleep, or let curiosity pull you deeper into the shadows? A Night at Home is an
+                    interactive game
+                    that challenges players to navigate a maze of creeping dread and uneasy choices. As the house
+                    shifts
+                    around you, and strange events draw you toward something sinister, it's up to you to decide how
+                    far
+                    you'll go when fear gnaws at the edges of your sanity. Will you face the darkness, or will you
+                    turn away
+                    and hope it's only your imagination?</p>
+
+                <p>Ready to test your courage? <a class="outgoing-link" target="_blank"
+                        href="https://nadelaja.github.io/a-night-at-home-2.0/">Play A Night at Home</a> and discover
+                    what lurks in the
+                    darkness of your own home.</p>
+            </div>
+
+            <div class="project-gallery">
+                <img src="" alt="Inital Brainstorming" class="gallery-image lightbox-trigger">
+                <img src="" alt="First Draft of Choice Architecture" class="gallery-image lightbox-trigger">
+                <img src="images\Game Planning.png" alt="Semi-Final Story Structure"
+                    class="gallery-image lightbox-trigger">
+            </div>
+
+            <h2>Development Process & Playtesting</h2>
+            <p>The development process was heavily informed by player feedback through multiple iterations:</p>
+
+            <h3>Early Testing</h3>
+            <p>Key feedback from early testing helped shape the narrative structure:</p>
+            <ul>
+                <li>dentified issues with passage length, leading to more digestible segments</li>
+                <li>Suggested incorporating choices within the text rather than just at passage ends</li>
+                <li>Recommended varying the presentation of player options to maintain engagement</li>
+            </ul>
+
+            <h3>Later Testing</h3>
+            <p>Further refinements based on additional testing:</p>
+            <ul>
+                <li>Further text optimization for better pacing</li>
+                <li>Suggested implementing a "true bad ending" where the player is consumed by the dark entity</li>
+                <li>Confirmed appropriate gameplay duration (approximately 10 minutes per route)</li>
+            </ul>
+
+            <h3>Results & Impact</h3>
+            <p>Playtesting showed players felt invested in their choices, with the familiar home setting deepening
+                their connection.
+                The branching narrative encouraged replayability as players explored different paths.</p>
+
+            <h2> Challenges</h2>
+
+            <p>Creating effective interactive horror meant balancing tension with meaningful choices, making sure
+                each decision felt
+                significant while maintaining a coherent narrative.
+            </p>
+
+            <h3>Passage Length and Pacing</h3>
+            <p>Managing the length of passages was key to keeping the narrative moving smoothly. Through
+                playtesting, I refined these
+                sections to strike the right balance between atmosphere, context, and engagement, ensuring the
+                pacing stayed consistent
+                without overwhelming the reader.</p>
+
+            <h3>Twine to Custom Implementation</h3>
+            <p>The game was ported from Twine to a custom interface using Lazerwalker's <a class="outgoing-link"
+                    target="_blank" href="https://github.com/lazerwalker/twison">Twison</a>
+                story format to export the narrative to JSON. This process, while challenging, gave me the freedom
+                to create a
+                more personalized and thematic user experience.
+            </p>
+
+            <h3>Custom UI Development</h3>
+            <p>Developing a custom UI required balancing aesthetics and functionality. The interface was designed to
+                enhance the horror
+                atmosphere while remaining intuitive, featuring custom navigation, save functionality, and seamless
+                visual transitions.</p>
+
+        </div>
     </main>
 
     <button id="backToTop" title="Back to Top">↑</button>
