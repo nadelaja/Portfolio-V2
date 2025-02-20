@@ -1,8 +1,7 @@
 //document.addEventListener('DOMContentLoaded', () => {
-// Initialize Swiper
 
-//hamburger  menu
-function hamburgerMenu() {
+//hamburger menu 
+window.hamburgerMenu = function () {
     var x = document.getElementById("navContent");
     if (x.className === "nav-content") {
         x.className += " responsive";
@@ -11,6 +10,7 @@ function hamburgerMenu() {
     }
 }
 
+// Initialize Swiper
 const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     spaceBetween: 20,
