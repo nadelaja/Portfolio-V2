@@ -357,7 +357,7 @@ img {
         display: block; /* Show on mobile */
         position: absolute;
         right: 65px;
-        top: 20px;
+        top: 10px;
         font-size: 24px;
         z-index: 100;
     }
@@ -369,9 +369,9 @@ img {
     }
 
     /* Styles when nav is expanded */
-    .nav-content.responsive {
+    /*.nav-content.responsive {
         position: relative;
-    }
+    }*/
 
     .nav-content.responsive .project-nav {
         display: flex;
@@ -381,7 +381,7 @@ img {
         padding-top: 15px;
     }
 
-    .nav-content.responsive .project-nav a:not(.icon) {
+  /*  .nav-content.responsive .project-nav a:not(.icon) {
         display: block;
         width: 100%;
         text-align: left;
@@ -392,5 +392,5 @@ img {
         position: absolute;
         right: 20px;
         top: 20px;
-    }
+    }*/
 }
