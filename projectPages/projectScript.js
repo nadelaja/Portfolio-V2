@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const pageColorMap = {
     project1: '#F9A8D4', // pink
     project2: '#54a0ff',// blue, // pink
-    project3: '#9723c9', // purple
+    project3: '#783dd9', // purple
     project4: '#1dd1a1', //green
 };
 
@@ -78,7 +78,7 @@ document.documentElement.style.setProperty('--main-color', pageColorMap[page]);
 const textColor = {
         project1: '#000',
         project2: '#000',
-        project3: '#000',
+        project3: '#fff',
     };
 
     document.documentElement.style.setProperty('--text-color', textColor[page]);   
