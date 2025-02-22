@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const pageColorMap = {
     project1: '#F9A8D4', // pink
     project2: '#54a0ff',// blue, // pink
-    project3: '#783dd9', // purple
+    project3: '#783ddf', // purple
     project4: '#1dd1a1', //green
 };
 

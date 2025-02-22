@@ -75,6 +75,10 @@ html {
     transform: scaleX(1.025);
 }*/
 
+.project-link:active {
+    text-decoration: underline;
+}
+
 .project1:hover {
     background-color: #F9A8D4;
     transform: scaleX(1.025);
@@ -86,7 +90,7 @@ html {
 }
 
 .project3:hover {
-    background-color:#9723c9;
+    background-color:#783ddf;
     transform: scaleX(1.025);
         color: #fff;
 }
