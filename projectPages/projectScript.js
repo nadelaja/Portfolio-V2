@@ -79,6 +79,7 @@ const textColor = {
         project1: '#000',
         project2: '#000',
         project3: '#fff',
+        project4: '#000'
     };
 
     document.documentElement.style.setProperty('--text-color', textColor[page]);   

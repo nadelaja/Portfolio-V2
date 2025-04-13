@@ -102,14 +102,12 @@ html {
 
 .project-link:hover {
     transform: translate(calc(var(--box-shadow-offset) * -1), calc(var(--box-shadow-offset) * -1));
-    box-shadow: var(--box-shadow-offset) var(--box-shadow-offset) 0 var(--text-color);
+    box-shadow: var(--box-shadow-offset) var(--box-shadow-offset) 0 #000;
 }
 
-/*.project-link.active {
-    background-color: var(--main-color);
-    transform: translate(calc(var(--box-shadow-offset) * -1), calc(var(--box-shadow-offset) * -1));
-    box-shadow: var(--box-shadow-offset) var(--box-shadow-offset) 0 var(--text-color);
-}*/
+.project-link {
+    border: #000 solid 3px;
+}
 
 .main-content {
     max-width: 1200px;
@@ -285,7 +283,7 @@ img {
 .lightbox img {
     max-width: 90%;
     max-height: 90%;
-    object-fit:cover;
+    object-fit:scale-down;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
@@ -295,7 +293,7 @@ img {
     top: 10px;
     right: 20px;
     font-size: 30px;
-    color: white;
+    color: #fff;
     cursor: pointer;
 }
 
