@@ -176,6 +176,7 @@ html {
     
 }
 
+
 .project-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -203,7 +204,7 @@ img {
 }
 
 .project-description {
-    font-size: 1.1em;
+    font-size: 1.2em;
     line-height: 1.6;
     margin-bottom: 40px;
 }
@@ -309,8 +310,13 @@ img {
 
 
 @media (max-width: 768px) {
+    .nav-bar {
+        margin-right:auto;
+    }
+    
     .nav-content {
         flex-direction: column;
+        margin: auto;
         gap: 15px;
     }
 
@@ -323,6 +329,8 @@ img {
     }
 
     .project-nav {
+        margin-left: auto;
+        margin-right: auto;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -346,6 +354,7 @@ img {
     .nav-content {
         flex-direction: column;
         align-items: flex-start;
+        margin-right: 20px;
     }
 
     /* Hide all nav links except home and hamburger icon */
@@ -383,7 +392,7 @@ img {
         padding-top: 15px;
     }
 
-  /*  .nav-content.responsive .project-nav a:not(.icon) {
+    /*  .nav-content.responsive .project-nav a:not(.icon) {
         display: block;
         width: 100%;
         text-align: left;

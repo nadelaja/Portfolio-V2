@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+                @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+
+    :root {
+    --main-color: orange;
+    --hover-color: orange;
+    --text-color: #000; 
+    --border-thickness: 3px;
+    --box-shadow-offset: -3px;
+    --header-font: 'Unbounded', serif;
+    --body-font:'Archivo', sans-serif;
+}
+
+body {
+     font-family: var(--body-font)
+}
+
+        .project-header {
+    font-family: var(--header-font);
+    margin-bottom: 40px;
+    background-color: #783ddf; /* Using your project3 color */
+    padding: 30px;
+    border: #000 solid var(--border-thickness);
+    box-shadow: -4px -4px 0px #000;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.project-title {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.project-subtitle {
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.header-description {
+    font-size: 1.2em;
+    color: #fff;
+    max-width: 600px;
+}
+
+.header-cta {
+    margin: 20px 0;
+}
+
+.play-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #fff;
+    color: #783ddf;
+    font-family: var(--header-font);
+    font-size: 1.3em;
+    padding: 15px 30px;
+    border: 3px solid #000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: -3px -3px 0px #000;
+}
+
+.play-button:hover {
+    transform: translate(3px, 3px);
+    box-shadow: -6px -6px 0px #000;
+}
+
+.play-icon {
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+
+.header-preview {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border: 3px solid #000;
+    margin-top: 20px;
+}
+
+.preview-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+    
+    .header-cta {
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    .play-button {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .header-preview {
+        height: 200px;
+    }
+}
+.technical-implementation {
+    margin: 60px 0;
+}
+
+.tech-overview {
+    margin-bottom: 40px;
+}
+
+.tech-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.tech-tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.tool-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 3px solid #000;
+    box-shadow: -3px -3px 0px #000;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.tool-card:hover {
+    transform: translate(3px, 3px);
+}
+
+.tool-icon {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.tool-card h4 {
+    font-family: var(--header-font);
+    margin: 10px 0;
+    color: #783ddf;
+}
+
+.tool-card p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.tech-showcase {
+    margin-top: 50px;
+}
+
+.tech-feature {
+    margin-bottom: 50px;
+}
+
+.tech-feature h3 {
+    font-family: var(--header-font);
+    font-size: 1.8em;
+    color: #783ddf;
+    margin-bottom: 20px;
+}
+
+.feature-content {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-description, .feature-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.feature-description p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.feature-description ul {
+    margin-bottom: 20px;
+}
+
+.feature-description li {
+    margin-bottom: 8px;
+}
+
+.code-sample {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #783ddf;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.code-sample pre {
+    margin: 0;
+}
+
+.code-sample code {
+    font-family: monospace;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.showcase-image {
+    width: 100%;
+    border: 3px solid #000;
+    box-shadow: -3px -3px 0px #000;
+}
+
+@media (max-width: 768px) {
+    .feature-content {
+        flex-direction: column;
+    }
+    
+    .tech-feature h3 {
+        font-size: 1.5em;
+    }
+}
+.game-demo {
+    margin: 60px 0;
+}
+
+.section-title {
+    font-family: var(--header-font);
+    font-size: 2.2em;
+    color: #783ddf;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.section-title:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background-color: #783ddf;
+}
+
+.demo-container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.demo-text, .demo-visual {
+    flex: 1;
+    min-width: 300px;
+}
+
+.demo-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.demo-features {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.feature-tag {
+    background-color: rgba(120, 61, 223, 0.1);
+    color: #783ddf;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+    border: 2px solid #783ddf;
+}
+
+.demo-cta {
+    display: inline-block;
+    background-color: #783ddf;
+    color: white;
+    padding: 12px 25px;
+    border: 3px solid #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--header-font);
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: -3px -3px 0px #000;
+}
+
+.demo-cta:hover {
+    transform: translate(3px, 3px);
+    box-shadow: -6px -6px 0px #000;
+}
+
+.demo-visual {
+    position: relative;
+    border: 3px solid #000;
+    overflow: hidden;
+    height: 350px;
+}
+
+.demo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.video-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.video-overlay .play-icon {
+    font-size: 3em;
+    color: white;
+    background-color: rgba(120, 61, 223, 0.7);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #fff;
+}
+
+/* Version comparison styling */
+.version-comparison {
+    margin-top: 50px;
+}
+
+.version-comparison h3 {
+    font-family: var(--header-font);
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    color: #111;
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.version-card {
+    border: 3px solid #000;
+    padding: 20px;
+    box-shadow: -3px -3px 0px #000;
+    transition: transform 0.3s ease;
+}
+
+.version-card:hover {
+    transform: translate(3px, 3px);
+}
+
+.version-card.v2 {
+    background-color: rgba(120, 61, 223, 0.1);
+}
+
+.version-card.v1 {
+    background-color: rgba(120, 61, 223, 0.05);
+}
+
+.version-card h4 {
+    font-family: var(--header-font);
+    margin-top: 0;
+    color: #783ddf;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+.comparison-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #000;
+    margin-bottom: 15px;
+}
+
+.feature-list {
+    padding-left: 20px;
+}
+
+.feature-list li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .demo-container {
+        flex-direction: column;
+    }
+    
+    .version-comparison h3 {
+        font-size: 1.5em;
+    }
+  
+}
+
+.technical-implementation {
+    margin: 60px 0;
+}
+
+.tech-overview {
+    margin-bottom: 40px;
+}
+
+.tech-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.tech-tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.tool-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 3px solid #000;
+    box-shadow: -3px -3px 0px #000;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.tool-card:hover {
+    transform: translate(3px, 3px);
+}
+
+.tool-icon {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.tool-card h4 {
+    font-family: var(--header-font);
+    margin: 10px 0;
+    color: #783ddf;
+}
+
+.tool-card p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.tech-showcase {
+    margin-top: 50px;
+}
+
+.tech-feature {
+    margin-bottom: 50px;
+}
+
+.tech-feature h3 {
+    font-family: var(--header-font);
+    font-size: 1.8em;
+    color: #783ddf;
+    margin-bottom: 20px;
+}
+
+.feature-content {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-description, .feature-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.feature-description p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.feature-description ul {
+    margin-bottom: 20px;
+}
+
+.feature-description li {
+    margin-bottom: 8px;
+}
+
+.code-sample {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #783ddf;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.code-sample pre {
+    margin: 0;
+}
+
+.code-sample code {
+    font-family: monospace;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.showcase-image {
+    width: 100%;
+    border: 3px solid #000;
+    box-shadow: -3px -3px 0px #000;
+}
+
+@media (max-width: 768px) {
+    .feature-content {
+        flex-direction: column;
+    }
+    
+    .tech-feature h3 {
+        font-size: 1.5em;
+    }
+}
+.reflection {
+    margin: 60px 0;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+}
+
+.reflection-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.reflection-quote {
+    margin: 30px 0;
+}
+
+.reflection-quote blockquote {
+    font-family: var(--header-font);
+    font-size: 1.6em;
+    line-height: 1.4;
+    color: #783ddf;
+    border-left: 5px solid #783ddf;
+    padding-left: 20px;
+    margin-left: 0;
+    font-weight: 500;
+    max-width: 800px;
+}
+
+.learnings h3, 
+.challenges-overcome h3, 
+.future-plans h3 {
+    font-family: var(--header-font);
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.learning-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.learning-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 3px solid #000;
+    box-shadow: -3px -3px 0px #000;
+    transition: transform 0.3s ease;
+}
+
+.learning-card:hover {
+    transform: translate(3px, 3px);
+}
+
+.learning-card h4 {
+    font-family: var(--header-font);
+    color: #783ddf;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.learning-card p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.challenge-solution {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.challenge, .solution {
+    padding: 20px;
+    border: 2px solid #000;
+}
+
+.challenge {
+    background-color: rgba(120, 61, 223, 0.1);
+}
+
+.solution {
+    background-color: #fff;
+}
+
+.challenge h4, .solution h4 {
+    font-family: var(--header-font);
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.challenge h4 {
+    color: #783ddf;
+}
+
+.solution h4 {
+    color: #333;
+}
+
+.plans-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.plans-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #fff;
+    padding: 15px;
+    border: 2px solid #000;
+    transition: transform 0.3s ease;
+}
+
+.plans-list li:hover {
+    transform: translateX(5px);
+}
+
+.plan-icon {
+    font-size: 1.5em;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.plan-text {
+    font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+    .challenge-solution {
+        grid-template-columns: 1fr;
+    }
+    
+    .reflection-quote blockquote {
+        font-size: 1.3em;
+    }
+    
+    .learnings h3, 
+    .challenges-overcome h3, 
+    .future-plans h3 {
+        font-size: 1.5em;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <header class="project-header">
+        <div class="header-content">
+            <div class="header-text">
+                <h1 class="project-title">A Night At Home 2.0</h1>
+                <div class="project-subtitle">Interactive Fiction / 2024 / Writer & Developer</div>
+                <p class="header-description">A branching narrative horror game where your choices shape the story and
+                    determine your fate.</p>
+            </div>
+            <div class="header-cta">
+                <a href="https://nadelaja.github.io/a-night-at-home-2.0/" class="play-button" target="_blank">
+                    Play Now
+                    <span class="play-icon">▶</span>
+                </a>
+            </div>
+        </div>
+        <!-- <div class="header-preview">
+            <img src="images/v2_story.png" alt="Game preview" class="preview-image">
+        </div> -->
+    </header>
+    <section class="game-demo">
+        <h2 class="section-title">Experience the Game</h2>
+
+        <div class="demo-container">
+            <div class="demo-text">
+                <p>Alone at night in your quiet, empty house, a noise pulls you from your thoughts. Do you brush it off
+                    and
+                    try to sleep, or let curiosity pull you deeper into the shadows?</p>
+                <p>Navigate a maze of creeping dread and uneasy choices in this interactive horror experience.</p>
+                <div class="demo-features">
+                    <span class="feature-tag">Branching Narrative</span>
+                    <span class="feature-tag">Multiple Endings</span>
+                    <span class="feature-tag">Atmospheric Horror</span>
+                    <span class="feature-tag">Player-Driven Story</span>
+                </div>
+                <a href="https://nadelaja.github.io/a-night-at-home-2.0/" class="demo-cta" target="_blank">Play A Night
+                    at
+                    Home</a>
+            </div>
+
+            <!-- Replace with actual gameplay video if available -->
+            <div class="demo-visual">
+                <img src="images/v2_story.png" alt="Gameplay Preview" class="demo-image">
+                <div class="video-overlay">
+                    <span class="play-icon">▶</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="version-comparison">
+            <h3>Evolution: Version 1.0 vs 2.0</h3>
+            <div class="comparison-grid">
+                <div class="version-card v2">
+                    <h4>Version 2.0 (Current)</h4>
+                    <img src="images/about.png" alt="Version 2.0 interface" class="comparison-image">
+                    <ul class="feature-list">
+                        <li>Custom three-page structure</li>
+                        <li>Enhanced navigation options</li>
+                        <li>Save functionality</li>
+                        <li>Custom visual elements</li>
+                        <li>Improved story pacing</li>
+                    </ul>
+                </div>
+                <div class="version-card v1">
+                    <h4>Version 1.0 (Original)</h4>
+                    <img src="images/v1_story.png" alt="Version 1.0 interface" class="comparison-image">
+                    <ul class="feature-list">
+                        <li>Standard Twine interface</li>
+                        <li>Basic navigation</li>
+                        <li>Core story elements</li>
+                        <li>Default Twine styling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="technical-implementation">
+        <h2 class="section-title">Technical Implementation</h2>
+
+        <div class="tech-overview">
+            <div class="tech-text">
+                <p>A Night at Home 2.0 was built using a combination of creative writing, interactive storytelling
+                    techniques, and custom web development. The game was initially prototyped in Twine, then exported to
+                    JSON using Lazerwalker's Twison format, and finally rebuilt with a custom interface.</p>
+            </div>
+
+            <div class="tech-tools">
+                <div class="tool-card">
+                    <div class="tool-icon">📝</div>
+                    <h4>Twine</h4>
+                    <p>Used for story mapping and initial prototype</p>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🔄</div>
+                    <h4>Twison</h4>
+                    <p>Converted Twine story to JSON format</p>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">💻</div>
+                    <h4>HTML/CSS/JS</h4>
+                    <p>Custom front-end implementation</p>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🎨</div>
+                    <h4>Canva</h4>
+                    <p>Visual design elements</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tech-showcase">
+            <div class="tech-feature">
+                <h3>Story Mapping</h3>
+                <div class="feature-content">
+                    <div class="feature-image">
+                        <img src="images/Game Planning.png" alt="Story map diagram" class="showcase-image">
+                    </div>
+                    <div class="feature-description">
+                        <p>The interactive narrative was carefully mapped to ensure meaningful player choices while
+                            maintaining narrative coherence. Each branch represents a significant decision point with
+                            real
+                            consequences.</p>
+                        <p>The story structure includes:</p>
+                        <ul>
+                            <li>3 major story paths</li>
+                            <li>5 possible endings</li>
+                            <li>12 critical decision points</li>
+                            <li>Approximately 8 minutes of gameplay per route</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-feature">
+                <h3>Custom Navigation System</h3>
+                <div class="feature-content">
+                    <div class="feature-description">
+                        <p>I implemented a custom navigation system that improves upon the standard Twine interface. Key
+                            features include:</p>
+                        <ul>
+                            <li>Quick navigation between story sections</li>
+                            <li>Save functionality to preserve player progress</li>
+                            <li>Visual cues to indicate choice importance</li>
+                            <li>Responsive design for all devices</li>
+                        </ul>
+                        <div class="code-sample">
+                            <pre><code>// Simplified example of the navigation system
+    function navigateToPassage(passageId) {
+      const passage = storyData.passages.find(p => p.pid === passageId);
+      if (!passage) return;
+      
+      // Update content
+      document.getElementById('content').innerHTML = passage.text;
+      
+      // Save current state
+      saveGameState(passageId);
+      
+      // Update available choices
+      const choices = passage.links || [];
+      renderChoices(choices);
+      
+      // Track for analytics
+      trackPassageView(passage.name);
+    }</code></pre>
+                        </div>
+                    </div>
+                    <div class="feature-image">
+                        <img src="images/gates.png" alt="Custom navigation interface" class="showcase-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reflection">
+        <h2 class="section-title">Reflections & Learnings</h2>
+
+        <div class="reflection-content">
+            <div class="reflection-quote">
+                <blockquote>
+                    "Building A Night at Home taught me that effective interactive storytelling is about creating
+                    meaningful
+                    choices that resonate with players emotionally."
+                </blockquote>
+            </div>
+
+            <div class="learnings">
+                <h3>What I Learned</h3>
+                <div class="learning-cards">
+                    <div class="learning-card">
+                        <h4>Narrative Architecture</h4>
+                        <p>Designing branching narratives requires balancing player agency with storytelling coherence.
+                            I
+                            learned to create choice points that feel consequential while maintaining narrative
+                            integrity.
+                        </p>
+                    </div>
+                    <div class="learning-card">
+                        <h4>Technical Integration</h4>
+                        <p>Converting from Twine to a custom interface taught me valuable lessons about JSON data
+                            handling,
+                            state management, and creating responsive user interfaces.</p>
+                    </div>
+                    <div class="learning-card">
+                        <h4>User Testing Insights</h4>
+                        <p>Through multiple playtesting sessions, I discovered how important pacing is in interactive
+                            fiction, and how to balance text length with player engagement.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="challenges-overcome">
+                <h3>Challenges & Solutions</h3>
+                <div class="challenge-solution">
+                    <div class="challenge">
+                        <h4>Challenge: Maintaining Story Coherence</h4>
+                        <p>With multiple branching paths, ensuring narrative consistency became increasingly complex.
+                        </p>
+                    </div>
+                    <div class="solution">
+                        <h4>Solution:</h4>
+                        <p>Created a detailed story map and tracking system to monitor story variables across different
+                            paths, enabling consistent characterization and plot development.</p>
+                    </div>
+                </div>
+
+                <div class="challenge-solution">
+                    <div class="challenge">
+                        <h4>Challenge: Custom UI Development</h4>
+                        <p>Building a custom interface that preserved the story's atmosphere while improving usability.
+                        </p>
+                    </div>
+                    <div class="solution">
+                        <h4>Solution:</h4>
+                        <p>Implemented a phased development approach, gathering user feedback at each stage to refine
+                            the
+                            interface design and navigation system.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="future-plans">
+                <h3>Looking Forward</h3>
+                <p>The development of A Night at Home continues as I explore new ways to enhance the experience:</p>
+                <ul class="plans-list">
+                    <li><span class="plan-icon">🔊</span> <span class="plan-text">Implementing ambient audio and sound
+                            effects</span></li>
+                    <li><span class="plan-icon">🖼️</span> <span class="plan-text">Adding subtle visual effects to
+                            heighten
+                            tension</span></li>
+                    <li><span class="plan-icon">📱</span> <span class="plan-text">Optimizing mobile experience for
+                            on-the-go
+                            play</span></li>
+                    <li><span class="plan-icon">📊</span> <span class="plan-text">Building analytics to track player
+                            choices
+                            and pathways</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

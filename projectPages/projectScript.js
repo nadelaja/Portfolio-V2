@@ -37,29 +37,29 @@ const swiper = new Swiper('.swiper', {
 });
 
 // Lightbox logic
-const lightbox = document.getElementById('lightbox');
-const lightboxImage = document.getElementById('lightbox-image');
-const closeBtn = document.querySelector('.lightbox .close');
+// const lightbox = document.getElementById('lightbox');
+// const lightboxImage = document.getElementById('lightbox-image');
+// const closeBtn = document.querySelector('.lightbox .close');
 
-// Open lightbox
-document.querySelectorAll('.lightbox-trigger').forEach(img => {
-    img.addEventListener('click', (e) => {
-        lightboxImage.src = e.target.src;
-        lightbox.classList.remove('hidden');
-    });
-});
+// // Open lightbox
+// document.querySelectorAll('.lightbox-trigger').forEach(img => {
+//     img.addEventListener('click', (e) => {
+//         lightboxImage.src = e.target.src;
+//         lightbox.classList.remove('hidden');
+//     });
+// });
 
-// Close lightbox
-closeBtn.addEventListener('click', () => {
-    lightbox.classList.add('hidden');
-});
+// // Close lightbox
+// closeBtn.addEventListener('click', () => {
+//     lightbox.classList.add('hidden');
+// });
 
-// Close lightbox on outside click!
-lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) {
-        lightbox.classList.add('hidden');
-    }
-});
+// // Close lightbox on outside click!
+// lightbox.addEventListener('click', (e) => {
+//     if (e.target === lightbox) {
+//         lightbox.classList.add('hidden');
+//     }
+// }); 
 
 //});
 
