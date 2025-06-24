@@ -10,64 +10,52 @@ window.hamburgerMenu = function () {
     }
 }
 
-// Initialize Swiper
-const swiper = new Swiper('.swiper', {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop: true,
-    allowTouchMove: true,
-    
-    autoplay: {
-        delay: 5000,
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        type: 'progressbar',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-        900: {
-            slidesPerView: 2,
+    const swiper = new Swiper('.swiper', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        allowTouchMove: true,
+        autoplay: {
+            delay: 5000,
         },
-    },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            900: {
+                slidesPerView: 2,
+            },
+        },
+    });
+
+/* lightGallery(document.getElementById('lightgallery'), {
+    selector: 'a',
+    plugins: [lgZoom, lgThumbnail],
+    speed: 500,
 });
 
-// Lightbox logic
-// const lightbox = document.getElementById('lightbox');
-// const lightboxImage = document.getElementById('lightbox-image');
-// const closeBtn = document.querySelector('.lightbox .close');
+lightGallery(document.getElementById('lightgallery-2'), {
+    selector: 'a',
+    plugins: [lgZoom, lgThumbnail],
+    speed: 500,
+});
+ */
 
-// // Open lightbox
-// document.querySelectorAll('.lightbox-trigger').forEach(img => {
-//     img.addEventListener('click', (e) => {
-//         lightboxImage.src = e.target.src;
-//         lightbox.classList.remove('hidden');
-//     });
-// });
 
-// // Close lightbox
-// closeBtn.addEventListener('click', () => {
-//     lightbox.classList.add('hidden');
-// });
 
-// // Close lightbox on outside click!
-// lightbox.addEventListener('click', (e) => {
-//     if (e.target === lightbox) {
-//         lightbox.classList.add('hidden');
-//     }
-// }); 
 
-//});
 
 // Main color logic
 document.addEventListener('DOMContentLoaded', () => {
 const pageColorMap = {
     project1: '#F9A8D4', // pink
-    project2: '#54a0ff',// blue, // pink
+    project2: '#54a0ff',// blue
     project3: '#783ddf', // purple
     project4: '#1dd1a1', //green
 };

@@ -263,50 +263,12 @@ img {
     --swiper-pagination-progressbar-size: 4px;
 }
 
-
-/* Lightbox styles */
-.lightbox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 1000;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+.lg-backdrop {
+    background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
-.lightbox img {
-    max-width: 90%;
-    max-height: 90%;
-    object-fit:scale-down;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
 
-.lightbox .close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 30px;
-    color: #fff;
-    cursor: pointer;
-}
 
-.lightbox.hidden {
-    visibility: hidden;
-    opacity: 0;
-}
-
-.lightbox:not(.hidden) {
-    visibility: visible;
-    opacity: 1;
-}
 
 
 @media (max-width: 768px) {
