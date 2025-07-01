@@ -70,16 +70,7 @@ const textColor = {
         project4: '#000'
     };
 
-    document.documentElement.style.setProperty('--text-color', textColor[page]);   
-
-/*const pageHoverColorMap = {
-    project1: 'rgb(95, 39, 205, 0.5)', // purple
-    project2: 'rgb(255, 165, 0, .5)',// <- orange, // pink
-    project3: 'grey', // replace with an dark opaque grey
-    project4: '#1dd1a1', // green
-};
-
-document.documentElement.style.setProperty('--hover-color', pageHoverColorMap[page]);*/     
+    document.documentElement.style.setProperty('--text-color', textColor[page]);        
 });
 
 // Scroll to top button

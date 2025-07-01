@@ -1,35 +1,146 @@
-.impact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-bottom: 40px;
-    text-align: center;
+/* Alt background section */
+.alt-section {
+    background-color: #e6fbf6;
+    padding: 60px 30px;
+    border-top: 3px solid #000;
+    margin-top: 60px;
 }
 
-.impact-item {
-    border: 3px solid #000;
-    padding: 20px;
-    box-shadow: -3px -3px 0px #000;
-    background-color: #fff;
-}
-
-.impact-icon img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    margin-bottom: 15px;
-}
-
-.impact-item h3 {
+/* Section Titles */
+.section-title {
     font-family: var(--header-font);
-    font-size: 1.2em;
-    margin: 0 0 10px 0;
+    font-size: 2em;
+    color: var(--main-color);
+    margin-bottom: 20px;
 }
 
-.impact-item p {
+.section-title.decorated-title::after {
+    content: "";
+    display: block;
+    margin-top: 10px;
+    width: 60px;
+    height: 4px;
+    background-color: var(--main-color);
+    animation: slide-in 0.5s ease;
+}
+
+@keyframes slide-in {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+
+    to {
+        width: 60px;
+        opacity: 1;
+    }
+}
+
+/* Info Cards*/
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.info-card {
+    background-color: #fff;
+    padding: 25px;
+    border: 3px solid #000;
+    box-shadow: -3px -3px 0px #000;
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translate(3px, 3px);
+}
+
+.info-meta {
+    font-family: var(--header-font);
+    font-size: 0.95em;
+    color: #fff;
+    background-color: var(--main-color);
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.info-card p,
+.info-card li {
     font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.info-card ul {
+    padding-left: 20px;
     margin: 0;
 }
+
+.info-card li {
+    margin-bottom: 8px;
+}
+
+
+/* Impact & Outcome */
+.impact-outcome {
+    background-color: #fefefe;
+}
+
+.story-map-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.story-card {
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+/* 
+.story-img {
+    width: 100%;
+    height: 400px;
+    border: 3px solid #000;
+    box-shadow: -3px -3px 0px #000;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border-bottom: 2px solid #000;
+}
+
+.story-img:hover {
+    transform: translate(3px, 3px);
+}
+*/    
+
+.story-content {
+    padding: 20px;
+    background-color: #e6fbf6;
+    
+}
+
+.story-content h3 {
+    font-family: var(--header-font);
+    color: var(--main-color);
+    font-size: 1.2em;
+    margin: 0 0 10px;
+}
+
+.story-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+
+
+
 
 /* Problem Space */
 .problem-grid {
@@ -42,7 +153,15 @@
 .problem-item {
     display: flex;
     align-items: flex-start;
-    gap: 20px;    
+    padding: 20px;
+    gap: 20px;
+    border: 3px solid #000;
+    box-shadow: -3px -3px 0px #000;
+    background-color: #fefefe;
+}
+
+.problem-item:hover {
+    transform: translate(3px, 3px);
 }
 
 .problem-icon img {
@@ -62,9 +181,50 @@
 .problem-details ul {
     margin: 0;
     padding-left: 20px;
+    color:#333
 }
 
-/*Insight Blocks (Problem Space + Research Highlights)*/
+/* Sprint Timeline */
+.sprint-timeline.clean-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.sprint-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.sprint-number {
+    min-width: 36px;
+    height: 36px;
+    background-color: var(--main-color);
+    color: #fff;
+    font-weight: bold;
+/*  border-radius: 50%;   */  
+    text-align: center;
+    line-height: 36px;
+    font-family: var(--header-font);
+    font-size: 1.2em;
+    border: 3px solid #000;
+    box-shadow: -3px -3px 0px #000;
+    flex-shrink: 0;
+}
+
+.sprint-details h3 {
+    margin: 0 0 8px 0;
+    font-family: var(--header-font);
+    font-size: 1.1em;
+}
+
+.sprint-details p {
+    margin: 0;
+}
+
+/* Research Highlights */
 .project-description .insight-block .icon {
     width: 10%;
     height: auto;
@@ -96,47 +256,7 @@
     padding-left: 20px;
 }
 
-/*Sprint Timeline (Clean Numbered Version)*/
-
-.sprint-timeline.clean-layout {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-bottom: 40px;
-}
-
-.sprint-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.sprint-number {
-    min-width: 36px;
-    height: 36px;
-    background-color: var(--main-color);
-    color: #fff;
-    font-weight: bold;
-/*  border-radius: 50%;   */  
-    text-align: center;
-    line-height: 36px;
-    font-family: var(--header-font);
-    font-size: 1.2em;
-
-    flex-shrink: 0;
-}
-
-.sprint-details h3 {
-    margin: 0 0 8px 0;
-    font-family: var(--header-font);
-    font-size: 1.1em;
-}
-
-.sprint-details p {
-    margin: 0;
-}
-
-/*Design Solutions (Two Column Layout)*/
+/* Design Solutions (Two Column Layout) */
 
 .design {
     display: grid;
@@ -150,7 +270,7 @@
     align-items: flex-start;
     gap: 30px;
     padding: 20px;
-    background-color: #f0f5f0;
+    background-color: #fff;
     border: 3px solid #000;
     box-shadow: -3px -3px 0px #000;
 }
@@ -161,13 +281,11 @@
     background-color: var(--main-color);
     color: #fff;
     font-weight: bold;
-/*     border-radius: 50%;
- */    text-align: center;
+    text-align: center;
     line-height: 36px;
     font-family: var(--header-font);
     font-size: 1.2em;
-/*     border: 2px solid #000;
- */    flex-shrink: 0;
+    flex-shrink: 0;
 }
 
 .design-details h3 {
@@ -181,7 +299,7 @@
     padding-left: 20px;
 }
 
-/*Lessons Learned Block*/
+/* Lessons Learned Block */
 
 .lessons-block {
     display: grid;
@@ -191,7 +309,7 @@
 }
 
 .lesson-item {
-    background-color: #f0f5f0;
+    background-color: #fff;
     border: 3px solid #000;
     padding: 20px;
     box-shadow: -3px -3px 0px #000;
@@ -229,5 +347,9 @@
     
         .design-number {
             margin-bottom: 15px;   }
+
+    .impact-outcome {
+        width: 100%;
+    }
 
 }
