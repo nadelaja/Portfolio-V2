@@ -6,6 +6,13 @@
     margin-top: 60px;
 }
 
+.alt-section-2 {
+    background-color: #fff;
+    padding: 60px 30px;
+    border-top: 3px solid #000;
+    margin-top: 60px;
+}
+
 /* Section Titles */
 .section-title {
     font-family: var(--header-font);
@@ -222,39 +229,66 @@
 
 .sprint-details p {
     margin: 0;
+    color:#333 ;
 }
 
 /* Research Highlights */
-.project-description .insight-block .icon {
-    width: 10%;
-    height: auto;
+/* Challenges */
+.section-intro {
+    font-size: 1.1em;
+    color: #444;
+    max-width: 700px;
+    margin-bottom: 40px;
 }
 
-.project-description .insight-block {
+/* Challenge items */
+.challenge-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.challenge-item {
     display: flex;
     align-items: flex-start;
-    gap: 50px;
-    margin-bottom: 30px;
+    gap: 20px;
+    padding: 20px;
+    border: 3px solid #000;
+    background-color: #fff;
+    box-shadow: -3px -3px 0px #000;
+    transition: transform 0.3s ease;
 }
 
-.project-description .icon {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-    margin-top: 6px;
+.challenge-item:hover {
+    transform: translate(3px, 3px);
 }
 
-.project-description .insight-text h3 {
-    margin-top: 0;
+.challenge-label {
+    font-size: 1.5em;
     font-family: var(--header-font);
-    font-size: 1.2em;
-    margin-bottom: 10px;
+    color: var(--main-color);
+    flex-shrink: 0;
+    width: 40px;
+    text-align: center;
 }
 
-.project-description .insight-text ul {
-    margin-top: 0;
-    padding-left: 20px;
+.challenge-body h3 {
+    font-family: var(--header-font);
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #000;
 }
+
+.challenge-body p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+}
+
+h2 {
+    text-decoration: none;
+}
+
 
 /* Design Solutions (Two Column Layout) */
 
