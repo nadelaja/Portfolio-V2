@@ -94,9 +94,9 @@
 
 
 /* Impact & Outcome */
-.impact-outcome {
+/* .impact-outcome {
     background-color: #fefefe;
-}
+} */
 
 .story-map-grid {
     display: grid;
@@ -109,6 +109,7 @@
     background-color: #fff;
     transition: transform 0.3s ease;
 }
+
 /* 
 .story-img {
     width: 100%;
@@ -123,12 +124,12 @@
 .story-img:hover {
     transform: translate(3px, 3px);
 }
-*/    
+*/
 
 .story-content {
     padding: 20px;
     background-color: #e6fbf6;
-    
+
 }
 
 .story-content h3 {
@@ -144,15 +145,10 @@
     color: #333;
 }
 
-
-
-
-
-
 /* Problem Space */
 .problem-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     margin-bottom: 40px;
 }
@@ -164,7 +160,9 @@
     gap: 20px;
     border: 3px solid #000;
     box-shadow: -3px -3px 0px #000;
+    transition: transform 0.3s ease;
     background-color: #fefefe;
+
 }
 
 .problem-item:hover {
@@ -188,7 +186,10 @@
 .problem-details ul {
     margin: 0;
     padding-left: 20px;
-    color:#333
+    margin-top: 10px;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
 }
 
 /* Sprint Timeline */
@@ -211,7 +212,7 @@
     background-color: var(--main-color);
     color: #fff;
     font-weight: bold;
-/*  border-radius: 50%;   */  
+    /*  border-radius: 50%;   */
     text-align: center;
     line-height: 36px;
     font-family: var(--header-font);
@@ -229,11 +230,12 @@
 
 .sprint-details p {
     margin: 0;
-    color:#333 ;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
 }
 
 /* Research Highlights */
-/* Challenges */
 .section-intro {
     font-size: 1.1em;
     color: #444;
@@ -241,8 +243,7 @@
     margin-bottom: 40px;
 }
 
-/* Challenge items */
-.challenge-timeline {
+.challenge-list {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -279,18 +280,73 @@
     color: #000;
 }
 
-.challenge-body p {
+.challenge-body ul {
     font-size: 1em;
     color: #333;
     line-height: 1.5;
 }
 
-h2 {
-    text-decoration: none;
+.research-context {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 3px solid #000;
+}
+
+.research-context h3,
+.research-context h4 {
+    font-family: var(--header-font);
+    margin-bottom: 10px;
+}
+
+.research-context ul {
+    margin-top: 0;
+    padding-left: 20px;
+    color: #333;
+}
+
+.research-context p {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.artifact-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.artifact-item {
+    background-color: #fff;
+    border: 3px solid #000;
+    box-shadow: -3px -3px 0 #000;
+    transition: transform 0.3s ease;
+    padding: 20px;
+    text-align: left;
+}
+
+.artifact-item:hover {
+    transform: translate(3px, 3px);
+}
+
+.artifact-image {
+    width: 100%;
+    height: auto;
+    border: 2px solid #000;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.artifact-caption {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+    line-height: 1.4;
 }
 
 
-/* Design Solutions (Two Column Layout) */
+
+/* UX Design Solutions (Two Column Layout) */
 
 .design {
     display: grid;
@@ -307,6 +363,11 @@ h2 {
     background-color: #fff;
     border: 3px solid #000;
     box-shadow: -3px -3px 0px #000;
+    transition: transform 0.3s ease;
+}
+
+.design-item:hover {
+    transform: translate(3px, 3px);
 }
 
 .design-number {
@@ -331,59 +392,181 @@ h2 {
 .design-details ul {
     margin: 0;
     padding-left: 20px;
+    margin-top: 10px;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
 }
 
-/* Lessons Learned Block */
+/* Reflection & Outcomes */
+.dev-process {
+    /* background-color: #fff; */
+    padding: 60px 30px;
+    margin-top: 60px;
+}
 
-.lessons-block {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.process-steps {
+    display: flex;
+    flex-direction: column;
     gap: 30px;
-    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
-.lesson-item {
-    background-color: #fff;
-    border: 3px solid #000;
-    padding: 20px;
-    box-shadow: -3px -3px 0px #000;
-}
-
-.lesson-item h3 {
-    font-family: var(--header-font);
-    font-size: 1.1em;
-    margin-top: 0;
-}
-
-/*Blockquote Styling*/
-
-.project-description blockquote {
-    border-left: 5px solid var(--main-color);
+.process-step {
+    position: relative;
+    border-left: 4px solid var(--main-color);
     padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.step-indicator {
+    font-family: var(--header-font);
+    font-size: 0.9em;
+    text-transform: uppercase;
+    background-color: var(--main-color);
+    color: #fff;
+    display: inline-block;
+    padding: 4px 10px;
+    margin-bottom: 10px;
+    letter-spacing: 0.05em;
+}
+
+.step-content h3 {
+    font-family: var(--header-font);
+    font-size: 0.9em;
+    text-transform: uppercase;
+    background-color: var(--main-color);
+    color: #fff;
+    display: inline-block;
+    padding: 4px 10px;
+    margin-bottom: 10px;
+    letter-spacing: 0.05em;
+}
+
+.step-content ul {
+    padding-left: 20px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.step-content li {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.step-content p {
+    margin-top: 10px;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Lessons Learned Block 
+.lessons-learned {
+    padding: 60px 30px;
+    background-color: #fefefe;
+}
+
+.lessons-learned-quote {
+    max-width: 800px;
+    margin: 0 auto 50px;
+} */
+
+blockquote {
+    background-color: #fff;
+    border-left: 5px solid var(--main-color);
+    padding: 20px;
     margin: 30px 0;
     font-style: italic;
-    color: #333;
     font-size: 1.1em;
+    color: #333;
+}
+
+.learning-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.learning-point {
+    background-color: #fff;
+    border: 3px solid #000;
+    box-shadow: -3px -3px 0px #000;
+    padding: 25px;
+    transition: transform 0.3s ease;
+}
+
+.learning-point:hover {
+    transform: translate(3px, 3px);
+}
+
+.learning-point h3 {
+    font-family: var(--header-font);
+    color: #000;
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.learning-point ul {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
 }
 
 
-
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .design {
-            grid-template-columns: 1fr;
-        }
-    
-        .design-item {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-    
-        .design-number {
-            margin-bottom: 15px;   }
+        grid-template-columns: 1fr;
+    }
+
+    .design-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .design-number {
+        margin-bottom: 15px;
+    }
 
     .impact-outcome {
         width: 100%;
+    }
+
+    /* Problem Space */
+        .problem-grid {
+            grid-template-columns: 1fr;
+        }
+
+    /* Responsive spacing */
+    .info-meta {
+        font-size: 0.85em;
+    }
+
+    /* Development Process*/
+    .step-content h3 {
+        font-size: 1.2em;
+    }
+
+    /* Challenges */
+    .challenge-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .challenge-label {
+        margin-bottom: 10px;
+        width: auto;
+    }
+
+    .learning-point h3 {
+        font-size: 1.1em;
+    }
+
+    /* UX design */
+    .design-details ul {
+        text-align: left;
     }
 
 }
