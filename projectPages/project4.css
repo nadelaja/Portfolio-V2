@@ -129,7 +129,7 @@
 .story-content {
     padding: 20px;
     background-color: #e6fbf6;
-
+    min-height: 140px;
 }
 
 .story-content h3 {
@@ -317,24 +317,44 @@
 }
 
 .artifact-item {
-    background-color: #fff;
+    /* background-color: #fff;
     border: 3px solid #000;
     box-shadow: -3px -3px 0 #000;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; */
     padding: 20px;
     text-align: left;
 }
 
-.artifact-item:hover {
+/* .artifact-item:hover {
     transform: translate(3px, 3px);
-}
+}*/
 
 .artifact-image {
     width: 100%;
-    height: auto;
-    border: 2px solid #000;
-    object-fit: contain;
+    object-fit: fill;
+    height: 250px;
+    background-color: #fff;
+    border: 3px solid #000;
+    box-shadow: -3px -3px 0 #000;
+    transition: transform 0.3s ease;
     margin-bottom: 15px;
+}
+
+.artifact-image:hover {
+    transform: translate(3px, 3px);
+
+}
+
+.artifact-content {
+    padding: 10px;
+    background-color: #e6fbf6;
+}
+
+.artifact-content h3 {
+    font-family: var(--header-font);
+    color: var(--main-color);
+    font-size: 1.2em;
+    margin: 0 0 10px;
 }
 
 .artifact-caption {
@@ -342,9 +362,8 @@
     font-size: 1em;
     color: #333;
     line-height: 1.4;
+    min-height: 150px;
 }
-
-
 
 /* UX Design Solutions (Two Column Layout) */
 
@@ -482,8 +501,10 @@ blockquote {
     color: #333;
 }
 
+/* Lessons Learned */
 .learning-columns {
     display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
 }
@@ -514,6 +535,27 @@ blockquote {
     color: #333;
 }
 
+/* Team */
+.team-columns {
+    /* !!!!!!!fix this */
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.team-point {
+    background-color: #fff;
+    border: 3px solid #000;
+    box-shadow: -3px -3px 0px #000;
+    padding: 25px;
+    transition: transform 0.3s ease;
+}
+
+.team-point:hover {
+    transform: translate(3px, 3px);
+}
+
 
 @media (max-width: 768px) {
     .design {
@@ -535,9 +577,9 @@ blockquote {
     }
 
     /* Problem Space */
-        .problem-grid {
-            grid-template-columns: 1fr;
-        }
+    .problem-grid {
+        grid-template-columns: 1fr;
+    }
 
     /* Responsive spacing */
     .info-meta {

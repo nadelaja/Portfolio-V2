@@ -1,55 +1,39 @@
 //document.addEventListener('DOMContentLoaded', () => {
-
+/*     Animate on Scoll */
+    
 //hamburger menu 
 window.hamburgerMenu = function () {
-    var x = document.getElementById("navContent");
-    if (x.className === "nav-content") {
-        x.className += " responsive";
+    var x = document.getElementById('navContent');
+    if (x.className === 'nav-content') {
+        x.className += ' responsive';
     } else {
-        x.className = "nav-content";
+        x.className = 'nav-content';
     }
 }
 
-    const swiper = new Swiper('.swiper', {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        loop: true,
-        allowTouchMove: true,
-        autoplay: {
-            delay: 5000,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'progressbar',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        breakpoints: {
-            900: {
-                slidesPerView: 2,
-            },
-        },
+AOS.init({
+    duration: 600,
+    once: false,
+    startEvent: 'load'
     });
 
-/* lightGallery(document.getElementById('lightgallery'), {
-    selector: 'a',
-    plugins: [lgZoom, lgThumbnail],
-    speed: 500,
-});
+const swiperV1 = new Swiper('#my-gallery', {
+    loop: true,
+    pagination: { el: '.swiper-pagination', type: 'progressbar', clickable: true },
+    navigation: {
+        nextEl: '#my-gallery .swiper-button-next',
+        prevEl: '#my-gallery .swiper-button-prev',
+    },
+    });
 
-lightGallery(document.getElementById('lightgallery-2'), {
-    selector: 'a',
-    plugins: [lgZoom, lgThumbnail],
-    speed: 500,
-});
- */
-
-
-
-
+    const swiperV2 = new Swiper('#my-gallery-v2', {
+    loop: true,
+    pagination: { el: '#my-gallery-v2 .swiper-pagination', type: 'progressbar', clickable: true },
+    navigation: {
+        nextEl: '#my-gallery-v2 .swiper-button-next',
+        prevEl: '#my-gallery-v2 .swiper-button-prev',
+    },
+    });
 
 // Main color logic
 document.addEventListener('DOMContentLoaded', () => {

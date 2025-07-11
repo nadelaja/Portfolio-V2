@@ -14,6 +14,9 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
+    <!-- Photoswipe -->
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css">
+
 
 </head>
 
@@ -63,53 +66,43 @@
                     <p>9 Months<br><strong>End-to-end UX Redesign</strong></p>
                 </div>
 
-                <div class="info-card">
-                    <div class="info-meta">My Role</div>
-                    <ul>
-                        <li>Narrative Design & Writing</li>
-                        <li>UX & Choice Architecture</li>
-                        <li>Front-end Development</li>
-                        <li>Playtesting & Iteration</li>
-                    </ul>
-                </div>
-
             </div>
         </section>
 
         <section class="before-after alt-section-2" data-aos="fade-up">
             <h2 class="section-title decorated-title">Before & After</h2>
-            <div class="project-description">
-                <div class="project-gallery">
-                    <img src="images/placeholder-homepage.png" alt="Original Green Mechanics homepage before redesign"
-                        class="gallery-image">
-                    <img src="images/placeholder-wireframes.png" alt="Low-fidelity wireframe layout"
-                        class="gallery-image">
-                    <img src="images/placeholder-hifi.png" alt="High-fidelity homepage prototype" class="gallery-image">
-                </div>
+            <div id="gallery" class="project-gallery">
+                <a href="images/placeholder-homepage.png" data-pswp-width="1200" data-pswp-height="800" target="_blank">
+                    <img src="images/placeholder-homepage.png" alt="Original Green Mechanics homepage" class="gallery-image">
+                </a>
+                <a href="images/placeholder-wireframes.png" data-pswp-width="1200" data-pswp-height="800" target="_blank">
+                    <img src="images/placeholder-wireframes.png" alt="Wireframe layout" class="gallery-image">
+                </a>
+                <a href="images/placeholder-hifi.png" data-pswp-width="1200" data-pswp-height="800" target="_blank">
+                    <img src="images/placeholder-hifi.png" alt="High-fidelity prototype" class="gallery-image">
+                </a>
+            </div>              
         </section>
 
-        <section class="impact-outcome" data-aos="fade-up">
+        <section class="impact-outcome alt-section-2" data-aos="fade-up">
             <h2 class="section-title decorated-title">Impact & Outcome</h2>
-            <p class="section-intro">
-                Fill in?
-            </p>
 
-            <div class="story-map-grid">
-                <div class="story-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="story-map-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="story-card">
                     <div class="story-content">
                         <h3>Redesigned Core Pages</h3>
                         <p>Homepage, service pages, and outreach content redesigned for clarity and trust-building.</p>
                     </div>
                 </div>
 
-                <div class="story-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="story-card">
                     <div class="story-content">
                         <h3>Interactive Prototype</h3>
                         <p>Delivered full high-fidelity Figma prototype to support client implementation.</p>
                     </div>
                 </div>
 
-                <div class="story-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="story-card">
                     <div class="story-content">
                         <h3>Scalable Design System</h3>
                         <p>Created a modular design system enabling future site growth and consistency.</p>
@@ -172,6 +165,11 @@
 
         <section class="time-line alt-section-2" data-aos="fade-up">
             <h2 class="section-title decorated-title">Sprint Timeline</h2>
+            <p class="section-intro">
+                Before each sprint, we outlined clear plans to guide our work in our project sprint plan. We held
+                weekly check-in with the client to stay aligned, and closed each sprint with a client retrospect to reflect, gather
+                feedback and adapt our approach moving forward.
+            </p>
             <div class="sprint-timeline clean-layout">
                 <div class="sprint-item">
                     <div class="sprint-number">1</div>
@@ -258,36 +256,50 @@
                         </ul>
                     </div>
                 </div>
+            </section>            
 
-            <h3>Artifacts Developed</h3>
+            <section class="research-strategy alt-section-2" data-aos="fade-up">
+                <h2 class="section-title decorated-title">Artifacts Developed</h2>
 
-            <div class="artifact-row">
-
-                <div class="artifact-item">
-                    <img src="images/user-journey-map.png" alt="User Journey Map artifact" class="artifact-image">
-                    <p class="artifact-caption">We developed a Customer Journey Map to visualize the experience of key
-                        user groups, identifying
-                        frustrations, expectations, and trust-building opportunities across stages.</p>
+                <div id="gallery" class="artifact-row">
+                
+                    <div class="artifact-item">
+                        <a href="images/user-journey-map.png" data-pswp-width="1200" data-pswp-height="800">
+                            <img src="images/user-journey-map.png" alt="User Journey Map" class="artifact-image">
+                        </a>
+                        <div class="artifact-content">
+                            <h3>Customer Journey Map</h3>
+                            <p class="artifact-caption">We developed a Customer Journey Map to visualize the experience of key user groups,
+                                identifying frustrations, expectations, and trust-building opportunities across stages.</p>
+                        </div>
+                    </div>
+                
+                    <div class="artifact-item">
+                        <a href="images/pain-points-bar-chart.png" data-pswp-width="1200" data-pswp-height="800">
+                            <img src="images/pain-points-bar-chart.png" alt="Bar chart summarizing participant concerns"
+                                class="artifact-image">
+                        </a>
+                        <div class="artifact-content">
+                            <h3>Pain Point Bar Chart</h3>
+                            <p class="artifact-caption">Bar chart summarizing recurring user pain points across navigation, messaging, and
+                            trust-building elements. This quantitative analysis of interview data highlighted common patterns and
+                            directly informed our design priorities and content strategy.</p>
+                        </div>
+                    </div>
+                
+                    <div class="artifact-item">
+                        <a href="images/how-might-we.png" data-pswp-width="1200" data-pswp-height="800">
+                            <img src="images/how-might-we.png" alt="How Might We strategy board" class="artifact-image">
+                        </a>
+                        <div class="artifact-content">
+                            <h3>Pain Point Bar Chart</h3>
+                            <p class="artifact-caption">Building on our research, we identified key focus areas using "How Might We" framing
+                                to structure actionable design solutions.</p>
+                        </div>
+                    </div>
+                
                 </div>
-
-                <div class="artifact-item">
-                    <img src="images/pain-points-bar-chart.png" alt="Bar chart summarizing participant concerns"
-                        class="artifact-image">
-                    <p class="artifact-caption">Bar chart summarizing recurring user pain points across navigation,
-                        messaging, and
-                        trust-building elements. This quantitative analysis of interview data highlighted common
-                        patterns and directly informed our design
-                        priorities and content strategy.</p>
-                </div>
-
-                <div class="artifact-item">
-                    <img src="images/how-might-we.png" alt="How Might We strategy board" class="artifact-image">
-                    <p class="artifact-caption">Building on our research, we identified key focus areas using "How Might
-                        We" framing to structure actionable
-                        design solutions.</p>
-                </div>
-
-            </div>
+                
         </section>
 
         <section class="research-highlights alt-section" data-aos="fade-up">
@@ -340,7 +352,7 @@
 
 
         <section class="ux-design alt-section" data-aos="fade-up">
-            <h2 class="section-title decorated-title" Design>(UX Principles in Action)</h2>
+            <h2 class="section-title decorated-title">Design (UX Principles in Action)</h2>
             <div class="design">
                 <div class="design-item">
                     <div class="design-number">1</div>
@@ -389,23 +401,22 @@
             </div>
         </section>
 
-        <section class="reflection alt-section" data-aos="fade-up">
+        <section class="reflection alt-section dev-process" data-aos="fade-up">
             <h2 class="section-title decorated-title">Reflection & Outcomes</h2>
             <p class="section-intro">This project reinforced the power of user-centered design to simplify complex
-                information, build trust,
-                and align design solutions with real organizational goals.
-            </p>
-            <div class="process-step">
-                <div class="step-content">
-                    <!-- <h3>Later Testing</h3> -->
-                    <ul>
-                        <li>Clarified services and simplified complex content for potential partners</li>
-                        <li>Aligned design decisions closely with client needs through weekly collaboration</li>
-                        <li>Strengthened skills in information architecture, content strategy, and trust-building UX
-                        </li>
-                        <li>Delivered a complete high-fidelity prototype, content recommendations, and scalable design
-                            system</li>
-                    </ul>
+                information, build trust, and align design solutions with real organizational goals.</p>
+        
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-content">
+                        <ul>
+                            <li>Clarified services and simplified complex content for potential partners</li>
+                            <li>Aligned design decisions closely with client needs through weekly collaboration</li>
+                            <li>Strengthened skills in information architecture, content strategy, and trust-building UX</li>
+                            <li>Delivered a complete high-fidelity prototype, content recommendations, and scalable design
+                                system</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -437,12 +448,36 @@
             </div>
         </section>
 
-        <section class="credits" data-aos="fade-up">
-            <h2 class="section-title decorated-title"></h2>
-            <img>
-            <img>
-
-        </section>
+        <section class="team-roles alt-section" data-aos="fade-up">
+            <h2 class="section-title decorated-title">Team & Roles</h2>
+            <div class="team-columns">
+                <div class="team-point">
+                    <h3>Team</h3>
+                    <ul>
+                        <li>Andrea Tavakol</li>
+                        <li>Chris Esmele</li>
+                        <li>Jummy Adelaja</li>
+                        <li>Sharvonne Sisco</li>
+                        <li>Stephanie Apollon</li>
+                    </ul>
+                </div>
+                <div class="team-point">
+                    <h3>Roles</h3>
+                    <ul>
+                        <li>UI Designer</li>
+                        <li>UX Researcher</li>
+                        <li>Project Manager</li>
+                        <li><em>(Roles were rotated after each sprint)</em></li>
+                    </ul>
+                </div>
+                <div class="artifact-item">
+                    <img src="images\team-2.jpg" alt="Team collaboration session" class="artifact-image">
+                </div>
+                <div class="artifact-item">
+                    <img src="images\team-1.jpeg" alt="Team collaboration session" class="artifact-image">
+                </div>
+<!--                     <p class="artifact-caption">Collaborative sketching session during early wireframing phase.</p> -->                  
+            </div>
 
     </main>
     <button id="backToTop" title="Back to Top">↑</button>
@@ -453,16 +488,24 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="projectScript.js"></script>
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 600,
-            once: false
+    <script src="projectScript.js"></script>
+
+
+    <!-- PhotoSwipe -->
+    <script type="module">
+        import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.js';
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#gallery',
+            children: 'a',
+            pswpModule: () => import('https://unpkg.com/photoswipe@5/dist/photoswipe.esm.js')
         });
+        lightbox.init();
     </script>
+
 </body>
 
 </html>

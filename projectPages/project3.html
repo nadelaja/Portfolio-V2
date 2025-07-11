@@ -5,24 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Night At Home - Interactive Horror Experience</title>
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="project3.css">
 
+    <!-- photoswipe CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.4.2/dist/photoswipe.css" />
+    
     <!-- Swiper styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="projects.css">
-    <link rel="stylesheet" href="project3.css">
     <!-- video js styles -->
     <link href="//vjs.zencdn.net/8.23.3/video-js.min.css" rel="stylesheet">
     <script src="//vjs.zencdn.net/8.23.3/video.min.js"></script>
 
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-
-
-</head>
 
 <body data-page="project3">
     <nav class="nav-bar">
@@ -69,8 +69,8 @@
 
                 <div class="info-card">
                     <div class="info-meta">Summary</div>
-                    <p>A Night at Home is a branching narrative horror game where players decisions shape both plot and
-                        psychological tone. It blends interactive fiction with subtle atmospheric horror.</p>
+                    <p>A Night at Home is a branching narrative horror game where players decisions shape both story,
+                        blending interactive fiction with subtle atmospheric horror.</p>
                 </div>
 
                 <div class="info-card">
@@ -102,16 +102,6 @@
         </section>
 
 
-        <!--         <div class="project-gallery">
-            <div class="swiper-slide">
-                <img src="images\v1_title.png" alt="version 1.0 title page" class=" gallery-image lightbox-trigger">
-            </div>
-
-            <div class="swiper-slide">
-                <img src="images\v1_story.png" alt="version 1.0 story page" class="gallery-image lightbox-trigger">
-            </div>
-        </div> -->
-
         <div class="h">
             <div class="game-demo">
                 <h2 class="section-title decorated-title">Experience the Game</h2>
@@ -133,7 +123,7 @@
                             Play A Night at Home
                         </a>
                     </div>
-                    
+
 
                     <div class="demo-visual">
                         <video id="gameplay-video" class="video-js vjs-default-skin" controls preload="auto"
@@ -183,20 +173,40 @@
                     </div>
                 </section>
 
-                <section class="version-evolution alt-section">
+                <section class="alt-section">
                     <h2 class="section-title decorated-title">Evolution: Version 1.0 → 2.0</h2>
                     <p class="section-intro">The game started as a simple Twine game. Over time, it transformed into a
-                        polished,
-                        custom interactive experience.</p>
-
+                        polished, custom interactive experience.</p>
+                
                     <div class="version-comparison-v2">
-
-                        <div class="version-block">
+                        <!-- Version 1.0 -->
+                        <div class="version-evolution version-block">
                             <div class="version-meta old">
                                 <h3>Version 1.0</h3>
                                 <p class="version-tag">Twine</p>
                             </div>
-                            <img src="images/v1_title.png" alt="Version 1.0 interface" class="version-img">
+                            <div class="swiper mySwiper gallery" id="my-gallery">
+                                <ul class="swiper-wrapper" itemscope itemtype="http://schema.org/ImageGallery">
+                                    <li class="swiper-slide" itemprop="associatedMedia" itemscope
+                                        itemtype="http://schema.org/ImageObject">
+                                        <a itemprop="contentUrl" href="images/v1_title.png" data-pswp-width="800"
+                                            data-pswp-height="450">
+                                            <img src="images/v1_title.png" alt="Version 1.0 title page" itemprop="thumbnail" />
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide" itemprop="associatedMedia" itemscope
+                                        itemtype="http://schema.org/ImageObject">
+                                        <a itemprop="contentUrl" href="images/v1_story.png" data-pswp-width="800"
+                                            data-pswp-height="450">
+                                            <img src="images/v1_story.png" alt="Version 1.0 story page" itemprop="thumbnail" />
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                
                             <ul class="version-list">
                                 <li>Standard Twine UI</li>
                                 <li>Basic navigation</li>
@@ -204,17 +214,57 @@
                                 <li>Core story only</li>
                             </ul>
                         </div>
-
+                
                         <div class="version-arrow">
-                            <span>⇨</span>
+                            <span>&#x21E8;</span>
                         </div>
-
-                        <div class="version-block">
+                
+                        <!-- Version 2.0 -->
+                        <div class="version-evolution version-block">
                             <div class="version-meta new">
                                 <h3>Version 2.0</h3>
                                 <p class="version-tag">Custom Interface</p>
                             </div>
-                            <img src="images/homepage.png" alt="Version 2.0 interface" class="version-img">
+                            <div class="swiper mySwiper gallery" id="my-gallery-v2">
+                                <ul class="swiper-wrapper" itemscope itemtype="http://schema.org/ImageGallery">
+                                    <li class="swiper-slide" itemprop="associatedMedia" itemscope
+                                        itemtype="http://schema.org/ImageObject">
+                                        <a href="images/homepage.png" data-pswp-width="800" data-pswp-height="450"
+                                            itemprop="contentUrl">
+                                            <img src="images/homepage.png" alt="Version 2.0 interface" itemprop="thumbnail" />
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide" itemprop="associatedMedia" itemscope
+                                        itemtype="http://schema.org/ImageObject">
+                                        <a href="images/about.png" data-pswp-width="800" data-pswp-height="450" itemprop="contentUrl">
+                                            <img src="images/about.png" alt="Version 2.0 summary" itemprop="thumbnail" />
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide" itemprop="associatedMedia" itemscope
+                                        itemtype="http://schema.org/ImageObject">
+                                        <a href="images/gates.png" data-pswp-width="800" data-pswp-height="450" itemprop="contentUrl">
+                                            <img src="images/gates.png" alt="Version 2.0 story gates" itemprop="thumbnail" />
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide" itemprop="associatedMedia" itemscope
+                                        itemtype="http://schema.org/ImageObject">
+                                        <a href="images/v2_story.png" data-pswp-width="800" data-pswp-height="450"
+                                            itemprop="contentUrl">
+                                            <img src="images/v2_story.png" alt="Version 2.0 story page" itemprop="thumbnail" />
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide" itemprop="associatedMedia" itemscope
+                                        itemtype="http://schema.org/ImageObject">
+                                        <a href="images/saves.png" data-pswp-width="800" data-pswp-height="450" itemprop="contentUrl">
+                                            <img src="images/saves.png" alt="Version 2.0 save system" itemprop="thumbnail" />
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                
                             <ul class="version-list">
                                 <li>Three-page custom structure</li>
                                 <li>Save system (in progress)</li>
@@ -222,46 +272,55 @@
                                 <li>Atmospheric horror enhancements</li>
                             </ul>
                         </div>
-
                     </div>
                 </section>
 
-                <section class="story-mapping">
+                <section class="story-mapping gallery">
                     <h2 class="section-title decorated-title">Story Mapping</h2>
                     <p class="section-intro">
-                        Before any code was written, the story structure was carefully mapped across several stages — from loose
+                        Before any code was written, the story structure was carefully mapped across several stages —
+                        from loose
                         brainstorming to a full interactive diagram in Twine.
                     </p>
-                
+
                     <div class="story-map-grid">
                         <div class="story-card" data-aos="fade-up" data-aos-delay="100">
-                            <img src="images\a-night-at-home-notes-1.jpg" alt="Initial brainstorming" class="story-img">
+                            <a href="images/a-night-at-home-notes-1.jpg" data-pswp-width="600" data-pswp-height="600" itemprop="contentUrl">
+                                <img src="images/a-night-at-home-notes-1.jpg" alt="Initial brainstorming" class="story-img" itemprop="thumbnail" />
+                            </a>
                             <div class="story-content">
                                 <h3>Initial Brainstorming</h3>
-                                <p>Freeform sketches helped clarify the themes, tone, and major emotional beats. Early ideas centered on
+                                <p>Freeform sketches helped clarify the themes, tone, and major emotional beats. Early
+                                    ideas centered on
                                     fear response, curiosity, and decision paralysis.</p>
                             </div>
                         </div>
-                
+
                         <div class="story-card" data-aos="fade-up" data-aos-delay="100">
-                            <img src="images/Game Planning.png" alt="Preliminary diagram" class="story-img">
+                            <a href="images/Game Planning.png" data-pswp-width="600" data-pswp-height="600" itemprop="contentUrl">
+                                <img src="images/Game Planning.png" alt="Preliminary diagram" class="story-img" itemprop="thumbnail">
+                            </a>
                             <div class="story-content">
                                 <h3>Preliminary Map</h3>
-                                <p>This branching diagram laid out key choice points and structural pacing, allowing for early testing
+                                <p>This branching diagram laid out key choice points and structural pacing, allowing for
+                                    early testing
                                     of flow and player friction.</p>
                             </div>
                         </div>
-                
+
                         <div class="story-card" data-aos="fade-up" data-aos-delay="100">
-                            <img src="images/Twine.png" alt="Final Twine map" class="story-img">
+                            <a href="images/Twine.png" data-pswp-width="600" data-pswp-height="600" itemprop="contentUrl">
+                                <img src="images/Twine.png" alt="Final Twine map" class="story-img" itemprop="thumbnail">
+                            </a>
                             <div class="story-content">
                                 <h3>Final Twine Map</h3>
-                                <p>The final version was fully playable in Twine, showcasing 3 major paths and 5 possible endings. It
+                                <p>The final version was fully playable in Twine, showcasing 3 major paths and 5
+                                    possible endings. It
                                     served as the reference for all future implementation.</p>
                             </div>
                         </div>
                     </div>
-                </section>                  
+                </section>
 
                 <section class="dev-process alt-section">
                     <h2 class="section-title decorated-title">Development Process & Playtesting</h2>
@@ -380,49 +439,15 @@
                     </div>
                 </section>
 
-                <!--           
-                <div class="swiper">
-    <div class="swiper-wrapper" id="lightgallery">
-        <div class="swiper-slide">
-            <a href="images/homepage.png"> <!--data-lg-size="686-386"-->
-                <!--<img src="images/homepage.png" alt="version 2.0 homepage">
-            </a>
-        </div>
-        <div class="swiper-slide">
-            <a href="images/about.png">
-                <img src="images/about.png" alt="version 2.0 summary">
-            </a>
-        </div>
-        <div class="swiper-slide">
-            <a href="images/gates.png">
-                <img src="images/gates.png" alt="version 2.0 story gates">
-            </a>
-        </div>
-        <div class="swiper-slide">
-            <a href="images/saves.png">
-                <img src="images/saves.png" alt="version 2.0 save function">
-            </a>
-        </div>
-        <div class="swiper-slide">
-            <a href="images/v2_story.png" >
-                <img src="images/v2_story.png" alt="version 2.0 story page">
-            </a>
-        </div>
-    </div> -->
 
-                <!--Pagination-->
-                <!--     <div class="swiper-pagination"></div> 
---> <!--Navigation-->
-                <!--  <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div> -->
             </div>
-            <section class="cta-banner"  >
-                <h2 class="section-title decorated-title">Ready to experience the horror?</h2>
+            <section class="cta-banner">
+                <h2 class="section-title decorated-title">Ready to spend a Night at Home?</h2>
                 <a href="https://nadelaja.github.io/a-night-at-home-2.0/" target="_blank" class="demo-cta">
                     Play A Night at Home →
                 </a>
             </section>
-</div>
+        </div>
     </main>
 
     <button id="backToTop" title="Back to Top">↑</button>
@@ -432,23 +457,28 @@
         <p>&copy; 2025 Jummy Adelaja | All rights reserved</p>
     </footer>
 
-    <!-- swiper script  -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
-    <!-- lightgallery script -->
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.3/lightgallery.umd.min.js"></script>
 
     <script src="projectScript.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 600,
-            once: false
-        });
-    </script>
+    <!-- PhotoSwipe container -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"></div>
+
+<!-- PhotoSwipe -->
+<script type="module">
+    import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.js';
+
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: '.gallery',
+        children: 'a',
+
+        pswpModule: () => import('https://unpkg.com/photoswipe@5/dist/photoswipe.esm.js')
+    });
+    lightbox.init();
+</script>
 
 
 </body>
