@@ -4,22 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Broker Breaker - Action-Progression Game</title>
+    <title>Book Buddies - UX Research Case Study</title>
     <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="project2.css">
+
+    <!-- photoswipe CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.4.2/dist/photoswipe.css" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </head>
 
 <body data-page="project2">
     <nav class="nav-bar">
-<div class="nav-content" id="navContent">
-
-        <a href="../index.html" class="home-link">← Home</a>
+        <div class="nav-content" id="navContent">
+            <a href="../index.html" class="home-link">← Home</a>
             <div class="project-nav">
-                <a class="project2 project-link active" href="project2.html">Broker Breaker</a>
-                <a class="project1 project-link" href="project1.html">Order Up!</a>
                 <a class="project3 project-link" href="project3.html">A Night at Home</a>
+                <a class="project1 project-link" href="project1.html">Order Up!</a>
+                <a class="project2 project-link" href="project2.html">Book Buddies</a>
                 <a class="project4 project-link" href="project4.html">Green Mechanics</a>
                 <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
                     <i class="fa fa-bars"></i>
@@ -29,130 +37,249 @@
     </nav>
 
     <main class="main-content">
-        <header class="project-header">
-            <h1 class="project-title">Broker Breaker: <span class="version-badge">A Very New York Twin-Stick Shooter</span></h1>
-            <div class="project-subtitle">Digital Game / 2024 / Developer</div>
+        <header class="case-header">
+            <div class="case-intro">
+                <h1 class="case-title">Book Buddies: Fostering Literacy Through Peer Reading</h1>
+                <div class="case-role">UX Research / 2025 / Researcher & Designer</div>
+                <p class="case-summary">A solo UX research case study on engaging early readers through a peer-based
+                    literacy program at a local tutoring center.</p>
+            </div>
         </header>
 
-        <div class="project-info">
-            <div class="info-section">
-                <h3>Tools & Technologies</h3>
-                <p>Game Maker<br>Pixel Art<br>Sound Design<br>Game Design<br>Player Testing</p>
-            </div>
-            <div class="info-section">
-                <h3>Team</h3>
-                <p>Jummy Adelaja<br>Felicita Kowalski<br>Sanya Gupta<br>Pavlo Soldatov</p>
-            </div>
-            <div class="info-section">
-                <h3>Role & Responsibilities</h3>
-                <ul>
-                    <li>Game Design</li>
-                    <li>Sprite Creation</li>
-                    <li>Player Testing</li>
-                    <li>Programming & Implementation</li>
-                </ul>
-            </div>
-        </div>
+        <section class="project-info-alt alt-section">
+            <h2 class="section-title decorated-title">Project Overview</h2>
 
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="images/broker-breaker/initial-inspiration.png" alt="Initial game inspiration"
-                        class="lightbox-trigger">
+            <div class="info-cards">
+
+                <div class="info-card">
+                    <div class="info-meta">Primary Goal</div>
+                    <p>Boost reading engagement and comprehension in students ages 7–10 through a peer collaboration
+                        model.</p>
                 </div>
-                <div class="swiper-slide">
-                    <img src="images/broker-breaker/gamemaker-first.png" alt="First attempt at Game Maker"
-                        class="lightbox-trigger">
+
+                <div class="info-card">
+                    <div class="info-meta">Tools</div>
+                    <ul>
+                        <li>Interviews</li>
+                        <li>Contextual Inquiry</li>
+                        <li>Concept Mapping</li>
+                        <li>Prototyping</li>
+                    </ul>
                 </div>
-                <div class="swiper-slide">
-                    <img src="images/broker-breaker/paper-prototype.png" alt="Paper prototyping phase"
-                        class="lightbox-trigger">
+
+                <div class="info-card">
+                    <div class="info-meta">Team</div>
+                    <p>Solo project with support from tutoring center staff and student participants.</p>
                 </div>
-                <div class="swiper-slide">
-                    <img src="images/broker-breaker/final-layout.png" alt="Final game layout" class="lightbox-trigger">
+
+                <div class="info-card">
+                    <div class="info-meta">Duration</div>
+                    <p>3 weeks<br><strong>Spring 2024</strong></p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="alt-section-2 problem" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="section-heading">Problem Space</h2>
+            <p class="section-description">Students lacked reading motivation and struggled with comprehension despite
+                interventions like tutoring.</p>
+            <div class="problem-grid"></div>
+            <div class="problem-card">
+                <div class="problem-content">
+                    <ul class="bullet-points">
+                        <li>Many upper elementary students show low motivation to read for pleasure and struggle
+                            with comprehension.</li>
+                        <li>Existing programs (e.g., book clubs, summer reading programs) lacked accountability and
+                            engagement.</li>
+                        <li>Minimal success with existing programs</li>
+                        <li>Literacy deficits persist despite frequent reading-related tutoring.</li>
+                    </ul>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
+        </section>
 
-        <div id="lightbox" class="lightbox hidden">
-            <span class="close">&times;</span>
-            <img class="lightbox-content" id="lightbox-image" alt="Enlarged View">
-        </div>
+        <section class="alt-section research">
+            <h2 class="section-heading">Research Plan & Methods</h2>
+            <p class="section-description">Conducted UX research with children aged 7–10 to uncover their reading habits
+                and
+                comprehension behaviors.</p>
+            <div class="media-grid">
+                <div class="media-card">
+                    <!-- <img src="images/book-buddies-interview.jpg" alt="Interview notes"> -->
+                    <h3>1-on-1 Interviews</h3>
+                    <p>Students shared book preferences, reading habits, and coping strategies for new vocabulary.</p>
+                </div>
+                <div class="media-card">
+                    <!-- <img src="images/book-buddies-tour.jpg" alt="Child-led walkthrough"> -->
+                    <h3>Child-led Walkthrough (Contextual Inquiry)</h3>
+                    <p>Observed real-time reading strategies and comprehension responses during classtime.</p>
+                </div>
+            </div>
+            <p class="section-description">Gained parent/guardian consent, minimized discomfort by using familiar,
+                friendly environments,
+                anonymized participant data</p>
+        </section>
 
-        <div class="project-description">
-            <h2>About the Project</h2>
-            <p>Broker Breaker is an action-progression PC game targeting casual gamers aged 8 and up. Set in the chaos
-                of Wall Street, players battle through waves of increasingly challenging enemies while managing
-                resources and upgrading their abilities, culminating in an epic boss battle.</p>
+        <section class="alt-section findings" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="section-heading">Key Findings</h2>
+            <div class="findings-grid">
+                <div class="findings-card">
+                    <div class="findings-content">
+                        <ul class="bullet-points">
+                            <li>5 of 7 students said they didn't read for fun; reading is seen as a chore not a choice.
+                            </li>
+                            <li>Most of the recently read/texts books were those they'd been assigned in class.</li>
+                            <li>Graphic novels are popular but not considered “real” reading by some students parents.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-            <h2>Core Gameplay</h2>
-            <p>The game follows a compelling loop where players spawn enemies, battle them, earn points, advance through
-                levels, and ultimately face the final boss. Players must survive increasingly difficult waves while
-                collecting resources and managing their abilities strategically.</p>
+                <div class="findings-card">
+                    <div class="findings-content">
+                        <ul class="bullet-points">
+                            <li>Poor comprehension strategies: students often skip to questions without reading the
+                                passage thoroughly.</li>
+                            <li>Several struggled when the answers were not very straight forward, drawing conclusions.
+                            </li>
+                            <li>Students are more motivated when reading socially or with peers.</li>
+                            <li>Fluency Issues.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <h2>Game Features</h2>
-            <ul>
-                <li>Multiple weapon types including red, blue, and white weapons, plus a special area attack ability
-                </li>
-                <li>Progressive difficulty system with six distinct stages of enemy spawning</li>
-                <li>Experience-based progression system using collectible rats that enhance player abilities</li>
-                <li>Three distinct enemy types with unique characteristics and behaviors</li>
-                <li>Epic final boss battle featuring special attacks and complex mechanics</li>
+        <section class="alt-section-2 ideation">
+            <h2 class="section-heading">Ideation & Concept Development</h2>
+
+            <div class="ideation-block" data-aos="fade-up" data-aos-delay="100">
+                <h3>Concept: Book Buddies</h3>
+                <p>A peer reading program designed to foster a love of reading and build comprehension in a fun,
+                    supportive environment. Students choose partners and books based on their interests, read together,
+                    and engage
+                    in structured discussions to deepen their understanding. It is an opportunity for students to take
+                    ownership of
+                    their reading journey and develop lifelong literacy skills via friendship and shared stories.</p>
+
+                <h3>Design Challenge</h3>
+                <p>Working to address student deficits in reading, comprehension and the lack of interest in
+                    reading at the tutoring center where I work. Are there more engaging ways to
+                    improve the reading vocabulary, fluency,and comprehension of our students
+                    while also fostering greater interest in reading?</p>
+
+                <blockquote><strong>"How might we inspire students to enjoy reading outside of school while also
+                        equipping them with the skills to comprehend diverse texts and draw meaningful conclusions?"
+                    </strong></blockquote>
+
+                <h3 class="sub-section">Impact Strategy</h3>
+            </div>
+            <div class="ideation-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="ideation-card">
+                    <h4>Inspiring Students to Enjoy Reading:</h4>
+                    <ul>
+                        <li>Paired reading makes literacy feel social and fun</li>
+                        <li>Student choice in partners and books increases ownership</li>
+                        <li>Reading becomes a shared experience rather than a solo task</li>
+                    </ul>
+                </div>
+                <div class="ideation-card">
+                    <h4>Building Comprehension Skills:</h4>
+                    <div></div>
+                    <p>Partners help each other interpret and ask questions</p>
+                    <p>Students reinforce comprehension strategies through peer discussion</p>
+                    <p>Shared accountability improves focus and fluency</p>
+                </div>
+                <div class="ideation-card">
+                    <div id="gallery">
+                        <h4>Concept Map</h4>
+                        <a href="images\book-buddies-concept-map.png" data-pswp-width="1234" data-pswp-height="895"
+                            itemprop="contentUrl">
+                            <img src="images\book-buddies-concept-map.png" alt="Book buddies Concept Map"
+                                itemprop="thumbnail">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="alt-section prototype" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="section-heading">Prototype</h2>
+            <div class="prototype-container">
+                <div class="prototype-description">
+                    <h3>Flyer Mockup</h3>
+                    <p>Intended to be distributed via email, this prototype announces the summer program and shares its
+                        goals with families. It's meant to test parent-facing
+                        communication and generate early interest.</p>
+                </div>
+                <div class="prototype-image" id="gallery">
+                    <a href="images/book-buddies-flyer-prototype.png" data-pswp-width="2250" data-pswp-height="3300"
+                        itemprop="contentUrl">
+                        <img src="images/book-buddies-flyer-prototype.png" alt="Newsletter flyer mockup"
+                            itemprop="thumbnail">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="alt-section-2 impact" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="section-heading">Goals</h2>
+            <ul class="bullet-points">
+                <li>Built enthusiasm for shared reading</li>
+                <li>Promoted comprehension strategies through conversation</li>
+                <li>Created sustainable habits beyond tutoring hours</li>
             </ul>
+        </section>
 
-            <h2>Development Process</h2>
-            <h3>Enemy Design & Progression</h3>
-            <p>The game features three main enemy types:</p>
-            <ul>
-                <li>Type 1: Balanced enemies with 100 HP and 0.6 movement speed</li>
-                <li>Type 2: Swift enemies with 50 HP and 1.1 movement speed</li>
-                <li>Type 3: Tank enemies with 300 HP and 0.3 movement speed</li>
-                <li>Final Boss: A formidable opponent with 5000 HP, special charging attacks, and unique mechanics</li>
-            </ul>
+        <section class="alt-section next-steps" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="section-heading">Next Steps</h2>
+            <div class="next-grid">
+                <div class="next-step">
+                    <h3>Runing a Pilot</h3>
+                    <p>Test the program with 8–10 pairs over a summer cycle and gather feedback.</p>
+                </div>
+                <div class="next-step">
+                    <h3>Tracking Results</h3>
+                    <p>Assess changes in reading fluency and interest before and after the program.</p>
+                </div>
+                <div class="next-step">
+                    <h3>Expanding Digitally</h3>
+                    <p>Prototype a simple app or site to log reading goals, partner check-ins, and reflections.</p>
+                </div>
+            </div>
+        </section>
 
-            <h2>Art and Visual Design</h2>
-            <p>The game features a detailed pixel art style with carefully crafted visual elements including:</p>
-            <ul>
-                <li>Character animations for movement, attacks, and weapon changes</li>
-                <li>Distinct weapon effects and projectiles</li>
-                <li>Environmental assets including buildings, lamp posts, and interactive elements</li>
-                <li>Dynamic UI elements showing health, weapons, and experience progress</li>
-            </ul>
-
-            <h2>Playtesting & Iterations</h2>
-            <p>Through multiple playtesting sessions, we refined the game based on player feedback:</p>
-
-            <h3>Key Improvements</h3>
-            <ul>
-                <li>Enhanced UI with weapon-specific colors and animations</li>
-                <li>Balanced rat spawn rates and collection mechanics</li>
-                <li>Adjusted enemy spawn rates and player health for better difficulty scaling</li>
-                <li>Added visual feedback for cooldowns and collectibles</li>
-                <li>Implemented automatic rat collection when in range</li>
-            </ul>
-
-            <h2>Controls & Gameplay</h2>
-            <p>The game features intuitive controls:</p>
-            <ul>
-                <li>Movement: WASD or arrow keys</li>
-                <li>Attack: Automatic firing toward mouse pointer</li>
-                <li>Weapon switching: Q or E keys</li>
-                <li>Special area attack: Space bar</li>
-            </ul>
-        </div>
     </main>
 
-    <button id="backToTop" title="Back to Top">↑</button>
-
+    <button id="backToTop" title="Back to Top">&#8593;</button>
     <footer class="footer">
-        <p>&copy; 2024 Jummy Adelaja. All rights reserved.</p>
+        <p>&copy; 2025 Jummy Adelaja | All rights reserved</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
     <script src="projectScript.js"></script>
+
+    <!-- PhotoSwipe container -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"></div>
+
+    <!-- PhotoSwipe -->
+    <script type="module">
+        import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.js';
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#gallery',
+            children: 'a',
+            pswpModule: () => import('https://unpkg.com/photoswipe@5/dist/photoswipe.esm.js')
+        });
+        lightbox.init();
+    </script>
+
+
 </body>
 
 </html>

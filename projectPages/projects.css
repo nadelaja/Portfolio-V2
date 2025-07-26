@@ -39,6 +39,66 @@ html {
     padding: 0 20px;
 }
 
+.alt-section {
+    background-color: #fef6fb;
+    padding: 60px 30px;
+    border-top: 3px solid #000;
+    margin-top: 60px;
+}
+
+.alt-section-2 {
+    background-color: #fff;
+    padding: 60px 30px;
+    border-top: 3px solid #000;
+    margin-top: 60px;
+}
+
+/* Section Titles */
+.section-title {
+    font-family: var(--header-font);
+    font-size: 2em;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.section-title.decorated-title::after {
+    content: "";
+    display: block;
+    margin-top: 10px;
+    width: 60px;
+    height: 4px;
+    background-color: var(--main-color);
+    animation: slide-in 0.5s ease;
+}
+
+.game-mechanics p,
+.game-mechanics li {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.game-mechanics ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.game-mechanics li {
+    margin-bottom: 8px;
+}
+
+
+@keyframes slide-in {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+
+    to {
+        width: 60px;
+        opacity: 1;
+    }
+}
 
 .home-link {
     font-size: 24px;
@@ -143,6 +203,7 @@ html {
     margin-bottom: 40px;
 }
 
+
 .outgoing-link {
     color: var(--main-color);
     font-weight: 900;
@@ -158,24 +219,63 @@ html {
     text-decoration-thickness: 3px;
 }
 
-.info-section {
-    background-color: #fff /*f0f0f0*/;
-    padding: 20px;
-    margin-right: 16px;
+/* Info Cards UPDATE*/
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.info-card {
+    background-color: #fff;
+    padding: 25px;
     border: 3px solid #000;
-    transform: translateX(10px);
     box-shadow: -3px -3px 0px #000;
+    transition: transform 0.3s ease;
 }
 
-.info-section h3 {
+.info-card:hover {
+    transform: translate(3px, 3px);
+}
+
+.info-meta {
     font-family: var(--header-font);
+    font-size: 0.95em;
+    color: #fff;
     background-color: var(--main-color);
-    padding-left: 5px;
-    color: var(--text-color);
-    margin-top: 0;
-    
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
+.info-card p,
+.info-card li {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.info-card ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.info-card li {
+    margin-bottom: 8px;
+}
+
+blockquote {
+    background-color: #fff;
+    border-left: 5px solid var(--main-color);
+    padding: 20px;
+    margin: 30px 0;
+    font-style: italic;
+    font-size: 1.1em;
+    color: #333;
+}
 
 .project-gallery {
     display: grid;
@@ -192,7 +292,6 @@ html {
         /*transform: translateX(10px);
             box-shadow: -3px -3px 0px #000;*/
 }
-
 
 img {
     width: 100%;
