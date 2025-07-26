@@ -30,10 +30,10 @@
 /* Alt Section */
 
 .alt-section {
-    background-color: #ddf4ff;
-    padding: 60px 30px;
-    border-top: 3px solid #000;
-    margin-top: 60px;
+  background-color: #ddf4ff;
+  padding: 60px 30px;
+  border-top: 3px solid #000;
+  margin-top: 60px;
 }
 
 /* .section {
@@ -68,44 +68,81 @@
 
 /* Findings Grid */
 .findings-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
 }
 
 .findings-card {
-    align-items: flex-start;
-    padding: 0px 20px;
-    gap: 20px;
-    border: 3px solid #000;
-    box-shadow: -3px -3px 0px #000;
-    transition: transform 0.3s ease;
-    background-color: #fff;
-    transition: transform 0.3s ease;
-
+  align-items: flex-start;
+  padding: 0px 20px;
+  gap: 20px;
+  border: 3px solid #000;
+  box-shadow: -3px -3px 0px #000;
+  transition: transform 0.3s ease;
+  background-color: #fff;
+  transition: transform 0.3s ease;
 }
 
 .findings-card:hover {
-        transform: translate(3px, 3px);
+  transform: translate(3px, 3px);
 }
 
 .findings-content {
-    padding: 10px;
-    min-height: 140px;
+  padding: 10px;
+  min-height: 140px;
 }
 
 .findings-content h3 {
-    font-family: var(--header-font);
-    color: var(--main-color);
-    font-size: 1.2em;
-    margin: 0 0 10px;
+  font-family: var(--header-font);
+  color: var(--main-color);
+  font-size: 1.2em;
+  margin: 0 0 10px;
 }
 
 .findings-content p {
-    font-size: 1em;
-    line-height: 1.6;
-    color: #333;
+  font-size: 1em;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Goals */
+.list-group {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.list {
+  position: relative;
+  border-left: 4px solid var(--main-color);
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.list-content h3 {
+  font-family: var(--header-font);
+  font-size: 0.9em;
+  text-transform: uppercase;
+  background-color: var(--main-color);
+  color: #fff;
+  display: inline-block;
+  padding: 4px 10px;
+  margin-bottom: 10px;
+  letter-spacing: 0.05em;
+}
+
+.list-content ul {
+  padding-left: 20px;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.list-content li {
+  margin-bottom: 8px;
+  color: #333;
 }
 
 .bullet-points {
@@ -134,7 +171,7 @@
 }
 
 .media-card img {
-  width:350px;
+  width: 350px;
   height: 450px;
   object-fit: fill;
 }
@@ -161,17 +198,17 @@ blockquote {
 
 .ideation-grid {
   display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
 }
 
 .ideation-card {
   align-items: flex-start;
-    padding: 0px 20px;
-    gap: 20px;
-    background-color: #ddf4ff;
-        padding: 20px;
+  padding: 0px 20px;
+  gap: 20px;
+  background-color: #ddf4ff;
+  padding: 20px;
 }
 
 .ideation-grid h4 {
@@ -190,8 +227,8 @@ blockquote {
 }
 
 .sub-section {
-  border-bottom:var(--main-color) solid 5px;
-  padding-bottom: 10px
+  border-bottom: var(--main-color) solid 5px;
+  padding-bottom: 10px;
 }
 
 .ideation-block p {
@@ -212,12 +249,11 @@ blockquote {
   margin: 0 auto;
   display: flex;
   gap: 40px;
-    max-width: auto;
+  max-width: auto;
 
   align-items: center;
   justify-content: center;
   flex-direction: column; /* Delete to return to 2 columns */
-
 }
 
 .prototype-image {
@@ -275,37 +311,36 @@ blockquote {
 } */
 
 .next-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
 }
 
 .next-step {
-    background-color: #fff;
-    border: 3px solid #000;
-    box-shadow: -3px -3px 0px #000;
-    padding: 25px;
-    transition: transform 0.3s ease;
+  background-color: #fff;
+  border: 3px solid #000;
+  box-shadow: -3px -3px 0px #000;
+  padding: 25px;
+  transition: transform 0.3s ease;
 }
 
 .next-step:hover {
-    transform: translate(3px, 3px);
+  transform: translate(3px, 3px);
 }
 
 .next-step h3 {
-    font-family: var(--header-font);
-    color: #000;
-    font-size: 1.2em;
-    margin-top: 0;
-    margin-bottom: 10px;
+  font-family: var(--header-font);
+  color: #000;
+  font-size: 1.2em;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .next-step p {
-    font-size: 1em;
-    line-height: 1.6;
-    color: #333;
+  font-size: 1em;
+  line-height: 1.6;
+  color: #333;
 }
-
 
 @media (max-width: 768px) {
   .prototype-container,
