@@ -1,0 +1,368 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boomer Beach - Board Game Design Case Study</title>
+
+        <link rel="stylesheet" href="projects.css">
+        <link rel="stylesheet" href="boomer.css">
+
+        <!-- hamberguger menu icon via font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    
+    <body data-page="project3">
+            <nav class="nav-bar">
+                <div class="nav-content" id="navContent">
+                    <a href="../index.html" class="home-link">← Home</a>
+                    <div class="project-nav">
+                        <a class="project3 project-link" href="project3.html">A Night at Home</a>
+                        <a class="project1 project-link" href="project1.html">Order Up!</a>
+                        <a class="project2 project-link" href="project2.html">Book Buddies</a>
+                        <a class="project4 project-link" href="project4.html">Green Mechanics</a>
+                        <a class="more-projects project-link" href="../oddsAndEnds.html">Odds & Ends</a>
+                        <a class="about project-link" href="../about.html">About</a>
+                        <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+    <main class="main-content">
+                <header class="case-study-header">
+                <div class="header-content">
+                    <div class="header-text">
+                        <h1 class="project-title">Boomer Beach</h1>
+                        <div class="project-subtitle">Board Game Design Case Study</div>
+                        <p class="header-description">Designing a Territory Control Game Through Iterative Playtesting</p>
+                    </div>
+                    <div class="header-cta">
+                        <a href="#overview" class="cta-button">View Case Study</a>
+                        <a href="#process" class="cta-button">Design Process</a>
+                    </div>
+                </div>
+            </header>
+    
+            <section  class="alt-section">
+                <h2 class="section-title decorated-title">Project Overview</h2>
+                <p class="section-intro">Boomer Beach features four "grumpy grannies and grandpas" competing to conquer
+                    territory on Virginia Beach, a land full of treasures buried under the sand. Scour the beach with metal detectors,
+                    searching for goods washed ashore by the tides. But players must be quick, balancing territorial
+                    expansion with treasure collection, all while racing against an inevitable tidal wave that will end the
+                    game.
+                </p>
+    
+                <div class="info-cards">
+                    <div class="info-card">
+                        <div class="info-meta">Challenge</div>
+                            <p>Design an engaging board game that combines territory control mechanics with treasure hunting
+                                in a beach setting, featuring elderly characters competing against time and environmental
+                                hazards.</p>
+                    </div>
+    
+                    <div class="info-card">
+                        <div class="info-meta">Core Mechanics</div>
+                            <ul>
+                                <li><strong>Territory Control:</strong> Players claim beach squares by moving through them
+                                </li>
+                                <li><strong>Resource Management:</strong> Limited movement points via dice rolls</li>
+                                <li><strong>Environmental Hazards:</strong> Dynamic water levels and random events</li>
+                                <li><strong>Time Pressure:</strong> Hidden tidal wave card creates urgency</li>
+                            </ul>
+                    </div>
+    
+                    <div class="info-card">
+                        <div class="info-meta">Team & Timeline</div>
+                            <p><strong>Team Size:</strong> 5 members (Feli, Jummy, Paris, Pavlo, Sanya)</p>
+                            <p><strong>Timeline:</strong> October 2024 (3 iterations over 3 weeks)</p>
+                            <p><strong>Setting:</strong> Virginia Beach</p>
+                    </div>
+    
+                    <div class="info-card">
+                        <div class="info-meta">Final Outcome</div>
+                            <p>A polished board game with balanced competitive and interactive elements, featuring 2-4
+                                player scalability and high replayability through variable treasure cards and event
+                                randomness.</p>
+                        </div>
+                </div>
+            </section>
+    
+
+            <section id="process" class="section alt-section">
+                <h2 class="section-title decorated-title">Design Process</h2>
+                <p class="section-intro">The development of Boomer Beach followed an iterative design approach with three
+                    major versions, each addressing specific gameplay and usability issues identified through playtesting.
+                </p>
+    
+                <div class="design-timeline">
+                    <div class="timeline-item">
+                        <div class="version-number">V1</div>
+                        <div class="timeline-content">
+                            <h3>Initial Concept</h3>
+                            <div class="version-date">October 7, 2024</div>
+                            <ul class="timeline-features">
+                                <li>Basic dice-based movement system</li>
+                                <li>Treasure cards with various effects</li>
+                                <li>Player interaction through territory contestation</li>
+                                <li>Hidden tidal wave mechanic</li>
+                            </ul>
+                            <div class="solution-tag">Issues: Overly complex rules, slow gameplay</div>
+                        </div>
+                    </div>
+    
+                    <div class="timeline-item">
+                        <div class="version-number">V2</div>
+                        <div class="timeline-content">
+                            <h3>Refinement</h3>
+                            <div class="version-date">October 14, 2024</div>
+                            <ul class="timeline-features">
+                                <li>Simplified treasure collection mechanics</li>
+                                <li>Introduced corner starting positions</li>
+                                <li>Added beach towel "safe zones"</li>
+                                <li>Streamlined player interaction rules</li>
+                            </ul>
+                            <div class="solution-tag">Remaining: Game length, turn pacing issues</div>
+                        </div>
+                    </div>
+    
+                    <div class="timeline-item">
+                        <div class="version-number">V3</div>
+                        <div class="timeline-content">
+                            <h3>Major Redesign</h3>
+                            <div class="version-date">October 21, 2024</div>
+                            <ul class="timeline-features">
+                                <li>Complete rulebook overhaul</li>
+                                <li>Refined wave mechanics with numbered cards (-2, -1, +1, +2)</li>
+                                <li>Introduced event cards (running dog, child, ice cream, energy drink)</li>
+                                <li>Established clear point system (1 point per territory, 5 points per treasure)</li>
+                                <li>Added final treasure reveal mechanic</li>
+                            </ul>
+                            <div class="solution-tag">Success: Balanced, engaging gameplay</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="section testing-section">
+                <h2 class="section-title">User Testing & Iteration</h2>
+                <p class="section-intro">The team conducted multiple playtests with detailed feedback collection, focusing
+                    on gameplay flow, rule clarity, player engagement, and balance between different mechanics.</p>
+    
+                <div class="test-results">
+                    <div class="test-card">
+                        <div class="test-label">Playtest #1</div>
+                        <h3>Initial Feedback</h3>
+                        <ul class="test-insights">
+                            <li>Game complexity overwhelmed new players</li>
+                            <li>Territory placement mechanics slowed gameplay significantly</li>
+                            <li>Players prioritized stealing territory over board coverage</li>
+                            <li>Event cards needed clearer instructions</li>
+                        </ul>
+                    </div>
+    
+                    <div class="test-card">
+                        <div class="test-label">Playtest #2</div>
+                        <h3>Refined Testing</h3>
+                        <ul class="test-insights">
+                            <li>Games ran too long due to insufficient tidal wave cards</li>
+                            <li>Wave timing needed adjustment for better flow</li>
+                            <li>Coordinate system needed on board for treasure placement</li>
+                            <li>Players forgot movement tracking, leading to confusion</li>
+                        </ul>
+                    </div>
+    
+                    <div class="test-card">
+                        <div class="test-label">Solutions</div>
+                        <h3>Implemented Fixes</h3>
+                        <ul class="test-insights">
+                            <li>Added simplified card instructions</li>
+                            <li>Created coordinate system for treasure placement</li>
+                            <li>Developed clearer rulebook structure</li>
+                            <li>Implemented wave card timing adjustments</li>
+                            <li>Added return-to-start penalty for cleared areas</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="section alt-section">
+                <h2 class="section-title">Design Challenges & Solutions</h2>
+                <p class="section-intro">Throughout development, the team encountered several key challenges that required
+                    creative solutions while maintaining the game's core vision and playability.</p>
+    
+                <div class="challenges-grid">
+                    <div class="challenge-card">
+                        <div class="challenge-number">01</div>
+                        <h3>Balancing Complexity with Accessibility</h3>
+                        <p><strong>Problem:</strong> Initial versions were too complex for casual players, overwhelming new
+                            players with too many mechanics and rules.</p>
+                        <p><strong>Solution:</strong> Streamlined mechanics while maintaining strategic depth through event
+                            cards and wave timing, creating layers of complexity that could be learned progressively.</p>
+                        <div class="solution-tag">Streamlined Design</div>
+                    </div>
+    
+                    <div class="challenge-card">
+                        <div class="challenge-number">02</div>
+                        <h3>Maintaining Engagement Throughout Game</h3>
+                        <p><strong>Problem:</strong> Early gameplay felt slow and disconnected from the treasure hunting
+                            theme, causing player interest to wane.</p>
+                        <p><strong>Solution:</strong> Integrated event cards for consistent variety and created mounting
+                            tension through wave mechanics that kept players engaged throughout the entire game.</p>
+                        <div class="solution-tag">Dynamic Events</div>
+                    </div>
+    
+                    <div class="challenge-card">
+                        <div class="challenge-number">03</div>
+                        <h3>Component Usability</h3>
+                        <p><strong>Problem:</strong> Territory pieces were difficult to handle and track, slowing down
+                            gameplay and causing player frustration.</p>
+                        <p><strong>Solution:</strong> Redesigned as 3D pieces with improved ergonomics and visual clarity,
+                            making the physical act of playing more enjoyable and efficient.</p>
+                        <div class="solution-tag">Physical Design</div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="section">
+                <h2 class="section-title">Final Game Components</h2>
+                <p class="section-intro">The final version includes carefully designed physical elements that support both
+                    gameplay mechanics and thematic immersion.</p>
+    
+                <div class="component-grid">
+                    <div class="component-item">
+                        <div class="component-image">🏖️</div>
+                        <div class="component-info">
+                            <h4>Game Board</h4>
+                            <p>8x12 grid representing beach terrain with coordinate system for treasure placement</p>
+                        </div>
+                    </div>
+    
+                    <div class="component-item">
+                        <div class="component-image">👵</div>
+                        <div class="component-info">
+                            <h4>Character Pieces</h4>
+                            <p>4 distinct elderly characters with unique personalities and backstories</p>
+                        </div>
+                    </div>
+    
+                    <div class="component-item">
+                        <div class="component-image">🏴</div>
+                        <div class="component-info">
+                            <h4>Territory Pieces</h4>
+                            <p>400 3D pieces in 4 colors (96 per player + extras) for improved handling</p>
+                        </div>
+                    </div>
+    
+                    <div class="component-item">
+                        <div class="component-image">🃏</div>
+                        <div class="component-info">
+                            <h4>Card Decks</h4>
+                            <p>Wave cards, Event cards, Character cards, and Treasure cards with clear instructions</p>
+                        </div>
+                    </div>
+    
+                    <div class="component-item">
+                        <div class="component-image">🎲</div>
+                        <div class="component-info">
+                            <h4>Dice & Accessories</h4>
+                            <p>2 dice and water level slider for visual tracking of game state</p>
+                        </div>
+                    </div>
+    
+                    <div class="component-item">
+                        <div class="component-image">💎</div>
+                        <div class="component-info">
+                            <h4>Treasures</h4>
+                            <p>6 physical treasure pieces with 10 different treasure cards for replayability</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="section alt-section">
+                <h2 class="section-title">Key Learnings</h2>
+                <p class="section-intro">The Boomer Beach project provided valuable insights into collaborative game design,
+                    iterative development, and the importance of user feedback in creating engaging experiences.</p>
+    
+                <div class="learning-grid">
+                    <div class="learning-card">
+                        <div class="learning-icon">🔄</div>
+                        <h3>Iterative Testing is Essential</h3>
+                        <p>Each playtest revealed critical issues not apparent in the design phase. Regular testing with
+                            diverse players helped identify problems early and validate solutions effectively.</p>
+                    </div>
+    
+                    <div class="learning-card">
+                        <div class="learning-icon">🎯</div>
+                        <h3>Component Design Matters</h3>
+                        <p>Physical usability significantly impacts gameplay experience. The transition to 3D territory
+                            pieces and improved visual design dramatically enhanced player satisfaction and game flow.</p>
+                    </div>
+    
+                    <div class="learning-card">
+                        <div class="learning-icon">📖</div>
+                        <h3>Rule Clarity is Paramount</h3>
+                        <p>Complex mechanics require extensive documentation and testing. Clear, accessible rules are as
+                            important as engaging gameplay mechanics for player adoption and enjoyment.</p>
+                    </div>
+    
+                    <div class="learning-card">
+                        <div class="learning-icon">🎨</div>
+                        <h3>Theme Enhancement</h3>
+                        <p>Strong thematic elements improve player engagement and memorability. The beach setting and
+                            elderly character theme created an immediately recognizable and charming experience.</p>
+                    </div>
+    
+                    <div class="learning-card">
+                        <div class="learning-icon">👥</div>
+                        <h3>Collaborative Design</h3>
+                        <p>Effective team collaboration with clear role distribution enabled comprehensive development.
+                            Different perspectives strengthened both mechanical design and thematic elements.</p>
+                    </div>
+    
+                    <div class="learning-card">
+                        <div class="learning-icon">⚖️</div>
+                        <h3>Balance Through Iteration</h3>
+                        <p>Game balance emerges through systematic testing and adjustment. Multiple iterations were
+                            necessary to achieve the right mix of strategy, luck, and player interaction.</p>
+                    </div>
+                </div>
+    </section>
+</main>
+
+    <button id="backToTop" title="Back to Top">↑</button>
+    
+    
+    <footer class="footer">
+    
+    </footer>
+    
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+    
+    <!-- PhotoSwipe container -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"></div>
+    
+    <!-- PhotoSwipe -->
+    <script type="module">
+        import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.js';
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '.gallery',
+            children: 'a',
+
+            pswpModule: () => import('https://unpkg.com/photoswipe@5/dist/photoswipe.esm.js')
+        });
+        lightbox.init();
+    </script>
+    
+    <!-- My Script -->
+    <script src="projectScript.js"></script>
+</body>
+</html>

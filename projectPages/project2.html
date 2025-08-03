@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="projects.css" />
     <link rel="stylesheet" href="project2.css" />
 
+    <!-- hamberguger menu icon via font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- photoswipe CSS -->
     <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.4.2/dist/photoswipe.css" />
 
@@ -17,6 +20,7 @@
     <!-- Swiper styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 
 <body data-page="project2">
@@ -24,10 +28,12 @@
         <div class="nav-content" id="navContent">
             <a href="../index.html" class="home-link">← Home</a>
             <div class="project-nav">
-                <a class="project3 project-link" href="project3.html">A Night at Home</a>
-                <a class="project1 project-link" href="project1.html">Order Up!</a>
                 <a class="project2 project-link" href="project2.html">Book Buddies</a>
+                <a class="project1 project-link" href="project1.html">Order Up!</a>
+                <a class="project3 project-link" href="project3.html">A Night at Home</a>
                 <a class="project4 project-link" href="project4.html">Green Mechanics</a>
+                <a class="more-projects project-link" href="../oddsAndEnds.html">Odds & Ends</a>
+                <a class="about project-link" href="../about.html">About</a>
                 <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -36,15 +42,15 @@
     </nav>
 
     <main class="main-content">
-        <header class="case-header">
-            <div class="case-intro">
-                <h1 class="case-title">
+        <header class="project-header">
+            <div class="project-intro">
+                <h1 class="project-title">
                     Book Buddies: Fostering Literacy Through Peer Reading
                 </h1>
-                <div class="case-role">
+                <div class="project-subtitle">
                     UX Research / 2025 / Researcher & Designer
                 </div>
-                <p class="case-summary">
+                <p class="header-description">
                     A solo UX research case study on engaging early readers through a
                     peer-based literacy program at a local tutoring center.
                 </p>
@@ -89,7 +95,7 @@
         </section>
 
         <section class="alt-section-2 problem" data-aos="fade-up" data-aos-delay="100">
-            <h2 class="section-heading">Problem Space</h2>
+            <h2 class="section-title decorated-title">Problem Space</h2>
             <p class="section-description">
                 Students lacked the motivation to read and struggled with comprehension
                 despite interventions like tutoring.
@@ -118,7 +124,7 @@
         </section>
 
         <section class="alt-section research" data-aos="fade-up" data-aos-delay="100">
-            <h2 class="section-heading">Research Plan & Methods</h2>
+            <h2 class="section-title decorated-title">Research Plan & Methods</h2>
             <p class="section-description">
                 Conducted UX research with children aged 7–10 to uncover their reading
                 habits and comprehension behaviors.
@@ -148,7 +154,7 @@
         </section>
 
         <section class="alt-section findings" data-aos="fade-up" data-aos-delay="100">
-            <h2 class="section-heading">Key Findings</h2>
+            <h2 class="section-title decorated-title">Key Findings</h2>
             <div class="findings-grid">
                 <div class="findings-card">
                     <div class="findings-content">
@@ -192,7 +198,7 @@
         </section>
 
         <section class="alt-section-2 ideation">
-            <h2 class="section-heading">Ideation & Concept Development</h2>
+            <h2 class="section-title decorated-title">Ideation & Concept Development</h2>
 
             <div class="ideation-block" data-aos="fade-up" data-aos-delay="100">
                 <h3>Concept: Book Buddies</h3>
@@ -259,7 +265,7 @@
         </section>
 
         <section class="alt-section prototype" data-aos="fade-up" data-aos-delay="100">
-            <h2 class="section-heading">Prototype: Flyer Mockup</h2>
+            <h2 class="section-title decorated-title">Prototype: Flyer Mockup</h2>
             <div class="prototype-container">
                 <div class="prototype-description">
                     <h3>Flyer Mockup</h3>
@@ -280,7 +286,7 @@
         </section>
 
         <section class="alt-section-2 impact" data-aos="fade-up" data-aos-delay="100">
-            <h2 class="section-heading">Goals</h2>
+            <h2 class="section-title decorated-title">Goals</h2>
             <div class="list-group">
                 <div class="list">
                     <div class="list-content">
@@ -295,7 +301,7 @@
         </section>
 
         <section class="alt-section next-steps" data-aos="fade-up" data-aos-delay="100">
-            <h2 class="section-heading">Possible Next Steps</h2>
+            <h2 class="section-title decorated-title">Possible Next Steps</h2>
             <div class="next-grid">
                 <div class="next-step">
                     <h3>Running a Pilot</h3>
@@ -324,15 +330,11 @@
 
     <button id="backToTop" title="Back to Top">&#8593;</button>
     <footer class="footer">
-        <p>&copy; 2025 Jummy Adelaja <br> All rights reserved</p>
+        <p>&copy; 2025 Jummy Adelaja<br>A web portfolio designed and built with 🍵</p>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-    <script src="projectScript.js"></script>
 
     <!-- PhotoSwipe container -->
     <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"></div>
@@ -349,6 +351,9 @@
         });
         lightbox.init();
     </script>
+
+    <!-- My Script -->
+    <script src="projectScript.js"></script>
 </body>
 
 </html>

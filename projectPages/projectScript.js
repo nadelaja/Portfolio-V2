@@ -1,7 +1,7 @@
 //document.addEventListener('DOMContentLoaded', () => {
 /*     Animate on Scoll */
 
-//hamburger menu 
+// Hamburger menu 
 window.hamburgerMenu = function () {
     var x = document.getElementById('navContent');
     if (x.className === 'nav-content') {
@@ -15,10 +15,12 @@ window.hamburgerMenu = function () {
 // Main color logic
 document.addEventListener('DOMContentLoaded', () => {
     const pageColorMap = {
-        project1: '#F9A8D4', // pink
-        project2: '#54a0ff',// blue
+        project1: '#F9A8D4', // orange
+        project2: '#f3769a',// salmon-pink?
         project3: '#783ddf', // purple
-        project4: '#1dd1a1', //green
+        project4: '#1dd1a1', // green
+        about: '#54a0ff', // blue
+        oddsAndEnds: '#ffc64c', //orange
     };
 
     const page = document.body.getAttribute('data-page');
@@ -35,12 +37,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// Animate on scroll
 AOS.init({
     duration: 600,
     once: false,
     startEvent: 'load'
 });
 
+//swiper
 const swiperV1 = new Swiper('#my-gallery', {
     loop: true,
     pagination: { 

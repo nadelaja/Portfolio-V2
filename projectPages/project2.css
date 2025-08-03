@@ -1,36 +1,7 @@
-/* Book Buddies Case Study Specific Styles */
-
-.case-header {
-  background-color: var(--main-color);
-  padding: 40px;
-  border: 3px solid #000;
-  box-shadow: -4px -4px 0 #000;
-  font-family: var(--header-font);
-}
-
-.case-title {
-  font-size: 2.8em;
-  margin: 0 0 10px;
-  color: var(--text-color);
-}
-
-.case-role {
-  font-size: 1.3em;
-  margin-bottom: 15px;
-  color: var(--text-color);
-}
-
-.case-summary {
-  font-size: 1.1em;
-  font-style: italic;
-  color: #000;
-  max-width: 700px;
-}
-
 /* Alt Section */
 
 .alt-section {
-  background-color: #ddf4ff;
+  background-color: #fef1f5;
   padding: 60px 30px;
   border-top: 3px solid #000;
   margin-top: 60px;
@@ -41,23 +12,6 @@
   border-top: 3px solid #000;
   background-color: #fefefe;
 } */
-
-.section-heading {
-  font-family: var(--header-font);
-  font-size: 2em;
-  color: var(--main-color);
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.section-heading::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 4px;
-  background-color: var(--main-color);
-  margin-top: 10px;
-}
 
 .section-description {
   font-size: 1.1em;
@@ -103,7 +57,7 @@
 
 .findings-content p {
   font-size: 1em;
-  line-height: 1.6;
+  line-height: 1.6em;
   color: #333;
 }
 
@@ -137,7 +91,7 @@
 .list-content ul {
   padding-left: 20px;
   margin-top: 10px;
-  line-height: 1.5;
+  line-height: 1.5em;
 }
 
 .list-content li {
@@ -150,7 +104,7 @@
   list-style: disc;
   color: #333;
   font-size: 1em;
-  line-height: 1.6;
+  line-height: 1.6em;
   max-width: 800px;
 }
 
@@ -187,13 +141,13 @@
   font-size: 1em;
   margin: 0 20px;
   color: #333;
-  line-height: 1.5;
+  line-height: 1.5em;
 }
 
 /* Ideation */
 
 blockquote {
-  background-color: #ddf4ff;
+  background-color: #fef1f5;
 }
 
 .ideation-grid {
@@ -207,7 +161,7 @@ blockquote {
   align-items: flex-start;
   padding: 0px 20px;
   gap: 20px;
-  background-color: #ddf4ff;
+  background-color: #fef1f5;
   padding: 20px;
 }
 
@@ -233,7 +187,7 @@ blockquote {
 
 .ideation-block p {
   font-size: 1.1em;
-  line-height: 1.6;
+  line-height: 1.6em;
 }
 
 .ideation-grid ul {
@@ -242,7 +196,7 @@ blockquote {
   margin-bottom: 20px;
   color: #333;
   font-size: 1em;
-  line-height: 1.6;
+  line-height: 1.6em;
 }
 /* Prototype*/
 .prototype-container {
@@ -297,7 +251,7 @@ blockquote {
 .prototype-description p {
   font-size: 1em;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.6em;
 }
 
 /* .design-question {
@@ -338,7 +292,7 @@ blockquote {
 
 .next-step p {
   font-size: 1em;
-  line-height: 1.6;
+  line-height: 1.6em;
   color: #333;
 }
 
