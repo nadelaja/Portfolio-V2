@@ -39,20 +39,20 @@ html {
     padding: 0 20px;
 }
 
-.alt-section {
+/* .alt-section {
     background-color: #fef6fb;
     padding: 60px 30px;
     border-top: 3px solid #000;
     margin-top: 60px;
-}
+} */
 
-/* .alt-section-2 {
+.alt-section-2 {
     background-color: #fff;
     padding: 60px 30px;
     border-top: 3px solid #000;
     margin-top: 60px;
 }
- */
+
 
 
 /* Section Titles */
@@ -147,12 +147,12 @@ html {
 }
 
 .project1:hover {
-    background-color: #F9A8D4;
+    background-color: #FF9F63;
     transform: scaleX(1.025);
 }
 
 .project2:hover {
-    background-color: #54a0ff;
+    background-color: #f3769a;
     transform: scaleX(1.025);
 }
 
@@ -363,9 +363,10 @@ img {
 }
 
 .footer {
+    font-family: var(--body-font);
     background-color: var(--main-color);
     padding: 15px;
-    border-top: var(--border-thickness) solid #000;
+    border-top: 3px solid #000;
 }
 
 .footer p{

@@ -2,11 +2,12 @@
 
 :root {
     --header-font: 'Unbounded', serif;
-    --body-font:'Archivo', sans-serif;
+    --body-font: 'Archivo', sans-serif;
 }
 
 /* About */
 .about-section {
+    background-color: #fff;
     padding: 60px 30px;
 }
 
@@ -27,9 +28,9 @@
 .about-image img {
     width: 280px;
     height: auto;
-    border: 3px solid #000;
+    /* border: 3px solid #000;
     box-shadow: -4px -4px 0px #000;
-    border-radius: 8px;
+    border-radius: 8px; */
     object-fit: cover;
 }
 
@@ -44,30 +45,43 @@
 .sub-title {
     text-align: center;
 }
-.my-email  {
+
+.my-email {
     text-decoration: none;
     font-size: 1.15em;
     font-weight: bold;
     font-family: var(--header-font);
+    text-align: center;
+}
+
+.my-email:hover {
+    color: var(--main-color);
+    font-style: italic;
+    transform: rotate(10deg);
+    transition: transform 0.3s ease;
 }
 
 .my-email a {
     text-decoration: none;
     color: var(--main-color);
     margin-top: 20px;
-    padding: 10px;
+    border-bottom: solid 3px var(--main-color);
+    padding: 0 10px;
 }
 
-.my-email a:hover{
+.my-email a:hover {
     color: var(--main-color);
     background-color: #fff3b0;
     font-style: italic;
+    padding: 0 10px;
 }
 
 .about-highlight {
     margin-top: 20px;
     /* font-weight: bold; */
-    background: #fff3b0/* #d5f5fc */;
+    background: #fff3b0
+        /* #d5f5fc */
+    ;
     border-left: 4px solid var(--main-color);
     padding: 10px 15px;
     font-family: var(--header-font, sans-serif);
@@ -95,6 +109,133 @@
     bottom: 0;
 }
 
+.thanks {
+    text-align: center;
+    line-height: 1.5em;
+    margin: 10px auto;
+    color: var(--text-color);
+    font-family: var(--header-font);
+    font-size: 1em;
+    background-color: #fff;
+    padding: 5px;
+    color: var(--main-color);
+}
+
+.thanks:hover {
+    background-color: #fff3b0;
+    font-style: italic;
+    width: 45%;
+}
+
+/* More Stuff */
+.for-you {
+    width: 75%;
+    margin: 0 auto;
+    flex: 2 1 400px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    /*     background-color: #d5f5fc;
+ */
+}
+
+.extra.small {
+    flex: 1 4 15%;
+    min-width: 180px;
+}
+
+article.small {
+    padding: 15px 20px;
+}
+
+.small {
+    flex: 1 2 40%;
+    min-width: 250px;
+}
+
+article {
+    background: #fff;
+    color: #333;
+    border: solid #000 3px;
+    padding: 20px;
+    margin: 15px;
+    max-width: 100%;
+    min-width: 200px;
+    flex: 1 1 100%;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+article:hover {
+    transform: translate(calc(3px * -1), calc(3px * -1));
+    box-shadow: -3px -3px 0 #000;
+}
+
+article h3 {
+    font-family: var(--header-font);
+    color: var(--main-color);
+}
+
+details summary::before,
+ul li::before {
+    position: absolute;
+    left: -15px;
+    font-style: normal;
+    color: var(--med);
+}
+
+ul li {
+    list-style: "\2605";
+    font-family: var(--body-font);
+    line-height: 1.75em;
+}
+
+li a::after {
+    content: "\2197";
+    color: var(--main-color);
+    font-size: .8em;
+    margin-left: .2em;
+    padding-left: .1em;
+    display: inline;
+    font-weight: bold;
+}
+
+a {
+    /* border-bottom: #d5f5fc 2px solid; */
+    color: var(--main-color);
+    padding: 5px;
+    text-decoration: dotted;
+    text-decoration-color: red;
+}
+
+li a:hover {
+    background-color: #d5f5fc;
+    padding: 5px;
+}
+
+.footer {
+    background-color: #fff;
+    padding: 30px 15px 30px 15px;
+    border-top: none;
+    color: var(--main-color);
+}
+
+.footer p {
+    text-align: center;
+    line-height: 1.5em;
+    margin: 0 auto;
+    color: var(--text-color);
+    font-family: var(--header-font);
+    font-size: medium;
+}
+
+.footer p:hover {
+    background-color: #fff3b0;
+    font-style: italic;
+    width: 35%;
+}
 
 /* Responsive tweaks */
 @media (max-width: 768px) {

@@ -15,7 +15,7 @@ window.hamburgerMenu = function () {
 // Main color logic
 document.addEventListener('DOMContentLoaded', () => {
     const pageColorMap = {
-        project1: '#F9A8D4', // orange
+        project1: '#ff9f63', // orange
         project2: '#f3769a',// salmon-pink?
         project3: '#783ddf', // purple
         project4: '#1dd1a1', // green

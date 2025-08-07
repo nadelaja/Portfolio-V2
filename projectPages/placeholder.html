@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Up! - A Card Game</title>
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body data-page="project1">
+    <nav class="nav-bar">
+        <div class="nav-content" id="navContent">
+            <a href="../index.html" class="home-link">← Home</a>
+            <div class="project-nav">
+                <a class="project1 project-link" href="project1.html">Order Up!</a>
+                <a class="project2 project-link" href="project2.html">Broker Breaker</a>
+                <a class="project3 project-link" href="project3.html">A Night at Home</a>
+                <a class="project4 project-link" href="project4.html">Green Mechanics</a>
+                <a class="more-projects project-link" href="../oddsAndEnds.html">Odds & Ends</a>
+                <a class="about project-link" href="../about.html">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header class="project-header">
+            <h1 class="project-title">Order Up! <span class="version-badge"></span></h1>
+            <div class="project-subtitle">Card Game Design / 2024 / Game Designer & Developer</div>
+        </header>
+
+        <div class="project-info">
+            <div class="info-section">
+                <h3>Game Components</h3>
+                <p>Recipe Cards (26)<br>Ingredient Cards (56)<br>Wild Cards (6)<br>Penalty Cards (6)</p>
+            </div>
+            <div class="info-section">
+                <h3>Gameplay</h3>
+                <p>2+ Players<br>Simultaneous Play<br>Fast-Paced Gameplay<br>~15-20 Minutes</p>
+            </div>
+            <div class="info-section">
+                <h3>Role & Responsibilities</h3>
+                <ul>
+                    <li>Game Design</li>
+                    <li>Playtesting</li>
+                    <li>Balancing</li>
+                    <li>Rule Development</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-gallery">
+            <img src="images\Order_up1.HEIC" alt="Game cards layout" class="gallery-image lightbox-trigger">
+            <img src="" alt="Gameplay example" class="gallery-image lightbox-trigger">
+            <img src="" alt="Card designs" class="gallery-image lightbox-trigger">
+        </div>
+
+        <div id="lightbox" class="lightbox hidden">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-image" alt="Enlarged View">
+        </div>
+
+        <section class="alt-section" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="section-title decorated-title">About the Project</h2>
+
+            <div class="project-description">
+                <p>Order Up! is a fast-paced card game where players compete as chefs to complete recipes using
+                    ingredient
+                    cards. Through a mix of strategic resource management and quick decision-making, players
+                    must balance the ingredients in their hand while watching out for penalty cards that could derail
+                    their
+                    progress. The game’s flexible structure also makes it suitable not only for
+                    casual play but for educational environments as well.</p>
+            </div>
+        </section>
+
+        <section class="alt-section-2" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="section-title decorated-title">Game Mechanics</h2>
+            <div class="game-mechanics">
+                <p>The core gameplay revolves around matching ingredient cards to recipe requirements. Players start
+                    with 7
+                    ingredient cards and compete to complete the currently revealed recipe. Special mechanics include:
+                </p>
+                <ul>
+                    <li>Wildcard "Fully Stocked Fridge" cards that can substitute any ingredient</li>
+                    <li>Penalty cards that force discards (One Star Review) or recipe forfeitures (Health Code
+                        Violation)</li>
+                    <li>Dynamic hand management with continuous drawing and discarding</li>
+                    <li>Simultaneous play format that encourages player interaction</li>
+                </ul>
+            </div>
+        </section>
+
+        <!--<div class="project-gallery">
+            <img src="" alt="Game cards layout" class="gallery-image lightbox-trigger">
+            <img src="" alt="Gameplay example" class="gallery-image lightbox-trigger">
+            <img src="" alt="Card designs" class="gallery-image lightbox-trigger">
+        </div>-->
+
+        <h2>Development Process</h2>
+        <p>Add section about developing game theme and the like</p>
+        <p>The game underwent significant evolution through multiple playtesting sessions:</p>
+
+        <h3>Initial Version</h3>
+        <p>The first iteration included trading mechanics and strict hand limits, which proved to slow down
+            gameplay. Early playtesting revealed issues with recipe completion difficulty and card distribution.</p>
+
+        <div class="project-gallery">
+            <img src="" alt="Card Prototypes" class="gallery-image lightbox-trigger">
+        </div>
+        <h3>Refinements</h3>
+        <p>Through iterative testing, several key improvements were made:</p>
+        <ul>
+            <li>Simplified recipe requirements for better game flow</li>
+            <li>Added wildcards to prevent gameplay stagnation</li>
+            <li>Introduced penalty cards for player interaction</li>
+            <li>Adjusted ingredient card distribution for better balance</li>
+            <li>Modified win conditions for more satisfying gameplay</li>
+        </ul>
+
+        <h2>Card Distribution</h2>
+        <p>The final game features carefully balanced card quantities:</p>
+        <ul>
+            <li>26 Recipe Cards with varying complexity</li>
+            <li>56 Ingredient Cards spread across 12 different types</li>
+            <li>6 Wildcard "Fully Stocked Fridge" cards</li>
+            <li>6 Penalty Cards (3 each of two types)</li>
+            <li>Recipe requirements ranging from 1-3 ingredients</li>
+        </ul>
+
+        <h2>Playtesting Insights</h2>
+        <p>Multiple playtesting sessions with 2-4 players revealed valuable insights:</p>
+        <ul>
+            <li>Need for clear rules about card placement and timing</li>
+            <li>Importance of round reset procedures</li>
+            <li>Balance between game speed and strategic depth</li>
+            <li>Accessibility considerations leading to planned illustrations</li>
+        </ul>
+
+        <h2>Future Development</h2>
+        <p>Current plans for further development include:</p>
+        <ul>
+            <li>Adding illustrations for improved accessibility</li>
+            <li>Upgrading to cardstock for better durability</li>
+            <li>Potential expansion with new recipe and ingredient combinations</li>
+            <li>Exploring additional special card mechanics</li>
+        </ul>
+        </div>
+    </main>
+    <button id="backToTop" title="Back to Top">↑</button>
+
+
+    <footer class="footer">
+        <p>&copy; 2024 Jummy Adelaja. All rights reserved.</p>
+    </footer>
+
+    <!--  Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="projectScript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</body>
+
+</html>

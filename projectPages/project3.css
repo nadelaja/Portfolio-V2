@@ -12,7 +12,7 @@
 }
 
 .header-description {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #fff;
     max-width: 600px;
     font-style: italic;
@@ -414,7 +414,6 @@
 
 /* Development Process - Playtesting*/
 .dev-process {
-    /* background-color: #fff; */
     padding: 60px 30px;
     margin-top: 60px;
 }
