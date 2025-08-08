@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="project1.css">
 
+    <!-- photoswipe CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.4.2/dist/photoswipe.css" />
+    
     <!-- hamberguger menu icon via font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -70,7 +73,7 @@
                     <ul>
                         <li><strong>Territory Control:</strong> Players claim beach squares by moving through them
                         </li>
-                        <li><strong>Resource Management:</strong> Limited movement points via dice rolls</li>
+                        <li><strong>Resource Management:</strong> Limited movement via dice rolls</li>
                         <li><strong>Environmental Hazards:</strong> Dynamic water levels and random events</li>
                         <li><strong>Time Pressure:</strong> Hidden tidal wave card creates urgency</li>
                     </ul>
@@ -78,7 +81,7 @@
 
                 <div class="info-card">
                     <div class="info-meta">Team & Timeline</div>
-                    <p><strong>Team Size:</strong> 5 members (Feli, Jummy, Paris, Pavlo, Sanya)</p>
+                    <p><strong>Team Size:</strong> 5 members</p>
                     <p><strong>Timeline:</strong> October 2024 (3 iterations over 3 weeks)</p>
                     <p><strong>Setting:</strong> Virginia Beach</p>
                 </div>
@@ -196,17 +199,17 @@
 
         <section class="section alt-section">
             <h2 class="section-title">Design Challenges & Solutions</h2>
-            <p class="section-intro">Throughout development, the team encountered several key challenges that required
-                creative solutions while maintaining the game's core vision and playability.</p>
+            <p class="section-intro">While developing the game, the team encountered several key challenges that required
+                creative solutions to maintain the game's core vision and playability.</p>
 
             <div class="challenges-grid">
                 <div class="challenge-card">
                     <div class="challenge-number">01</div>
                     <h3>Balancing Complexity with Accessibility</h3>
-                    <p><strong>Problem:</strong> Initial versions were too complex for casual players, overwhelming new
-                        players with too many mechanics and rules.</p>
-                    <p><strong>Solution:</strong> Streamlined mechanics while maintaining strategic gameplay with event
-                        cards and wave timing, creating  q game with layers of complexity that could be learned over time.</p>
+                    <p><strong>Problem:</strong> Initial versions were too complex for casual players, overwhelming them
+                        with too many mechanics and rules.</p>
+                    <p><strong>Solution:</strong> Streamlined game mechanics while maintaining strategic gameplay with event
+                        cards and wave timing, creating an engaging game that could be learned easily over time.</p>
                     <div class="solution-tag">Streamlined Design</div>
                 </div>
 
@@ -215,18 +218,18 @@
                     <h3>Maintaining Engagement Throughout the Game</h3>
                     <p><strong>Problem:</strong> Early gameplay felt slow and disconnected from the treasure hunting
                         theme.</p>
-                    <p><strong>Solution:</strong> Integrated event cards for consistent variety and created mounting
-                        tension through wave mechanics that kept players engaged throughout the entire game.</p>
+                    <p><strong>Solution:</strong>Kept players engaged throughout the game by integrating beach themed
+                        event cards for greater variety and creating tension with the wave mechanic.</p>
                     <div class="solution-tag">Dynamic Events</div>
                 </div>
 
                 <div class="challenge-card">
                     <div class="challenge-number">03</div>
                     <h3>Component Usability</h3>
-                    <p><strong>Problem:</strong> Territory pieces were difficult to handle and track, slowing down
-                        gameplay and causing player frustration.</p>
+                    <p><strong>Problem:</strong> The flat territory pieces were difficult to handle and track, slowing down
+                        gameplay and frustrating players.</p>
                     <p><strong>Solution:</strong> Redesigned them as 3D pieces, making the physical act 
-                        of playing more enjoyable and efficient.</p>
+                        of playing more efficient.</p>
                     <div class="solution-tag">Physical Design</div>
                 </div>
             </div>
@@ -237,17 +240,26 @@
             <p class="section-intro">The final version includes carefully designed  elements that support both
                 gameplay mechanics and our beach theme.</p>
 
-            <div class="component-grid">
+            <div class="component-grid" id="gallery">
                 <div class="component-item">
-                    <div class="component-image"><img src="images\beach-map.png"></div>
+                    <div class="component-image" >
+                        <a href="images\Game-Board-Grid.png" data-pswp-width="1080" data-pswp-height="1920" itemprop="contentUrl">
+                            <img src="images\Game-Board-Grid.png" alt="Newsletter flyer mockup" itemprop="thumbnail" />
+                        </a>
+                    </div>
                     <div class="component-info">
                         <h4>Game Board</h4>
-                        <p>8x12 grid representing beach terrain with coordinate system for treasure placement</p>
+                        <p>8x12 grid representing the beach with a coordinate system for treasure placement</p>
                     </div>
                 </div>
 
                 <div class="component-item">
-                    <div class="component-image">i need an image here lmaooooo bruh</div>
+                    <div class="component-image">
+                        <a href="images/Character-Pieces.jpg" data-pswp-width="1080" data-pswp-height="1920"
+                            itemprop="contentUrl">
+                            <img src="images/Character-Pieces.jpg" alt="Newsletter flyer mockup" itemprop="thumbnail" />
+                        </a>
+                    </div>
                     <div class="component-info">
                         <h4>Character Pieces</h4>
                         <p>4 distinct elderly characters with unique personalities and backstories</p>
@@ -258,7 +270,7 @@
                     <div class="component-image">i need an image here lmaooooo bruh</div>
                     <div class="component-info">
                         <h4>Territory Pieces</h4>
-                        <p>400 3D pieces in 4 colors (96 per player + extras) for improved handling</p>
+                        <p>400 3D pieces in 4 colors (96 per player + extras) for better handling</p>
                     </div>
                 </div>
 
@@ -274,7 +286,7 @@
                     <div class="component-image">i need an image here lmaooooo bruh</div>
                     <div class="component-info">
                         <h4>Dice & Accessories</h4>
-                        <p>2 dice and water level slider for visual tracking of game state</p>
+                        <p>2 dice and water level slider for visually tracking game states</p>
                     </div>
                 </div>
 
@@ -282,7 +294,7 @@
                     <div class="component-image">i need an image here lmaooooo bruh</div>
                     <div class="component-info">
                         <h4>Treasures</h4>
-                        <p>6 physical treasure pieces with 10 different treasure cards for replayability</p>
+                        <p>6 physical treasure pieces with 10 different treasure cards, each with unique coordinates</p>
                     </div>
                 </div>
             </div>
@@ -290,51 +302,52 @@
 
         <section class="section alt-section">
             <h2 class="section-title">Key Learnings</h2>
-            <p class="section-intro">The Boomer Beach project provided valuable insights into collaborative game design,
-                iterative development, and the importance of user feedback in creating engaging experiences.</p>
+            <p class="section-intro">I gained many valuable insights from the Boomer Beach Borad Game about collaborative game design,
+                iterative development, and the importance of user feedback in creating engaging user experiences.</p>
 
             <div class="learning-grid">
                 <div class="learning-card">
                     <div class="learning-icon"> i need an image here lmaooooo bruh </div>
                     <h3>Iterative Testing is Essential</h3>
                     <p>Each playtest revealed critical issues that were not apparent in the design phase. Regular testing with
-                        diverse players helped identify problems early and validate solutions.</p>
+                        diverse players helped us identify problems early on and validate propsed solutions.</p>
                 </div>
 
                 <div class="learning-card">
                     <div class="learning-icon"> i need an image here lmaooooo bruh </div>
                     <h3>Component Design Matters!
                     </h3>
-                    <p>Physical usability significantly impacts gameplay experience. The transition to 3D territory
-                        pieces and improved visual design,  enhanced player satisfaction, and game flow.</p>
+                    <p>A games physical usability can significantly impact a players gameplay experience. Our transition to 3D territory
+                        pieces and improved visual design, enhanced player satisfaction, and game flow.</p>
                 </div>
 
                 <div class="learning-card">
                     <div class="learning-icon"> i need an image here lmaooooo bruh </div>
                     <h3>Rule Clarity is Paramount</h3>
-                    <p>Complex game mechanics need extensive documentation and testing. Additonally, clear and accessible rules are as
-                        important as engaging gameplay mechanics for player enjoyment.</p>
+                    <p>Game mechanics need considerable documentation and testing. When it comes to the enjoyment of players 
+                        clear and accessible rules are as important as engaging gameplay mechanics.</p>
                 </div>
 
                 <div class="learning-card">
                     <div class="learning-icon"> i need an image here lmaooooo bruh </div>
                     <h3>Theme Enhancement and Integration</h3>
-                    <p>Strong thematic elements improve player engagement and memorability. The beach setting, themed cards and
-                        elderly character created an immediately recognizable and charming experience.</p>
+                    <p>Strong thematic elements improved player engagement and mkae the game more memorable. The beach setting, 
+                        themed cards and elderly characters all come together to created a unique and charming experience for the player.</p>
                 </div>
 
                 <div class="learning-card">
                     <div class="learning-icon"> i need an image here lmaooooo bruh </div>
                     <h3>Collaborative Design</h3>
-                    <p>Effective team collaboration with clear role distribution allowed for comprehensive development and rapid prototyping.
-                        Different perspectives aslo strengthened the games mechanical design and the integration of thematic elements.</p>
+                    <p>Collaboration and role distribution allowed us to rapidly prototype after each round of playtesting.
+                        Different perspectives aslo strengthened the games design and the way we integrated the beach and other themed elements.</p>
                 </div>
 
                 <div class="learning-card">
                     <div class="learning-icon"> i need an image here lmaooooo bruh </div>
                     <h3>Game Balance Through Iteration</h3>
-                    <p>Game balance emerges through systematic testing and adjustment. Multiple iterations were
-                        necessary to reach the right mix of strategy, luck, and player interaction.</p>
+                    <p>Game balance emerges through systematic testing and adjustment! Multiple iterations of development, 
+                        prototyping and playtesting were necessary in order to reach the right mix of strategy, luck, 
+                        and player interaction.</p>
                 </div>
             </div>
         </section>
@@ -359,7 +372,7 @@
         import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.js';
 
         const lightbox = new PhotoSwipeLightbox({
-            gallery: '.gallery',
+            gallery: '#gallery',
             children: 'a',
 
             pswpModule: () => import('https://unpkg.com/photoswipe@5/dist/photoswipe.esm.js')

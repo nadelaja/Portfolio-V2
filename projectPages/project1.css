@@ -286,7 +286,7 @@ body {
     text-transform: uppercase;
 }
 
-/* Component Showcase */
+/* Game Components */
 .component-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -296,33 +296,38 @@ body {
 
 .component-item {
     background-color: #fff;
-    border: var(--border-thickness) solid #000;
-    box-shadow: var(--box-shadow-offset) var(--box-shadow-offset) 0px #000;
+    /* border: var(--border-thickness) solid #000;
+    box-shadow: var(--box-shadow-offset) var(--box-shadow-offset) 0px #000; */
     overflow: hidden;
     transition: transform 0.3s ease;
+    
 }
 
 .component-item:hover {
     transform: translate(3px, 3px);
 }
 
-.component-image {
-    width: 50%;
-    height: 50%;
-    margin: auto 0;
-    background-color: #f8f8f8;
-    border-bottom: 2px solid #000;
+.component-item .component-image {
+    width: 100%;
+    height: 200px;
+    /* background-color: #f8f8f8; */
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-size: 3em;
-    margin: auto 0;
     color: var(--main-color);
 }
 
+/* Target the image inside more specifically */
+.component-item .component-image img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
 .component-info {
     padding: 20px;
+    border: var(--border-thickness) solid #000;
+        box-shadow: var(--box-shadow-offset) var(--box-shadow-offset) 0px #000;
 }
 
 .component-info h4 {
