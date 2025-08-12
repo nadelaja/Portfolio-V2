@@ -36,7 +36,6 @@
   box-shadow: -3px -3px 0px #000;
   transition: transform 0.3s ease;
   background-color: #fff;
-  transition: transform 0.3s ease;
 }
 
 .findings-card:hover {

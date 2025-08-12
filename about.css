@@ -78,10 +78,8 @@
 
 .about-highlight {
     margin-top: 20px;
-    /* font-weight: bold; */
     background: #fff3b0
-        /* #d5f5fc */
-    ;
+    /* #d5f5fc */;
     border-left: 4px solid var(--main-color);
     padding: 10px 15px;
     font-family: var(--header-font, sans-serif);
@@ -141,18 +139,23 @@
  */
 }
 
-.extra.small {
-    flex: 1 4 15%;
+.extra-small {
+    flex: 1 4 20%;
     min-width: 180px;
 }
 
-article.small {
+/* .extra-small {
+    flex: 1 4 15%;
+    min-width: 180px;
+} */
+
+article.small .article.extra-small {
     padding: 15px 20px;
 }
 
 .small {
-    flex: 1 2 40%;
-    min-width: 250px;
+    flex: 1 2 30%;
+    min-width: 200px;
 }
 
 article {

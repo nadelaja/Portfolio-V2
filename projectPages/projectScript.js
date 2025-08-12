@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         project3: '#783ddf', // purple
         project4: '#1dd1a1', // green
         about: '#54a0ff', // blue
-        oddsAndEnds: '#ffc64c', //orange
+        oddsAndEnds: '#ffc64c', //yellow
     };
 
     const page = document.body.getAttribute('data-page');

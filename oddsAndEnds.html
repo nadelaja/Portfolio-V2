@@ -13,8 +13,7 @@
 
 </head>
 
-<body data-page="about">
-
+<body data-page="oddsAndEnds">
     <nav class="nav-bar">
         <div class="nav-content" id="navContent">
             <a href="./index.html" class="home-link">← Home</a>
@@ -33,21 +32,100 @@
     </nav>
 
     <main class="main-content">
+        <h1>Odd & Ends</h1>
+        <div class="container">
+            <section class="order-up">
+                <button type="button" class="collapsible">Order Up</button>
+                <div class="project">
+                    <div class="left-side">
+                        <h3 class="project-title">About the Game</h3>
+                        <div class="project-description">
+                            <p>
+                                Order Up! is a fast-paced card game I desighed where players compete as chefs to
+                                complete recipes using
+                                ingredient cards. Through a mix of strategic resource management and quick
+                                decision-making, players
+                                try to balance the ingredients in their hand while watching out for penalty cards that
+                                could derail
+                                their progress.
+                            </p>
 
+                            <p><u>several rounds of playtesting, key improvements were made:</u></p>
+                            <ul>
+                                <li>Simplified recipe requirements for better game flow</li>
+                                <li>Added wildcards to prevent gameplay stagnation</li>
+                                <li>Introduced penalty cards for player interaction</li>
+                                <li>Adjusted ingredient card distribution for better balance</li>
+                                <li>Modified win conditions for more satisfying gameplay</li>
+                            </ul>
+
+                            <h3 class="project-type">Final Design</h3>
+                            <p><u>The final game features carefully balanced card distribution:</u></p>
+                            <ul>
+                                <li>Recipe requirements ranging from 1-3 ingredients</li>
+                                <li>26 Recipe Cards with varying complexity</li>
+                                <li>56 Ingredient Cards spread across 12 different types</li>
+                                <li>6 Wildcard "Fully Stocked Fridge" cards that can substitute any ingredient</li>
+                                <li>6 Penalty Cards that force discards (One Star Review) or recipe forfeitures (Health Code
+                                Violation)</li>
+                            </ul>
+                        </div>
+
+                        
+                        
+                    </div>
+                    <div class="gallery">
+                        <img src="projectPages/images/Order_up3.jpg" alt="Order Up Game Cards" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="illustrations">
+                <button type="button" class="collapsible">Broker Breaker:<br>A Very New York Twin-Stick Shooter</button>
+            </section>
+
+            <section class="honey-and-oats">
+                <button type="button" class="collapsible">Honey & Oats</button>
+            </section>
+
+            <section class="implicit-bias">
+                <button type="button" class="collapsible">Implicit Bias Information Pack</button>
+            </section>
+
+            <section class="illustrations">
+                <h2>Illustrations</h2>
+            </section>
+
+            <section class="illustrations">
+                <h2></h2>
+            </section>
+        </div>
     </main>
 
-<footer class="footer">
-    <p>&copy; 2025 Jummy Adelaja<br>A web portfolio designed and built by me!</p>
-</footer>
+    <footer class="footer">
+        <p>&copy; 2025 Jummy Adelaja<br>A web portfolio designed and built by me!</p>
+    </footer>
 
-        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
-        <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
 
-        <!-- Production -->
-        <script src="https://unpkg.com/@popperjs/core@2"></script>
-        <script src="https://unpkg.com/tippy.js@6"></script>
+    <!-- Production -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
 
-        <script src="script.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    content.classList.toggle("show");
+                });
+            }
+    </script>
 
 </body>
 
