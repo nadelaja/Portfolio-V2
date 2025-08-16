@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -21,6 +25,8 @@ body {
     grid-template-rows: 1fr auto;
 }
 
+h1 {
+}
 .main-content {
     width: 100%;
 }
@@ -31,7 +37,6 @@ body {
 }
 
 .collapsible {
-    background-color: #fff;
     font-family: var(--header-font);
     color: #000;
     cursor: pointer;
@@ -45,18 +50,33 @@ body {
 }
 
 .collapsible:hover {
-    background-color: #ff9f63;
     box-shadow: -3px -3px 0px #000;
     transition: transform 0.3s ease;
 }
 
+.order-up .collapsible { background-color: #ff9f63; }
+.order-up .collapsible:hover { background-color: #feba8f; }
+.order-up .collapsible.active {  background-color: #ff9f63; }
+.order-up .project { background-color: #ffece0; }
+
+.broker-breaker .collapsible { background-color: #54a0ff; }
+.broker-breaker .collapsible:hover { background-color: #89bdfc; }
+.broker-breaker .collapsible.active { background-color: #54a0ff; }
+.broker-breaker .project { background-color: #ddecff; }
+
+
+.illustrations .collapsible { background-color: #f3769a; }
+.illustrations .collapsible:hover { background-color: #f7b2c6; }
+.illustrations .collapsible.active { background-color: #f3769a; }
+.illustrations .project { background-color: #fde4eb; }
+
 .active {
-    background-color: #ff9f63;
     box-shadow: -3px -3px 0px #000;
     transition: transform 0.3s ease;
 }
 
 .project {
+    background-color: #ffece0;
     overflow: hidden;
     display: grid;
     font-family: var(--body-font);
@@ -70,11 +90,11 @@ body {
 
 .project.show {
     max-height: 1000px;
-    /* Adjust as needed */
     opacity: 1;
+    margin-bottom: 20px;
 }
 
-.project-title {
+h3, .project-title {
     font-size: 1.25em;
     color: #000;
     margin: 15px 0 0 0;
@@ -82,7 +102,7 @@ body {
 
 .project-description {
     font-size: 1em;
-    color: #444;
+    color: #333;
 }
 
 .project-description p {
@@ -90,19 +110,82 @@ body {
     margin-bottom: 5px;
 }
 
-.gallery {
-    display: flex;
-    align-items: center;
+#gallery {
+    width: 100%;
+    display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(525px, 1fr));
+        gap: 30px;
 } 
+
+.gallery-masonry {
+    column-count: 1;
+    column-gap: 16px;
+        width: 100%;
+}
+
+@media (min-width: 600px) {
+    .gallery-masonry {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 900px) {
+    .gallery-masonry {
+        column-count: 3;
+    }
+}
+
+.gallery-masonry a {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 16px;
+    break-inside: avoid;
+    overflow: hidden;
+}
+
+.gallery-masonry img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
 img {
     width: 100%;
-    height: auto;
+    height: 400px;
     object-fit: contain;
 }
 
+/* Video */
+.video-js {
+    width: 100%;
+    height: 50%;
+}
+
+.vjs-control-bar {
+    background-color: #54a0ff !important;
+}
+
+/* Text/icons inside the control bar */
+.vjs-control-bar .vjs-control {
+    color: #000 !important;
+}
+
+.video-js .vjs-big-play-button {
+    background-color: #54a0ff !important;
+    border: 3px solid #54a0ff !important;
+    border-radius: 50%;
+    font-size: 2em;
+    width: 40px;
+    height: 40px;
+}
+
+/* Play icon */
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+    color: #000;
+}
+
 .footer {
-    background-color: #ffc64c;
+    background-color: var(--main-color);
     padding: 15px;
     border-top: 3px solid #000;
     margin-bottom: -50px;
@@ -112,4 +195,152 @@ img {
     text-align: center;
     line-height: 1.5em;
     color: var(--text-color);
+}
+
+@media screen and (max-width: 768px) {
+
+    .collapsible {
+        font-size: 1.2em;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    h3,
+    .project-title {
+        font-size: 1.1em;
+    }
+
+    .project-description {
+        font-size: 0.9em;
+    }
+
+    .project {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px;
+        max-height: 0;
+    }
+
+    .project.show {
+        max-height: 2000px;
+    }
+
+    #gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    img {
+        width: 100%;
+        height: 250px;
+        object-fit: contain;
+    }
+
+    .video-js {
+        height: 200px;
+    }
+
+    .video-js .vjs-big-play-button {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5em;
+    }
+
+    .footer {
+        padding: 12px;
+    }
+
+    .footer p {
+        font-size: 0.9em;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .collapsible {
+        font-size: 1.1em;
+        padding: 12px;
+    }
+
+    .project {
+        padding: 12px;
+        gap: 15px;
+    }
+
+    img {
+        height: 200px;
+    }
+
+    .video-js {
+        height: 180px;
+    }
+}
+
+/* Medium screens (tablets) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .collapsible {
+        font-size: 1.3em;
+        padding: 16px;
+    }
+
+    .project {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        padding: 18px;
+    }
+
+    #gallery {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    img {
+        height: 300px;
+    }
+}
+
+/* Landscape orientation on mobile */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .video-js {
+        height: 250px;
+    }
+
+    img {
+        height: 220px;
+    }
+
+    .project {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .project {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding: 20px 18px;
+    }
+
+    #gallery {
+        grid-template-columns: repeat(auto-fit, minmax(525px, 1fr));
+    }
+
+    img {
+        height: 400px;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .collapsible {
+        padding: 20px;
+        font-size: 1.2em;
+    }
+
+    .collapsible:hover {
+        /* Remove hover effects on touch devices */
+        box-shadow: none;
+        background-color: inherit;
+    }
+
 }

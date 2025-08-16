@@ -44,7 +44,9 @@ AOS.init({
     startEvent: 'load'
 });
 
-//swiper
+// swipers
+
+// A Night At Home Gallery Swiper Carousel
 const swiperV1 = new Swiper('#my-gallery', {
     loop: true,
     pagination: { 
@@ -69,6 +71,7 @@ const swiperV2 = new Swiper('#my-gallery-v2', {
     },
 });
 
+// Green Mechanics Swiper Carousels
 const oldSwiper = new Swiper('.gm-old-swiper', {
     slidesPerView: 1,
     spaceBetween: 30,
