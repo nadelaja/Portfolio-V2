@@ -140,7 +140,7 @@
 }
 
 .extra-small {
-    flex: 1 4 20%;
+    flex: 1 4 30%;
     min-width: 180px;
 }
 
@@ -154,7 +154,7 @@ article.small .article.extra-small {
 }
 
 .small {
-    flex: 1 2 30%;
+    flex: 1 2 35%;
     min-width: 200px;
 }
 

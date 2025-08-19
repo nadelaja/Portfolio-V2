@@ -141,7 +141,7 @@ body {
     font-family: var(--header-font);
     font-size: 1.2em;
     flex-shrink: 0;
-    width: 30px;
+    width: 55px;
     text-align: left;
     padding: 10px;
 }
