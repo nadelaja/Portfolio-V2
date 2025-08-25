@@ -26,6 +26,11 @@ body {
 }
 
 h1 {
+    font-size: 1.8em;
+}
+
+p {
+    font-size: 1em;
 }
 .main-content {
     width: 100%;
@@ -46,7 +51,7 @@ h1 {
     border: 3px solid #000;
     text-align: left;
     outline: none;
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 .collapsible:hover {
@@ -76,6 +81,7 @@ h1 {
 }
 
 .project {
+    width: 100%;
     background-color: #ffece0;
     overflow: hidden;
     display: grid;
@@ -88,8 +94,12 @@ h1 {
     transition: all 0.3s ease;
 }
 
+.project.gallery-only {
+    display: block;
+}
+
 .project.show {
-    max-height: 1000px;
+    max-height: 4000px;
     opacity: 1;
     margin-bottom: 20px;
 }
@@ -120,7 +130,8 @@ h3, .project-title {
 .gallery-masonry {
     column-count: 1;
     column-gap: 16px;
-        width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 @media (min-width: 600px) {
@@ -173,9 +184,9 @@ img {
 .video-js .vjs-big-play-button {
     background-color: #54a0ff !important;
     border: 3px solid #54a0ff !important;
-    border-radius: 50%;
+    border-radius: 15%;
     font-size: 2em;
-    width: 40px;
+    width: 70px;
     height: 40px;
 }
 
