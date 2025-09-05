@@ -79,7 +79,7 @@
 .about-highlight {
     margin-top: 20px;
     background: #fff3b0
-    /* #d5f5fc */;
+    /* #fff5c0 */;
     border-left: 4px solid var(--main-color);
     padding: 10px 15px;
     font-family: var(--header-font, sans-serif);
@@ -135,7 +135,7 @@
     flex-flow: row wrap;
     align-items: flex-start;
     align-content: flex-start;
-    /*     background-color: #d5f5fc;
+    /*     background-color: #fff5c0;
  */
 }
 
@@ -206,7 +206,7 @@ li a::after {
 }
 
 a {
-    /* border-bottom: #d5f5fc 2px solid; */
+    /* border-bottom: #fff5c0 2px solid; */
     color: var(--main-color);
     padding: 5px;
     text-decoration: dotted;
@@ -214,7 +214,7 @@ a {
 }
 
 li a:hover {
-    background-color: #d5f5fc;
+    background-color: #fff5c0;
     padding: 5px;
 }
 

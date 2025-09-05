@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
         project2: '#f3769a',// salmon-pink?
         project3: '#783ddf', // purple
         project4: '#1dd1a1', // green
-        project5: '#ffc64c', //yellow
-        about: '#54a0ff', // blue
+        project5: '#54a0ff', //blue
+        about: '#e66060', // red
     };
 
     const page = document.body.getAttribute('data-page');
