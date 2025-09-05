@@ -219,26 +219,9 @@ li a:hover {
 }
 
 .footer {
-    background-color: #fff;
-    padding: 30px 15px 30px 15px;
-    border-top: none;
-    color: var(--main-color);
+    margin-top: 100px;
 }
 
-.footer p {
-    text-align: center;
-    line-height: 1.5em;
-    margin: 0 auto;
-    color: var(--text-color);
-    font-family: var(--header-font);
-    font-size: medium;
-}
-
-.footer p:hover {
-    background-color: #fff3b0;
-    font-style: italic;
-    width: 35%;
-}
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
