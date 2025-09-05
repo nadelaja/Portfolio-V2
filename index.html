@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">  
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>It's Me Jummy | Jummy Adelaja's Web Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -19,34 +19,38 @@
             <span class="arrow-right">&#8594;</span>
             <span class="arrow-down">&#8595;</span>
         </div>
-        
+
         <div class="box title">
-            DESIGNER +<br>RESEARCHER
+            PRODUCT DESIGNER +<br>RESEARCHER
         </div>
-        
+
         <div class="box clickable-box about">
             <a href="about.html">About Me</a>
         </div>
 
-        <div class="box project1 clickable-box">
-            <a href="projectPages/project1.html" id="myButton">Boomer Beach</a>
+        <div class="box project1 clickable-box" id="a">
+            <a href="projectPages/project1.html">Boomer Beach</a> <!-- id="myButton" -->
         </div>
 
-        <div class="box project2 clickable-box">
-            <a href="projectPages/project2.html">Book Buddies<!-- Broker Breaker:<br>A Very New York Twin-Stick Shooter --></a>
+        <div class="box project2 clickable-box" id="b">
+            <a href="projectPages/project2.html">Book Buddies</a>
         </div>
 
-        <div class="box project3 clickable-box"  id="nightAtHome">
+        <div class="box project3 clickable-box" id="c">
             <a href="projectPages/project3.html">A Night At Home</a>
-        </div> 
+        </div>
 
-        <div class="box project4 clickable-box">
+        <div class="box project4 clickable-box" id="d">
             <a href="projectPages/project4.html">Green Mechanics Website Redesign</a>
         </div>
 
-        <div class="box more-projects clickable-box">
-            <a href="oddsAndEnds.html">ODDS & ENDS</a>
+        <div class="box project5 clickable-box" id="e">
+            <a href="projectPages/project5.html">Broker Breaker</a>
         </div>
+
+        <!--         <div class="box project5 clickable-box" id="e">
+            <a href="oddsAndEnds.html">testing</a>
+        </div> -->
 
         <div class="star">&#10022;</div>
         <div class="flower">&#10047;</div>
@@ -57,23 +61,23 @@
         <div class="box skills">DESIGN / UX / RESEARCH</div>
 
         <div class="box social-1 clickable-box social-icon">
-            <a href="path-to-your-resume.pdf" target="_blank">
+            <a href="Adelaja-Resume-ver1.pdf" target="_blank">
                 <i class="fas fa-file-alt"></i>
-                <span>Resume</span>
+                <span>Resume&#8599</span>
             </a>
         </div>
 
         <div class="box social-2 clickable-box social-icon">
             <a href="https://github.com/nadelaja" target="_blank">
                 <i class="fab fa-github"></i>
-                <span>Github</span>
+                <span>Github&#8599</span>
             </a>
         </div>
 
         <div class="box social-3 clickable-box social-icon">
             <a href="https://www.linkedin.com/in/nafisat-adelaja/" target="_blank">
                 <i class="fab fa-linkedin"></i>
-                <span>LinkedIn</span>
+                <span>LinkedIn&#8599</span>
             </a>
         </div>
     </div>
@@ -81,23 +85,18 @@
     <!-- Tippy Development -->
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
-    
+
     <!-- Tippy Production -->
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
 
     <script src="script.js"></script>
 
-        <script>
-            tippy('#a', {
-                content: 'My tooltip!',
-                placement: 'top',
-                arrow: true,
-                content: '<img src="projectPages/images/Twine.png" alt="Final Twine map" class="tippy-img" > ',
-                allowHTML: true,
-            });
-        </script>
-    
+    <script>
+
+
+    </script>
+
 </body>
 
 </html>

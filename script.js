@@ -1,4 +1,45 @@
-const modal = document.getElementById("projectModal");
+        tippy('#a', {
+            content: 'My tooltip!',
+            placement: 'top',
+            arrow: false,
+            content: 'Game Design | UX Design',
+            allowHTML: true,
+        });
+
+        tippy('#b', {
+            content: 'My tooltip!',
+            placement: 'top',
+            arrow: false,
+            content: 'UX Research ',
+            allowHTML: true,
+        });
+
+        tippy('#c', {
+            content: 'My tooltip!',
+            placement: 'top',
+            arrow: false,
+            content: 'Interactive Fiction | UI & UX Design',
+            /* content: '<img src="projectPages/images/homepage.png" alt="Final Twine map" class="tippy-img" > ', */
+            allowHTML: true,
+        });
+
+        tippy('#d', {
+            content: 'My tooltip!',
+            placement: 'top',
+            arrow: false,
+            content: 'UX Research & UI Design ',
+            allowHTML: true,
+        });
+
+        tippy('#e', {
+            content: 'My tooltip!',
+            placement: 'top',
+            arrow: false,
+            content: 'Digital Game | UI & UX Design',
+            allowHTML: true,
+        });
+
+/* const modal = document.getElementById("projectModal");
 const modalTitle = document.getElementById("modalTitle");
 const modalImage = document.getElementById("modalImage");
 const modalDescription = document.getElementById("modalDescription");
@@ -34,12 +75,13 @@ const projectDetails = {
 function openModal(projectId) {
     const project = projectDetails[projectId];
     modalTitle.textContent = project.title;
-    
+     */
+
     // Clear previous images
-    modalImageContainer.innerHTML = '';
+    //modalImageContainer.innerHTML = '';
     
     // Add new images
-    project.images.forEach(imageSrc => {
+/*     project.images.forEach(imageSrc => {
         const img = document.createElement('img');
         img.src = imageSrc;
         img.alt = project.title;
@@ -60,7 +102,7 @@ window.onclick = function(event) {
     if (event.target == modal) {
         closeModal();
     }
-}
+} */
 //rotating arrow funtion
 /*const arrow = document.querySelector('.arrow');
 const mediaQuery = window.matchMedia('(max-width: 1024px)');

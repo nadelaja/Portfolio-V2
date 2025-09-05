@@ -75,7 +75,7 @@ box-shadow: -3px -3px 0px #000;
 .project2 { grid-column: 6 / 9; grid-row: 3 / 5; font-size: 1.5vw; background-color: #f3769a; cursor: pointer}
 .project3 { grid-column: 1 / 3; grid-row: 5 / 7; font-size: 1.5vw; background-color: #783ddf; color: #f8f8f8; cursor: pointer;} /*783ddf 5f27cd 9723c9*/
 .project4  { grid-column: 3 / 5; grid-row: 5 / 7; font-size: 1.5vw; background-color: #1dd1a1; cursor: pointer; }
-.more-projects { grid-column: 5 / 8; grid-row: 5 / 7; font-size: 1.5vw; background-color: #ffc64c; padding:0; }
+.project5 { grid-column: 5 / 8; grid-row: 5 / 7; font-size: 1.5vw; background-color: #ffc64c; padding:0; }
 .star { grid-column: 8 / 9; grid-row: 5 / 7; color: #000; font-size: 10vw; transition: transform 1s ease-in-out; } 
 .flower { grid-column: 1/ 2; grid-row: 7/ 9; color: #000; font-size: 10vw; transition: transform 1s ease-in-out; } 
 .contact { grid-column: 2 / 4; grid-row: 7 / 9; font-size: 1.5vw; background-color: #ff9ff3; }
@@ -84,11 +84,17 @@ box-shadow: -3px -3px 0px #000;
 .social-2 { grid-column: 7 / 8; grid-row: 7 / 9; background-color: #F9A8D4; font-size: 1.5vw; }
 .social-3 { grid-column: 8 / 9; grid-row: 7 / 9; background-color: #5EEAD4; font-size: 1.5vw; }
 
+
+
 .tippy-content img {
-    width: 180px;
+    width: 250px;
     height: 180px;
 }
 
+.tippy-box[data-theme~='tomato'] {
+    background-color: tomato;
+    color: yellow;
+}
 .social-icon a {
     display: flex;
     flex-direction: column;
@@ -127,67 +133,6 @@ box-shadow: -3px -3px 0px #000;
     color: inherit;
 }
 
-/* Modal Styles */
-/*.modal {
-    display: none;
-    position: fixed;
-    z-index: 100;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.modal-content {
-    background-color: #f0f0f0;
-    margin: 5% auto;
-    padding: 20px;
-    /*border: 3px solid #000;*/
-    /* width: 85%;
-    max-width: 1100px;
-    box-shadow: 10px 10px 0px #000;
-}*/
-
-/*.close {
-    color: #000;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover {
-    color: #ff6b6b;
-}
-
-.modal-title {
-    font-size: 2em;
-    margin-bottom: 20px;
-    text-decoration: underline;
-}
-
-.modal-description {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.modal-image-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.modal-image {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    border: 2px solid #000;
-} */
-
         /* Media Queries */
         @media screen and (max-width: 1024px) {
             .container {
@@ -204,7 +149,7 @@ box-shadow: -3px -3px 0px #000;
             .project2 { grid-column: 3 / 5; grid-row: 4 / 6; font-size: 2.5vw; }
             .project3 { grid-column: 1 / 3; grid-row: 6 / 8; font-size: 2.5vw; }
             .project4 { grid-column: 3 / 5; grid-row: 6 / 8; font-size: 2.5vw; }
-            .more-projects { grid-column: 1 / 5; grid-row: 8 / 10; padding: 20px; font-size: 2.5vw;} 
+            .project5 { grid-column: 1 / 5; grid-row: 8 / 10; padding: 20px; font-size: 2.5vw;} 
             .star { grid-column: 1 / 2; grid-row: 10 / 11; font-size: 10vw; }
             .flower { grid-column: 2 / 3; grid-row: 10 / 11; font-size: 10vw; }
             .contact { grid-column: 3 / 5; grid-row: 10 / 12; font-size: 2.5vw; }
@@ -232,7 +177,7 @@ box-shadow: -3px -3px 0px #000;
             .project2 { grid-column: 2 / 3; grid-row: 4 / 6; font-size: 3vw; }
             .project3 { grid-column: 1 / 2; grid-row: 6 / 8; font-size: 3vw; }
             .project4 { grid-column: 2 / 3; grid-row: 6 / 8; font-size: 3vw; }
-            .more-projects { grid-column: 1 / 3; grid-row: 8 / 10; font-size: 3vw; padding: 20px;}
+            .project5 { grid-column: 1 / 3; grid-row: 8 / 10; font-size: 3vw; padding: 20px;}
             .star { grid-column: 1 / 2; grid-row: 10 / 11; font-size: 7vw; }
             .flower { grid-column: 2 / 3; grid-row: 10 / 11; font-size: 7vw; }
             .contact { grid-column: 1 / 3; grid-row: 11 / 13; font-size: 4vw; }
@@ -265,13 +210,12 @@ box-shadow: -3px -3px 0px #000;
             .title { grid-column: 1; grid-row: 3; font-size: 6.5vw; }
             .about { grid-column: 1; grid-row: 4; font-size: 5vw; }
             
-            .project1, .project2, .project3, .project4 { 
+            .project1, .project2, .project3, .project4, .project5 { 
                 grid-column: 1; 
                 grid-row: auto;
                 height: 100px;
                 font-size: 5vw;
             }
-            .more-projects { grid-column: 1; grid-row: auto; height: 100px; font-size: 5vw; }
 
             .star, .flower { 
                 grid-column: 1; 

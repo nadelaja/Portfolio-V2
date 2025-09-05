@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
         project2: '#f3769a',// salmon-pink?
         project3: '#783ddf', // purple
         project4: '#1dd1a1', // green
+        project5: '#ffc64c', //yellow
         about: '#54a0ff', // blue
-        oddsAndEnds: '#ffc64c', //yellow
     };
 
     const page = document.body.getAttribute('data-page');
@@ -30,7 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
         project1: '#000',
         project2: '#000',
         project3: '#fff',
-        project4: '#000'
+        project4: '#000',
+        project5: '#000'
     };
 
     document.documentElement.style.setProperty('--text-color', textColor[page]);

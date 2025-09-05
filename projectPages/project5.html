@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broker Breaker - Game Development Case Study</title>
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="project5.css">
+
+    <!-- photoswipe CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.4.2/dist/photoswipe.css" />
+
+    <!-- Swiper styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- hamberguger menu icon via font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- video js styles -->
+    <link href="//vjs.zencdn.net/8.23.3/video-js.min.css" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<body data-page="project5">
+    <nav class="nav-bar">
+        <div class="nav-content" id="navContent">
+            <a href="../index.html" class="home-link">← Home</a>
+            <div class="project-nav">
+                <a class="project5 project-link" href="project5.html">Broker Breaker</a>
+                <a class="project3 project-link" href="project3.html">A Night at Home</a>
+                <a class="project1 project-link" href="project1.html">Boomer Beach</a>
+                <a class="project2 project-link" href="project2.html">Book Buddies</a>
+                <a class="project4 project-link" href="project4.html">Green Mechanics</a>
+                <a class="about project-link" href="../about.html">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header class="project-header">
+            <div class="header-content">
+                <div class="project-intro">
+                    <h1 class="project-title">Broker Breaker</h1>
+                    <div class="project-subtitle">Digital Game / 2024 / Game Designer & Developer</div>
+                    <p class="header-description">A Wall Street-themed game where players battle through waves 
+                        of increasingly challenging enemies while managing resources and upgrading their abilities, all 
+                        culminating in an epic boss battle.</p>
+                </div>
+                <div class="header-cta">
+                    <a href="#game-demo" class="play-button">
+                        View Demo
+                        <span class="play-icon">▶</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <section class="project-info-alt alt-section">
+            <h2 class="section-title decorated-title">Project Overview</h2>
+
+            <div class="info-cards">
+
+                <div class="info-card">
+                    <div class="info-meta">Summary</div>
+                    <p>An arcade-style action game set in Wall Street chaos where players survive increasingly
+                        challenging waves of enemys, featuring a progression system and multiple weapon.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-meta">Tools Used</div>
+                    <ul>
+                        <li>GameMaker Studio</li>
+                        <li>Pixel Art Creation</li>
+                        <li>Sound Design (Pixabay)</li>
+                        <li>Paper Prototyping</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-meta">My Role</div>
+                    <ul>
+                        <li>Game Design & Mechanics</li>
+                        <li>Programming & Implementation</li>
+                        <li>Playtesting & Iteration</li>
+                    </ul>
+                </div>
+
+                <!-- <div class="info-card">
+                    <div class="info-meta">Target Audience</div>
+                    <p><strong>Platform:</strong> PC<br>
+                        <strong>Genre:</strong> Action-Progression<br>
+                        <strong>Age:</strong> Casual gamers, 8+
+                    </p>
+                </div> -->
+
+            </div>
+        </section>
+
+        <div class="game-demo" id="game-demo">
+            <h2 class="section-title decorated-title">Game Experience</h2>
+
+            <div class="demo-container">
+                <div class="demo-text">
+                    <p>Navigate the chaos of Wall Street as you battle through waves of increasingly challenging
+                        enemies. Master four different weapon types, collect experience points, and survive long enough
+                        to face the final boss.</p>
+                    <strong><p>The core gameplay loop: </strong><strong style="color: #ffc64c;">Spawn enemies → Battle enemies → Collect points (rats) → Advance levels →
+                            Face the boss → Victory/Defeat</strong></p>
+                    <!-- <div class="demo-features">
+                        <span class="feature-tag">Progressive Difficulty</span>
+                        <span class="feature-tag">Multiple Weapons</span>
+                        <span class="feature-tag">Experience System</span>
+                        <span class="feature-tag">Boss Battles</span>
+                    </div> -->
+                </div>
+
+                <div class="demo-visual">
+
+                        <div class="preview-content">
+                            <video class="video-js vjs-default-skin" controls preload="auto" width="100%" height="100%" data-setup='{}'>
+                                <source src="videos\Broker-Breaker-Demo.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+        <section class="technical-implementation alt-section">
+            <h2 class="section-title decorated-title">Game Mechanics & Systems</h2>
+            <p class="section-intro">
+                The games carefully balanced progression system.
+            </p>
+
+            <div class="tech-stages">
+                <div class="tech-step">
+                    <h3>Enemy Progression System</h3>
+                    <p><strong>Type 1:</strong> Basic enemies (100 HP, 0.6 speed)<br>
+                        <strong>Type 2:</strong> Fast enemies (50 HP, 1.1 speed)<br>
+                        <strong>Type 3:</strong> Tank enemies (300 HP, 0.3 speed)<br>
+                        <strong>Final Boss:</strong> Special charging attacks (5000 HP, 0.6 speed)
+                    </p>
+                </div>
+                <div class="tech-step">
+                    <h3>Weapon Arsenal</h3>
+                    <p><strong>Red Weapon (Fire):</strong> High damage output<br>
+                        <strong>Blue Weapon (Water/Ice):</strong> Balanced stats<br>
+                        <strong>White Weapon (Air):</strong> Rapid fire<br>
+                        <strong>Area Attack (Earth):</strong> Multi-target damage
+                    </p>
+                </div>
+                <div class="tech-step">
+                    <h3>Experience & Progression</h3>
+                    <p>Rat collectibles provide experience points with dynamic drop rates. Six player levels unlock
+                        weapon upgrades, with decreasing rat probability as players advance (75% → 16.667%).</p>
+                </div>
+                <div class="tech-step">
+                    <h3>Difficulty Scaling</h3>
+                    <p>Six distinct stages with evolving enemy spawn probabilities. Stage 1: 100% Type 1 enemies → Stage
+                        6: Boss battle with all regular enemies cleared.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="alt-section">
+            <h2 class="section-title decorated-title">Development Journey</h2>
+            <p class="section-intro">From initial brainstorming to polished gameplay, the development process involved
+                multiple iterations and creative problem-solving.</p>
+
+            <div class="version-comparison-v2" id="gallery">
+                <!-- Brainstorming -->
+                <div class="version-evolution version-block">
+                    <div class="version-meta old">
+                        <h3>Brainstorming</h3>
+                        <p class="version-tag">Concept</p>
+                    </div>
+                    <div class="placeholder-content">
+                        <a itemprop="contentUrl" href="images\Broker-Breaker-First-Ideas.png" data-pswp-width="3347" data-pswp-height="2275">
+                            <img src="images\Broker-Breaker-First-Ideas.png" alt="Brainstorming" itemprop="thumbnail" />
+                        </a>
+                    </div>
+                    <ul class="version-list">
+                        <li>Game inspiration</li>
+                        <li>Wall Street theme</li>
+                        <li>Basic progression ideas</li>
+                        <li>Enemy type brainstorming</li>
+                    </ul>
+                </div>
+
+                <div class="version-arrow">
+                    <span>&#10142;</span>
+                </div>
+
+                <!-- Paper Prototyping -->
+                <div class="version-evolution version-block">
+                    <div class="version-meta">
+                        <h3>Paper Prototyping</h3>
+                        <p class="version-tag">Design</p>
+                    </div>
+                    <div class="placeholder-content">
+                        <a itemprop="contentUrl" href="images\Broker-Breaker-Paper-Prototype.png" data-pswp-width="1455" data-pswp-height="846">
+                            <img src="images\Broker-Breaker-Paper-Prototype.png" alt="Inital paper design" itemprop="thumbnail" />
+                        </a>
+                    </div>
+                    <ul class="version-list">
+                        <li>Gameplay flow testing</li>
+                        <li>Enemy spawn patterns</li>
+                        <li>Weapon balance design</li>
+                        <li>Experience curve planning</li>
+                    </ul>
+                </div>
+
+                <div class="version-arrow">
+                    <span>&#10142;</span>
+                </div>
+
+                <!-- Final Implementation -->
+                <div class="version-evolution version-block">
+                    <div class="version-meta new">
+                        <h3>Implementing GameMaker</h3>
+                        <p class="version-tag">Production</p>
+                    </div>
+                    <div class="test">
+                    <div class="placeholder-content">
+                        <a itemprop="contentUrl" href="images\Game with ui.png" data-pswp-width="774" data-pswp-height="521">
+                            <img src="images\Game with ui.png" alt="GameMaker implementation" itemprop="thumbnail" />
+                        </a>
+                    </div>
+                    <ul class="version-list">
+                        <li>Complete art</li>
+                        <li>Sprite Animation</li>
+                        <li>Sound effects & music</li>
+                        <li>UI/UX implementation</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="story-mapping alt-section-2" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="section-title decorated-title">Art & Asset Development</h2>
+            <p class="section-intro">
+                Broker Breaker's detailed character animations and environmental assets combine pixel 
+                art aesthetics with some magical chaos.
+            </p>
+
+            <div class="story-map-grid" id="gallery">
+                <div class="story-card">
+                    <div class="art-placeholder">
+                        <a itemprop="contentUrl" href="images\Character-range-attack.gif" data-pswp-width="1320" data-pswp-height="1046">
+                            <img src="images\Range-attack-crop.gif" alt="Charater gif" itemprop="thumbnail" />
+                        </a>
+                        <p>Main player animations, 3 enemy types, final boss with special moves</p>
+                    </div>
+                    <div class="story-content">
+                        <h3>Character Design</h3>
+                        <p>Created comprehensive animation sets including walking, attacking, death sequences, and
+                            boss-specific charging animations for dynamic gameplay.</p>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="art-placeholder">
+                        <a itemprop="contentUrl" href="images\Weapons-2x.png" data-pswp-width="1882" data-pswp-height="478">
+                            <img src="images\Weapons-2x.png" alt="Weapons menu" itemprop="thumbnail" />
+                        </a>
+                        <p>4 weapon types with unique visual effects and bullet animations</p>
+                    </div>
+                    <div class="story-content">
+                        <h3>Weapon Visuals</h3>
+                        <p>Designed distinctive weapon icons and bullet effects for each damage type, with UI
+                            integration showing active weapon status and cooldown timers.</p>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="art-placeholder">
+                        <a itemprop="contentUrl" href="images\Main-building.png" data-pswp-width="1406" data-pswp-height="706">
+                            <img src="images\Main-building.png" alt="Building example" itemprop="thumbnail" />
+                        </a>
+                        <p>Wall Street buildings, street clutter, and interactive elements</p>
+                    </div>
+                    <div class="story-content">
+                        <h3>Environmental Design</h3>
+                        <p>Built a dynamic Wall Street scene with lamp posts, plants, poles, fences, and trashcans
+                            to create an authentic urban battleground.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dev-process alt-section">
+            <h2 class="section-title decorated-title">Playtesting & Iteration</h2>
+            <p class="section-intro">Three rounds of focused playtesting sessions guided major design decisions and improvements:
+            </p>
+
+            <div class="process-steps">
+
+                <div class="process-step">
+                    <div class="step-content">
+                        <h3>Session 1: UI & Balance</h3>
+                        <ul>
+                            <li><strong>Feedback:</strong> UI colors should reflect weapon power/attack types</li>
+                            <li><strong>Feedback:</strong> Too many rats spawning, overwhelming the collection mechanic</li>
+                            <li><strong>Implementation:</strong> Added animated weapon UI boxes showing active selection
+                            </li>
+                            <li><strong>Implementation:</strong> Adjusted rat drop probability and spawn caps</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-content">
+                        <h3>Session 2: Clarity & Difficulty</h3>
+                        <ul>
+                            <li><strong>Feedback:</strong> Make cooldowns visible to players</li>
+                            <li><strong>Feedback:</strong> Game difficulty too high, reduce enemy spawns</li>
+                            <li><strong>Implementation:</strong> Added cooldown animations to UI</li>
+                            <li><strong>Implementation:</strong> Decreased spawn rates and increased player HP</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-content">
+                        <h3>Session 3: Polish & Feel</h3>
+                        <ul>
+                            <li><strong>Feedback:</strong> Add knock-back to prevent getting stuck</li>
+                            <li><strong>Feedback:</strong> Still need more player health</li>
+                            <li><strong>Implementation:</strong> Increased player HP to 300</li>
+                            <li><strong>Implementation:</strong> Explored knock-back mechanics</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="development-challenges alt-section">
+            <h2 class="section-title decorated-title">Technical Challenges & Solutions</h2>
+            <p class="section-intro">Developing Broker Breaker presented many unique challenges in balancing gameplay
+                mechanics, technical implementation, and user experience.
+            </p>
+
+            <div class="challenge-timeline">
+
+                <div class="challenge-item">
+                    <div class="challenge-label">Progressive Difficulty Balance</div>
+                    <div class="challenge-body">
+                        <!-- <h3>Progressive Difficulty Balance</h3> -->
+                        <p>Designing six enemy stages with distinct spawn probabilities required a lot of
+                            testing. Creating smooth difficulty progression while trying not to overwhelm was a challenge.</p>
+                    </div>
+                </div>
+
+                <div class="challenge-item">
+                    <div class="challenge-label">GameMaker Learning Curve</div>
+                    <div class="challenge-body">
+                        <!-- <h3>GameMaker Learning Curve</h3> -->
+                        <p>Working with GameMaker Studio presented some challenges, including system crashes and
+                            debugging complex sprite interactions. This required iterative problem-solving and extensive
+                            error handling.</p>
+                    </div>
+                </div>
+
+                <div class="challenge-item">
+                    <div class="challenge-label">Experience System Tuning</div>
+                    <div class="challenge-body">
+                        <!-- <h3>Experience System Tuning</h3> -->
+                        <p>Balancing the rat collection system and experience progression required multiple iterations.
+                            Early versions either dropped too many or too few, drop rates had to be carefully adjustment.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="reflection alt-section" data-aos="fade-up">
+            <h2 class="section-title decorated-title">What I Learned</h2>
+
+            <div class="learning-columns">
+                <div class="learning-point">
+                    <h3>Game Balance Design</h3>
+                    <p>Creating an engaging progression system requires careful math and comprehensive
+                        playtesting. Small changes in spawn rates or damage values can dramatically the affect player
+                        experience.</p>
+                </div>
+
+                <div class="learning-point">
+                    <h3>Iterative Development</h3>
+                    <p>User feedback was crucial for identifying the pain points that were invisible during development. Each
+                        playtesting session revealed specific areas for improvement that wouldn't have been apparent
+                        otherwise.</p>
+                </div>
+
+                <div class="learning-point">
+                    <h3>Technical Problem-Solving</h3>
+                    <p>Working with GameMaker taught a lot about patience when it comes to debuging and also the 
+                        impotance of patience when working with other programers</p>
+                        <!-- also the importance of
+                        building robust, testable game mechanics from the ground up. -->
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <button id="backToTop" title="Back to Top">↑</button>
+
+    <footer class="footer">
+        <p>&copy; 2025 Jummy Adelaja<br>A web portfolio designed and built by me!</p>
+    </footer>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Video js script -->
+    <script src="//vjs.zencdn.net/8.23.3/video.min.js"></script>
+
+    <!-- PhotoSwipe container -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"></div>
+
+    <!-- PhotoSwipe -->
+    <script type="module">
+        import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.js';
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#gallery',
+            children: 'a',
+
+            pswpModule: () => import('https://unpkg.com/photoswipe@5/dist/photoswipe.esm.js')
+        });
+        lightbox.init();
+    </script>
+
+    <!-- My Script -->
+    <script src="projectScript.js"></script>
+
+</body>
+
+</html>
