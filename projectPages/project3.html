@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- hamberguger menu icon via font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- video js styles -->
     <link href="//vjs.zencdn.net/8.23.3/video-js.min.css" rel="stylesheet">
@@ -35,8 +35,8 @@
                 <a class="project4 project-link" href="project4.html">Green Mechanics</a>
                 <a class="project5 project-link" href="project5.html">Broker Breaker</a>
                 <a class="about project-link" href="../about.html">About</a>
-                <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
-                    <i class="fa fa-bars"></i>
+                <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()" aria-label="Menu button">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
                 </a>
             </div>
         </div>
@@ -228,7 +228,7 @@
                                     <li class="swiper-slide" itemprop="associatedMedia" itemscope
                                         itemtype="http://schema.org/ImageObject">
                                         <a itemprop="contentUrl" href="images/homepage.png" data-pswp-width="800" data-pswp-height="450">
-                                            <img src="images/homepage.png" alt="Version 2.0 interface"
+                                            <img src="images/homepage.png" alt="Version 2.0 main interface"
                                                 itemprop="thumbnail" />
                                         </a>
                                     </li>
@@ -458,9 +458,22 @@
 
     <button id="backToTop" title="Back to Top">↑</button>
 
-
     <footer class="footer">
         <p>&copy; 2025 Jummy Adelaja<br>A web portfolio designed and built by me!</p>
+    
+        <div class="links">
+            <a href="\Adelaja-Resume-ver1.pdf" target="_blank" aria-label="Resume">
+                <i class="fas fa-file-alt" aria-hidden="true"></i>
+            </a>
+    
+            <a href="https://github.com/nadelaja" target="_blank" aria-label="GitHub profile">
+                <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+    
+            <a href="https://www.linkedin.com/in/nafisat-adelaja/" target="_blank" aria-label="LinkedIn profile">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </div>
     </footer>
 
     <!-- AOS -->

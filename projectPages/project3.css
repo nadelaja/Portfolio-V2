@@ -582,6 +582,10 @@ h2 {
     transform: translate(3px, 3px);
 }
 
+.links a:hover {
+    color: #000;
+}
+
 
 
 @media (max-width: 768px) {

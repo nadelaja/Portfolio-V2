@@ -377,6 +377,30 @@ img {
     color: var(--text-color);
 }
 
+.footer .links {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.40em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a i {
+    display: block;
+    /* or inline-block */
+}
+
+.links a {
+    color: var(--text-color);
+    padding: 0 10px;
+}
+
+.links a:hover {
+    color: #fff;
+}
+
 /* .lg-backdrop {
     background-color: rgba(0, 0, 0, 0.8) !important;
 } */
