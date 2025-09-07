@@ -205,12 +205,10 @@ li a::after {
     font-weight: bold;
 }
 
-a {
+li a {
     /* border-bottom: #fff5c0 2px solid; */
     color: var(--main-color);
     padding: 5px;
-    text-decoration: dotted;
-    text-decoration-color: red;
 }
 
 li a:hover {

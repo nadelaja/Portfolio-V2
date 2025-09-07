@@ -552,6 +552,11 @@ body {
         text-align: left;
     }
 
+    .demo-visual  {
+        width: auto;
+        height: auto;
+
+    }
     .gallery-wrap {
     padding: 0;
 }
