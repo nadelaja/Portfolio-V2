@@ -179,6 +179,7 @@ article:hover {
 article h3 {
     font-family: var(--header-font);
     color: var(--main-color);
+    font-size: .90em;
 }
 
 details summary::before,

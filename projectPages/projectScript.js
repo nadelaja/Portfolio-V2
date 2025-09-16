@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const pageColorMap = {
         project1: '#ff9f63', // orange
         project2: '#f3769a',// salmon-pink?
-        project3: '#783ddf', // purple
+        project3: '#783ddf', // purple - passes AAA
         project4: '#1dd1a1', // green
         project5: '#54a0ff', //blue
         about: '#e66060', // red
@@ -73,7 +73,7 @@ const swiperV2 = new Swiper('#my-gallery-v2', {
 });
 
 // Green Mechanics Swiper Carousels
-const oldSwiper = new Swiper('.gm-old-swiper', {
+/* const oldSwiper = new Swiper('.gm-old-swiper', {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -94,7 +94,7 @@ const oldSwiper = new Swiper('.gm-old-swiper', {
             slidesPerView: 2
         }
     }
-});
+}); */
 
 const newSwiper = new Swiper('.gm-new-swiper', {
     slidesPerView: 1,
