@@ -91,9 +91,23 @@ box-shadow: -3px -3px 0px #000;
     color: #ef6f68
 }
 
-.tippy-box[data-theme~='tomato'] {
-    background-color: tomato;
-    color: yellow;
+
+.tippy-box{ 
+    background-color: #000;
+    color: #f8f8f8;
+    border-radius: 0%;
+    /* background-color: tomato;
+    color: yellow; */
+}
+
+.tippy-content-wrapper {
+    text-align: center;
+}
+
+.tippy-img {
+    max-width: 400px;
+    margin-top: 8px;
+    /* border-radius: 4px; */
 }
 .social-icon a {
     display: flex;
