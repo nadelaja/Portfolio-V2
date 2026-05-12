@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Night At Home - Interactive Horror Experience Development Case Study</title>
+    <title>A Night At Home - UX Research & Interaction Design Case Study</title>
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="project3.css">
 
@@ -47,7 +47,7 @@
             <div class="header-content">
                 <div class="project-intro">
                     <h1 class="project-title">A Night At Home 2.0</h1>
-                    <div class="project-subtitle">Interactive Fiction UI & UX Design / 2024 / Writer & Developer</div>
+                    <div class="project-subtitle">Interaction Design & Iterative User Research / 2024 / Writer & Developer</div>
                     <p class="header-description">A branching narrative horror game where your choices shape the story
                         and determine your fate.</p>
                 </div>
@@ -96,7 +96,7 @@
                         <li>Narrative Design & Writing</li>
                         <li>UX & Choice Architecture</li>
                         <li>Front-end Development</li>
-                        <li>Playtesting & Iteration</li>
+                        <li>User Testing & Iteration</li>
                     </ul>
                 </div>
 
@@ -136,8 +136,7 @@
                     <h2 class="section-title decorated-title">Technical Implementation</h2>
                     <p class="section-intro">
                         The development of A Night at Home moved through multiple phases — from story planning to
-                        interactive
-                        prototyping and finally a custom-coded interface.
+                        interactive prototyping and finally a custom-coded interface.
                     </p>
 
                     <div class="tech-stages">
@@ -282,8 +281,7 @@
                     <h2 class="section-title decorated-title">Story Mapping</h2>
                     <p class="section-intro">
                         Before any technical implementation, the story structure was carefully mapped across several
-                        stages —
-                        from loose brainstorming to a full interactive diagram in Twine.
+                        stages — from loose brainstorming to a full interactive diagram in Twine.
                     </p>
 
                     <div class="story-map-grid">
@@ -332,9 +330,11 @@
                 </section>
 
                 <section class="dev-process alt-section">
-                    <h2 class="section-title decorated-title">Development Process & Playtesting</h2>
-                    <p class="section-intro">Each phase of development was guided by iterative feedback from players.
-                        Here's how the game evolved over time:
+                    <h2 class="section-title decorated-title">Development Process & User Testing</h2>
+                    <p class="section-intro">Each phase of development was guided by structured user testing sessions with 5–8 participants recruited from both my
+                    personal network and people unfamiliar with the project. Sessions combined direct observation, think-aloud, and
+                    written feedback collection — giving me behavioral data, in-the-moment reasoning, and reflective responses to
+                    triangulate across.
                     </p>
 
                     <div class="process-steps">
@@ -343,10 +343,18 @@
                             <div class="step-content">
                                 <h3>Early Testing</h3>
                                 <ul>
-                                    <li>Identified issues with passage length → split content into more digestible
-                                        chunks</li>
-                                    <li>Recommended integrating choices within the narrative, not just at the end of
-                                        passages</li>
+                                    <li>
+                                        Each phase of development was guided by structured user testing sessions with 5–8 participants recruited from both my
+                                        personal network and people unfamiliar with the project.
+                                    </li>
+                                    <li>
+                                        Sessions combined three methods: direct observation, think-aloud protocol, and written feedback collection. This gave me
+                                        behavioral data, in-the-moment reasoning, and reflective responses to triangulate across.
+                                    </li>
+                                    <li>
+                                        After each round, I reviewed session notes to identify recurring patterns before making any changes, treating user
+                                        testing as a genuine feedback loop rather than a final check.
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -355,9 +363,19 @@
                             <div class="step-content">
                                 <h3>Later Testing</h3>
                                 <ul>
-                                    <li>Further optimized text for better pacing</li>
-                                    <li>Suggested a "true bad ending" to amplify horror genre payoff</li>
-                                    <li>Validated final runtime (~10 minutes per route)</li>
+                                    <li>
+                                        In early sessions, I observed where players slowed down, reread passages, or disengaged — often without being able to
+                                        articulate why.
+                                    </li>
+                                    <li>
+                                        Think-aloud data revealed that dense passage lengths were breaking narrative immersion. Players were losing the thread
+                                        of tension before reaching a choice point.
+                                    </li>
+                                    <li>
+                                        Written feedback corroborated this, with multiple participants noting the story felt "slow to get going." These patterns
+                                        led to two decisions: splitting long passages into shorter beats, and integrating choices within the narrative rather
+                                        than holding them until the end.
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -366,8 +384,18 @@
                             <div class="step-content">
                                 <h3>Results & Impact</h3>
                                 <ul>
-                                    <li>Players consistently expressed a sense of agency and curiosity.</li>
-                                    <li>Players returned to explore new narrative paths.</li>
+                                    <li>
+                                        A second round focused on pacing at the macro level and genre payoff at the end.
+                                    <li>
+                                        Thematic analysis of feedback surfaced a consistent feeling that the story's resolution didn't fully deliver on the
+                                        dread built throughout — players wanted a more consequential "bad" ending. This directly informed the addition of a true
+                                        bad ending to satisfy horror genre expectations.
+                                    </li>
+                                    <li>
+                                        Final sessions validated runtime (~10 minutes per route) and confirmed players felt a sense of agency and investment in
+                                        replaying to explore alternate paths.
+                                    </li>
+                                </ul>
                             </div>
                         </div>
 
@@ -427,20 +455,25 @@
                     <div class="learning-columns">
                         <div class="learning-point">
                             <h3>Narrative Architecture</h3>
-                            <p>Designing branching narratives taught me how to maintain story cohesion while still
-                                giving players meaningful choices that shape tone, pacing, and outcome.</p>
+                            <p>Designing branching narratives taught me how structural decisions: where to place a choice, how much information to
+                            withhold all directly shape a player's emotional experience. What started as a writing challenge became a lesson in how
+                            information architecture drives user behavior and perception.</p>
                         </div>
 
                         <div class="learning-point">
-                            <h3>Technical Integration</h3>
-                            <p>Porting from Twine to a custom front-end pushed me to handle JSON structures, manage
-                                state persistence, and balance flexibility with usability.</p>
+                            <h3>Observation vs. Self-Report</h3>
+                            <p>Running sessions with both think-aloud observation and written feedback revealed a consistent gap between what players
+                            experienced in the moment and what they remembered afterward. Players would narrate confusion or hesitation while
+                            playing, then rate the experience in written feedback. That tension taught me to weight behavioral data
+                            heavily and treat self-reported feedback as a secondary signal.</p>
                         </div>
 
                         <div class="learning-point">
-                            <h3>User Testing Insights</h3>
-                            <p>Playtesting highlighted the importance of text rhythm: trimming excess, layering
-                                tension, and choice design.</p>
+                            <h3>Synthesis Over Instinct</h3>
+                            <p>The most important shift was learning to sit with raw feedback before acting on it. Early on I'd make changes after a
+                            single session. By the second round I was reviewing all notes together first, looking for patterns before drawing
+                            conclusions. Resisting the urge to fix the loudest piece of feedback immediately is what turned my
+                            user testing into actual research.</p>
                         </div>
                     </div>
                 </section>
